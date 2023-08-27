@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<style>:root{--body-bg-color:#fff;--content-bg-color:#f5f5f5;--card-bg-color:#f5f5f5;--text-color:#555;--blockquote-color:#666;--link-color:#555;--link-hover-color:#222;--brand-color:#222;--brand-hover-color:#222;--table-row-odd-bg-color:#f9f9f9;--table-row-hover-bg-color:#f5f5f5;--menu-item-bg-color:#ddd;--theme-color:#222;--btn-default-bg:transparent;--btn-default-color:var(--link-color);--btn-default-border-color:var(--link-color);--btn-default-hover-bg:transparent;--btn-default-hover-color:var(--link-hover-color);--btn-default-hover-border-color:var(--link-hover-color);--highlight-background:#f3f3f3;--highlight-foreground:#444;--highlight-gutter-background:#e1e1e1;--highlight-gutter-foreground:#555;color-scheme:light}html{line-height:1.15;-webkit-text-size-adjust:100%}details,main{display:block}pre{font-size:1em;overflow:auto;padding:10px}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}.table-container,textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}summary{display:list-item}[hidden],template{display:none}::selection{background:#262a30;color:#eee}body,html{height:100%}body{margin:0;background:var(--body-bg-color);box-sizing:border-box;color:var(--text-color);font-family:Monda,'PingFang SC','Microsoft YaHei',sans-serif;font-size:.8em;line-height:2;min-height:100%;position:relative;transition:padding .2s ease-in-out}h1,h2,h3,h4,h5,h6{font-family:Monda,Monda,'PingFang SC','Microsoft YaHei',sans-serif;font-weight:700;line-height:1.5;margin:30px 0 15px}h1{font-size:1.375em}h2{font-size:1.25em}h3{font-size:1.125em}h4{font-size:1em}h5{font-size:.875em}h6{font-size:.75em}p{margin:0 0 20px}a{background:0 0;border-bottom:1px solid #ccc;color:var(--link-color);cursor:pointer;outline:0;text-decoration:none;overflow-wrap:break-word}a:hover{border-bottom-color:var(--link-hover-color);color:var(--link-hover-color)}embed,iframe,img,video{display:block;margin-left:auto;margin-right:auto;max-width:100%}hr{box-sizing:content-box;overflow:visible;background-image:repeating-linear-gradient(-45deg,#ddd,#ddd 4px,transparent 4px,transparent 8px);border:0}blockquote{border-left:4px solid #ddd;color:var(--blockquote-color);margin:0;padding:0 15px}blockquote cite::before{content:'-';padding:0 5px}dt{font-weight:700}dd{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0;font-size:.875em;margin:0 0 20px;width:100%}tbody tr:nth-of-type(odd){background:var(--table-row-odd-bg-color)}tbody tr:hover{background:var(--table-row-hover-bg-color)}caption,td,th{padding:8px}td,th{border:1px solid #ddd;border-bottom:3px solid #ddd}th{font-weight:700;padding-bottom:10px}td{border-bottom-width:1px}.btn{background:var(--btn-default-bg);border:2px solid var(--btn-default-border-color);border-radius:0;color:var(--btn-default-color);display:inline-block;font-size:.875em;line-height:2;transition:background-color .2s ease-in-out}.btn:hover{background:var(--btn-default-hover-bg);border-color:var(--btn-default-hover-border-color);color:var(--btn-default-hover-color)}.btn+.btn{margin:0 0 8px 8px}.btn .fa-fw{text-align:left;width:1.285714285714286em}.toggle{line-height:0}.toggle .toggle-line{background:#fff;display:block;height:2px;left:0;position:relative;top:0;transition:.4s;width:100%}.toggle .toggle-line:first-child{margin-top:1px}.toggle .toggle-line:not(:first-child){margin-top:4px}.toggle.toggle-arrow :first-child{top:2px;transform:rotate(-45deg);width:50%}.toggle.toggle-arrow :last-child{top:-2px;transform:rotate(45deg);width:50%}.toggle.toggle-close :nth-child(2){opacity:0}.toggle.toggle-close :first-child{top:6px;transform:rotate(-45deg)}.toggle.toggle-close :last-child{top:-6px;transform:rotate(45deg)}/*!
+  Theme: Default
+  Description: Original highlight.js style
+  Author: (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
+  Maintainer: @highlightjs/core-team
+  Website: https://highlightjs.org/
+  License: see project LICENSE
+  Touched: 2021
+*/pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#f3f3f3;color:#444}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.code-container:hover .copy-btn,.highlight:hover .copy-btn{opacity:1}.code-container{position:relative}.copy-btn{color:#333;cursor:pointer;line-height:1.6;opacity:0;padding:2px 6px;position:absolute;transition:opacity .2s ease-in-out;color:var(--highlight-foreground);font-size:14px;right:0;top:2px}figure.highlight{border-radius:5px;box-shadow:0 10px 30px 0 rgba(0,0,0,.4);padding-top:30px;overflow:auto;position:relative}figure.highlight .table-container{border-radius:0 0 5px 5px}figure.highlight::before{background:#fc625d;box-shadow:20px 0 #fdbc40,40px 0 #35cd4b;left:12px;margin-top:-20px;position:absolute;border-radius:50%;content:' ';height:12px;width:12px}code,figure.highlight,kbd,pre{background:var(--highlight-background);color:var(--highlight-foreground)}figure.highlight,pre{line-height:1.6;margin:0 auto 20px}figure.highlight figcaption,pre .caption,pre figcaption{background:var(--highlight-gutter-background);color:var(--highlight-foreground);display:flow-root;font-size:.875em;line-height:1.2;padding:.5em}figure.highlight figcaption a,pre .caption a,pre figcaption a{color:var(--highlight-foreground);float:right}figure.highlight figcaption a:hover,pre .caption a:hover,pre figcaption a:hover{border-bottom-color:var(--highlight-foreground)}code,pre{font-family:monospace,consolas,Menlo,monospace,'PingFang SC','Microsoft YaHei'}code{border-radius:3px;font-size:.875em;padding:2px 4px;overflow-wrap:break-word}kbd{border:2px solid #ccc;border-radius:.2em;box-shadow:.1em .1em .2em rgba(0,0,0,.1);font-family:inherit;padding:.1em .3em;white-space:nowrap}figure.highlight pre{border:0;margin:0;padding:10px 0}figure.highlight table{border:0;margin:0;width:auto}figure.highlight td{border:0;padding:0}figure.highlight .gutter{-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;user-select:none}figure.highlight .gutter pre{background:var(--highlight-gutter-background);color:var(--highlight-gutter-foreground);padding-left:10px;padding-right:10px;text-align:right}figure.highlight .code pre{padding-left:10px;width:100%}figure.highlight .marked{background:rgba(0,0,0,.3)}pre .caption,pre figcaption{margin-bottom:10px}.gist table{width:auto}.gist table td{border:0}pre code{background:0 0;padding:0;text-shadow:none}.blockquote-center{border-left:0;margin:40px 0;padding:0;position:relative;text-align:center}.blockquote-center::after,.blockquote-center::before{left:0;line-height:1;opacity:.6;position:absolute;width:100%}.blockquote-center::before{border-top:1px solid #ccc;text-align:left;top:-20px;content:'\f10d';font-family:'Font Awesome 6 Free';font-weight:900}.blockquote-center::after{border-bottom:1px solid #ccc;bottom:-20px;text-align:right;content:'\f10e';font-family:'Font Awesome 6 Free';font-weight:900}.blockquote-center div,.blockquote-center p{text-align:center}.group-picture{margin-bottom:20px}.group-picture .group-picture-row{display:flex;gap:3px;margin-bottom:3px}.group-picture .group-picture-column{flex:1}.group-picture .group-picture-column img{height:100%;margin:0;object-fit:cover;width:100%}.post-body .label{color:#555;padding:0 2px}.post-body .label.default{background:#f0f0f0}.post-body .label.primary{background:#efe6f7}.post-body .label.info{background:#e5f2f8}.post-body .label.success{background:#e7f4e9}.post-body .label.warning{background:#fcf6e1}.post-body .label.danger{background:#fae8eb}.post-body .link-grid{display:grid;grid-gap:1.5rem;gap:1.5rem;grid-template-columns:1fr 1fr;margin-bottom:20px;padding:1rem}.post-body .link-grid .link-grid-container{border:solid #ddd;box-shadow:1rem 1rem .5rem rgba(0,0,0,.5);min-height:5rem;min-width:0;padding:.5rem;position:relative;transition:background .3s}.post-body .link-grid .link-grid-container:hover{animation:.5s next-shake;background:var(--card-bg-color)}.post-body .link-grid .link-grid-container:active{box-shadow:.5rem .5rem .25rem rgba(0,0,0,.5);transform:translate(.2rem,.2rem)}.post-body .link-grid .link-grid-container .link-grid-image{border:1px solid #ddd;border-radius:50%;box-sizing:border-box;height:5rem;padding:3px;position:absolute;width:5rem}.post-body .link-grid .link-grid-container p{margin:0 1rem 0 6rem}.post-body .link-grid .link-grid-container p:first-of-type{font-size:1.2em}.post-body .link-grid .link-grid-container p:last-of-type{font-size:.8em;line-height:1.3rem;opacity:.7}.post-body .link-grid .link-grid-container a{border:0;height:100%;left:0;position:absolute;top:0;width:100%}@keyframes next-shake{0%{transform:translate(1pt,1pt) rotate(0)}10%{transform:translate(-1pt,-2pt) rotate(-1deg)}20%{transform:translate(-3pt,0) rotate(1deg)}30%{transform:translate(3pt,2pt) rotate(0)}40%{transform:translate(1pt,-1pt) rotate(1deg)}50%{transform:translate(-1pt,2pt) rotate(-1deg)}60%{transform:translate(-3pt,1pt) rotate(0)}70%{transform:translate(3pt,1pt) rotate(-1deg)}80%{transform:translate(-1pt,-1pt) rotate(1deg)}90%{transform:translate(1pt,2pt) rotate(0)}100%{transform:translate(1pt,-2pt) rotate(-1deg)}}.post-body .note{border-radius:3px;margin-bottom:20px;padding:1em;position:relative;border:1px solid #eee;border-left-width:5px}.post-body .note summary{cursor:pointer;outline:0}.post-body .note summary p{display:inline}.post-body .note h2,.post-body .note h3,.post-body .note h4,.post-body .note h5,.post-body .note h6{border-bottom:initial;margin:0;padding-top:0}.post-body .note :first-child{margin-top:0}.post-body .note :last-child{margin-bottom:0}.post-body .note.default{border-left-color:#777}.post-body .note.default h2,.post-body .note.default h3,.post-body .note.default h4,.post-body .note.default h5,.post-body .note.default h6{color:#777}.post-body .note.primary{border-left-color:#6f42c1}.post-body .note.primary h2,.post-body .note.primary h3,.post-body .note.primary h4,.post-body .note.primary h5,.post-body .note.primary h6{color:#6f42c1}.post-body .note.info{border-left-color:#428bca}.post-body .note.info h2,.post-body .note.info h3,.post-body .note.info h4,.post-body .note.info h5,.post-body .note.info h6{color:#428bca}.post-body .note.success{border-left-color:#5cb85c}.post-body .note.success h2,.post-body .note.success h3,.post-body .note.success h4,.post-body .note.success h5,.post-body .note.success h6{color:#5cb85c}.post-body .note.warning{border-left-color:#f0ad4e}.post-body .note.warning h2,.post-body .note.warning h3,.post-body .note.warning h4,.post-body .note.warning h5,.post-body .note.warning h6{color:#f0ad4e}.post-body .note.danger{border-left-color:#d9534f}.post-body .note.danger h2,.post-body .note.danger h3,.post-body .note.danger h4,.post-body .note.danger h5,.post-body .note.danger h6{color:#d9534f}.post-body .tabs{margin-bottom:20px}.post-body .tabs,.tabs-comment{padding-top:10px}.post-body .tabs ul.nav-tabs,.tabs-comment ul.nav-tabs{background:var(--body-bg-color);display:flex;display:flex;flex-wrap:wrap;justify-content:center;margin:0;padding:0;position:-webkit-sticky;position:sticky;top:0;z-index:5}.post-body .tabs ul.nav-tabs li.tab,.tabs-comment ul.nav-tabs li.tab{border-bottom:1px solid #ddd;border-left:1px solid transparent;border-right:1px solid transparent;border-radius:0;border-top:3px solid transparent;flex-grow:1;list-style-type:none}@media (max-width:413px){.post-body .tabs ul.nav-tabs,.tabs-comment ul.nav-tabs{display:block;margin-bottom:5px}.post-body .tabs ul.nav-tabs li.tab,.tabs-comment ul.nav-tabs li.tab{border-bottom:1px solid transparent;border-left:3px solid transparent;border-right:1px solid transparent;border-top:1px solid transparent;border-radius:0}}.post-body .tabs ul.nav-tabs li.tab a,.tabs-comment ul.nav-tabs li.tab a{border-bottom:initial;display:block;line-height:1.8;padding:.25em .75em;text-align:center;transition:.2s ease-out}.post-body .tabs ul.nav-tabs li.tab a i[class^=fa],.tabs-comment ul.nav-tabs li.tab a i[class^=fa]{width:1.285714285714286em}.post-body .tabs ul.nav-tabs li.tab.active,.tabs-comment ul.nav-tabs li.tab.active{border-color:#fc6423 #ddd transparent}@media (max-width:413px){.post-body .tabs ul.nav-tabs li.tab.active,.tabs-comment ul.nav-tabs li.tab.active{border-color:#ddd #ddd #ddd #fc6423}}.post-body .tabs ul.nav-tabs li.tab.active a,.tabs-comment ul.nav-tabs li.tab.active a{cursor:default}.post-body .tabs .tab-content,.tabs-comment .tab-content{border:1px solid #ddd;border-radius:0;border-top-color:transparent}@media (max-width:413px){.post-body .tabs .tab-content,.tabs-comment .tab-content{border-radius:0;border-top-color:#ddd}}.post-body .tabs .tab-content .tab-pane,.tabs-comment .tab-content .tab-pane{padding:20px 20px 0}.post-body .tabs .tab-content .tab-pane:not(.active),.tabs-comment .tab-content .tab-pane:not(.active){display:none}.pagination .next,.pagination .page-number,.pagination .prev,.pagination .space{display:inline-block;margin:-1px 10px 0;padding:0 10px}.pagination .page-number.current{background:#ccc;border-color:#ccc;color:var(--content-bg-color)}.pagination{border-top:1px solid #eee;margin:120px 0 0;text-align:left}.pagination .next,.pagination .page-number,.pagination .prev{border-bottom:0;border-top:1px solid #eee;transition:border-color .2s ease-in-out}.pagination .next:hover,.pagination .page-number:hover,.pagination .prev:hover{border-top-color:var(--link-hover-color)}@media (max-width:767px){.post-body .link-grid{grid-template-columns:1fr}.pagination .next,.pagination .page-number,.pagination .prev,.pagination .space{margin:0 5px}.pagination{border-top:0}.pagination .next,.pagination .page-number,.pagination .prev{border-bottom:1px solid #eee;border-top:0}.pagination .next:hover,.pagination .page-number:hover,.pagination .prev:hover{border-bottom-color:var(--link-hover-color)}.site-meta{text-align:center}}.pagination .space{margin:0;padding:0}.comments{margin-top:60px;overflow:hidden}.comment-button-group{display:flex;display:flex;flex-wrap:wrap;justify-content:center;justify-content:center;margin:1em 0}.comment-button-group .comment-button{margin:.1em .2em}.comment-button-group .comment-button.active{background:var(--btn-default-hover-bg);border-color:var(--btn-default-hover-border-color);color:var(--btn-default-hover-color)}.comment-position{display:none}.comment-position.active{display:block}.tabs-comment{margin-top:4em;padding-top:0}.tabs-comment .comments{margin-top:0;padding-top:0}.headband{background:var(--theme-color);height:3px}@media (max-width:991px){.headband{display:none}}.site-brand-container{display:flex;flex-shrink:0;padding:0 10px}.use-motion .column,.use-motion .site-brand-container .toggle{opacity:0}.site-meta{flex-grow:1;text-align:center}.custom-logo-image{margin-top:20px}@media (max-width:991px){.custom-logo-image{display:none}}.brand{border-bottom:0;color:var(--brand-color);display:inline-block;padding:2px 1px}.brand:hover{color:var(--brand-hover-color)}.site-title{font-family:Monda,Monda,'PingFang SC','Microsoft YaHei',sans-serif;font-size:1.5em;font-weight:400;line-height:1.5;margin:0}.site-subtitle{color:#999;font-size:.8125em;margin:10px 0}.use-motion .custom-logo-image,.use-motion .site-subtitle,.use-motion .site-title{opacity:0;position:relative;top:-10px}.site-nav-right,.site-nav-toggle{display:none}.site-nav-right .toggle,.site-nav-toggle .toggle{color:var(--text-color);padding:10px;width:22px}.site-nav-right .toggle .toggle-line,.site-nav-toggle .toggle .toggle-line{background:var(--text-color);border-radius:1px}@media (max-width:767px){.site-nav-right,.site-nav-toggle{display:flex;flex-direction:column;justify-content:center}.site-nav{--scroll-height:0;height:0;overflow:hidden;transition:height .2s ease-in-out,visibility .2s ease-in-out;visibility:hidden}body:not(.site-nav-on) .site-nav .animated{animation:none}body.site-nav-on .site-nav{height:var(--scroll-height);visibility:unset}}.menu{margin:0;text-align:center}.menu-item{display:inline-block;list-style:none;margin:0 10px}@media (max-width:767px){.menu-item{display:block;margin-top:10px}.menu-item.menu-item-search{display:none}}.menu-item a{border-bottom:0;display:block;font-size:.8125em;transition:border-color .2s ease-in-out}.menu-item a.menu-item-active,.menu-item a:hover{background:var(--menu-item-bg-color)}.menu-item i[class^=fa]{margin-right:8px}.menu-item .badge{display:inline-block;font-weight:700;line-height:1;margin-left:.35em;margin-top:.35em;text-align:center;white-space:nowrap}.use-motion .menu-item{visibility:hidden}.book-mark-link{border-bottom:0;position:fixed;top:-10px;transition:top .3s;left:30px}@media (max-width:991px){.book-mark-link{left:20px;display:none}}.book-mark-link::before{color:#222;font-size:32px;line-height:1;content:'\f02e';font-family:'Font Awesome 6 Free';font-weight:900}.book-mark-link-fixed,.book-mark-link:hover{top:-2px}.sidebar-inner{color:#999;padding:18px 10px;text-align:center;display:flex;flex-direction:column;justify-content:center}.cc-license .cc-opacity{border-bottom:0;opacity:.7}.cc-license .cc-opacity:hover{opacity:.9}.cc-license img{display:inline-block}.site-author-image{border:2px solid #333;max-width:96px;padding:2px;border-radius:50%;transition:transform 1s ease-out}.site-author-image:hover{transform:rotateZ(360deg)}.site-author-name{color:#f5f5f5;font-weight:400;margin:5px 0 0}.site-description{color:#999;font-size:1em;margin-top:5px}.links-of-author a{font-size:.8125em}.sidebar .sidebar-button:not(:first-child){margin-top:15px}.sidebar .sidebar-button button{background:0 0;color:#fc6423;cursor:pointer;line-height:2;padding:0 15px;border:1px solid #fc6423;border-radius:4px}.sidebar .sidebar-button button:hover{background:#fc6423;color:#fff}.sidebar .sidebar-button button i[class^=fa]{margin-right:5px}.links-of-blogroll{font-size:.8125em}.links-of-blogroll-title{font-size:.875em;font-weight:600}.links-of-blogroll-list{list-style:none;margin:0;padding:0}.sidebar-nav{font-size:.875em;height:0;margin:0;overflow:hidden;padding-left:0;pointer-events:none;transition:height .2s ease-in-out,visibility .2s ease-in-out;visibility:hidden}.sidebar-nav-active .sidebar-nav{height:calc(2em + 1px);pointer-events:unset;visibility:unset}.sidebar-nav li{border-bottom:1px solid transparent;color:#666;cursor:pointer;display:inline-block;transition:border-bottom-color .2s ease-in-out,color .2s ease-in-out}.sidebar-nav li.sidebar-nav-overview{margin-left:10px}.sidebar-nav li:hover{color:#f5f5f5}.sidebar-overview-active .sidebar-nav-overview,.sidebar-toc-active .sidebar-nav-toc{border-bottom-color:#87daff;color:#87daff;transition-delay:0.2s}.sidebar-overview-active .sidebar-nav-overview:hover,.sidebar-toc-active .sidebar-nav-toc:hover{color:#87daff}.sidebar-panel-container{align-items:start;display:grid;flex:1;overflow-x:hidden;overflow-y:auto;padding-top:0;transition:padding-top .2s ease-in-out}.sidebar-nav-active .sidebar-panel-container{padding-top:20px}.sidebar-panel{animation:.2s ease-in-out deactivate-sidebar-panel;grid-area:1/1;height:0;opacity:0;overflow:hidden;pointer-events:none;transform:translateY(0);transition:.2s ease-in-out;transition-property:opacity,transform,visibility;visibility:hidden}.sidebar-nav-active .sidebar-panel,.sidebar-overview-active .sidebar-panel.post-toc-wrap{transform:translateY(-20px)}.sidebar-overview-active:not(.sidebar-nav-active) .sidebar-panel.post-toc-wrap{transition-delay:0s,0.2s,0s}.sidebar-overview-active .sidebar-panel.site-overview-wrap,.sidebar-toc-active .sidebar-panel.post-toc-wrap{animation-name:activate-sidebar-panel;height:auto;opacity:1;pointer-events:unset;transform:translateY(0);transition-delay:0.2s,0.2s,0s;visibility:unset}.sidebar-panel.site-overview-wrap{display:flex;flex-direction:column;justify-content:center;gap:10px;justify-content:flex-start}@keyframes deactivate-sidebar-panel{from{height:var(--inactive-panel-height,0)}to{height:var(--active-panel-height,0)}}@keyframes activate-sidebar-panel{from{height:var(--inactive-panel-height,auto)}to{height:var(--active-panel-height,auto)}}.sidebar-toggle{bottom:61px;height:16px;padding:5px;width:16px;background:#222;cursor:pointer;opacity:.8;position:fixed;z-index:30;right:30px}.sidebar-toggle:hover{opacity:1}@media (max-width:991px){.sidebar-toggle{right:20px;opacity:1}}.sidebar-toggle:hover .toggle-line{background:#87daff}@media (any-hover:hover){body:not(.sidebar-active) .sidebar-toggle:hover :first-child{top:2px;transform:rotate(-45deg);width:50%}body:not(.sidebar-active) .sidebar-toggle:hover :last-child{top:-2px;transform:rotate(45deg);width:50%}}.sidebar-active .sidebar-toggle :nth-child(2){opacity:0}.sidebar-active .sidebar-toggle :first-child{top:6px;transform:rotate(-45deg)}.sidebar-active .sidebar-toggle :last-child{top:-6px;transform:rotate(45deg)}.post-toc{font-size:.875em}.post-toc ol{list-style:none;margin:0;padding:0 2px 0 10px;text-align:left}.post-toc ol>:last-child{margin-bottom:5px}.post-toc ol>ol{padding-left:0}.post-toc ol a{transition:.2s ease-in-out}.post-toc .nav-item{line-height:1.8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.post-toc .nav .nav-child{--height:0;height:0;opacity:0;overflow:hidden;transition:.2s ease-in-out;visibility:hidden}.post-toc .nav .active>.nav-child{height:var(--height,auto);opacity:1;visibility:unset}.post-toc .nav .active>a{border-bottom-color:#87daff;color:#87daff}.post-toc .nav .active-current>a,.post-toc .nav .active-current>a:hover{color:#87daff}.site-state{display:flex;flex-wrap:wrap;justify-content:center;line-height:1.4}.site-state-item{padding:0 15px}.site-state-item a{border-bottom:0;display:block}.site-state-item-count{display:block;font-size:1.25em;font-weight:600}.site-state-item-name{color:inherit;font-size:.875em}.footer{color:#999;font-size:.875em;transition:left .2s ease-in-out,right .2s ease-in-out}.footer.footer-fixed{bottom:0;left:0;position:absolute;right:0}.footer-inner{box-sizing:border-box;text-align:left;display:flex;flex-direction:column;justify-content:center;margin:0 auto;width:700px}@media (max-width:767px){.menu-item .badge{float:right;margin-left:0}.footer-inner{width:auto}}@media (min-width:1200px){.footer-inner{width:800px}}@media (min-width:1600px){.footer-inner{width:900px}}.use-motion .footer{opacity:0}.languages{display:inline-block;font-size:1.125em;position:relative}.languages .lang-select-label span{margin:0 .5em}.languages .lang-select{height:100%;left:0;opacity:0;position:absolute;top:0;width:100%}.with-love{color:red;display:inline-block;margin:0 5px;animation:1.33s ease-in-out infinite icon-animate}.busuanzi-count #busuanzi_container_site_pv,.busuanzi-count #busuanzi_container_site_uv{display:none}@keyframes icon-animate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,50%,60%,70%,80%{transform:scale(1.1)}}.back-to-top{font-size:12px;margin:8px -10px -20px;opacity:0;transition:opacity .2s ease-in-out}.back-to-top span{margin-right:8px}.back-to-top .fa{text-align:center;width:26px}.back-to-top.back-to-top-on{cursor:pointer;opacity:.8}.back-to-top.back-to-top-on:hover{opacity:1}.reading-progress-bar{--progress:0;background:#37c6c0;height:3px;position:fixed;z-index:50;width:var(--progress);left:0;bottom:0}.rtl.post-body a,.rtl.post-body h1,.rtl.post-body h2,.rtl.post-body h3,.rtl.post-body h4,.rtl.post-body h5,.rtl.post-body h6,.rtl.post-body li,.rtl.post-body ol,.rtl.post-body p,.rtl.post-body ul{direction:rtl;font-family:UKIJ Ekran}.rtl.post-title{font-family:UKIJ Ekran}.post-button{text-align:left}.use-motion .collection-header,.use-motion .comments,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header{visibility:hidden}.posts-collapse .post-content{margin-bottom:35px;margin-left:35px;position:relative}@media (max-width:767px){.posts-collapse .post-content{margin-left:0;margin-right:0}}.posts-collapse .post-content .collection-title{font-size:1.125em;position:relative}.posts-collapse .post-content .collection-title::before{background:#999;border:1px solid #fff;margin-left:-6px;margin-top:-4px;position:absolute;top:50%;border-radius:50%;content:' ';height:10px;width:10px}.posts-collapse .post-content .collection-year{font-size:1.5em;font-weight:700;margin:60px 0;position:relative}.posts-collapse .post-content .collection-year::before{background:#bbb;margin-left:-4px;margin-top:-4px;position:absolute;top:50%;border-radius:50%;content:' ';height:8px;width:8px}.posts-collapse .post-content .collection-header{display:block;margin-left:20px}.posts-collapse .post-content .collection-header small{color:#bbb;margin-left:5px}.posts-collapse .post-content .post-header{border-bottom:1px dashed #ccc;margin:30px 2px 0;padding-left:15px;position:relative;transition:border .2s ease-in-out}.posts-collapse .post-content .post-header::before{background:#bbb;border:1px solid #fff;left:-6px;position:absolute;top:.75em;transition:background .2s ease-in-out;border-radius:50%;content:' ';height:6px;width:6px}.posts-collapse .post-content .post-header:hover{border-bottom-color:#666}.posts-collapse .post-content .post-header:hover::before{background:#222}.posts-collapse .post-content .post-meta-container{display:inline;font-size:.75em;margin-right:10px}.posts-collapse .post-content .post-title{display:inline}.posts-collapse .post-content .post-title a{border-bottom:0;color:var(--link-color)}.posts-collapse .post-content::before{background:#f5f5f5;content:' ';height:100%;margin-left:-2px;position:absolute;top:1.25em;width:4px}.post-body{font-family:Monda,Monda,'PingFang SC','Microsoft YaHei',sans-serif;overflow-wrap:break-word}@media (min-width:1200px){.post-body{font-size:1.125em}}@media (min-width:992px){.post-body{text-align:justify}}.post-body h1 .header-anchor,.post-body h1 .headerlink,.post-body h2 .header-anchor,.post-body h2 .headerlink,.post-body h3 .header-anchor,.post-body h3 .headerlink,.post-body h4 .header-anchor,.post-body h4 .headerlink,.post-body h5 .header-anchor,.post-body h5 .headerlink,.post-body h6 .header-anchor,.post-body h6 .headerlink{border-bottom-style:none;color:inherit;float:right;font-size:.875em;margin-left:10px;opacity:0}.post-body h1 .header-anchor::before,.post-body h1 .headerlink::before,.post-body h2 .header-anchor::before,.post-body h2 .headerlink::before,.post-body h3 .header-anchor::before,.post-body h3 .headerlink::before,.post-body h4 .header-anchor::before,.post-body h4 .headerlink::before,.post-body h5 .header-anchor::before,.post-body h5 .headerlink::before,.post-body h6 .header-anchor::before,.post-body h6 .headerlink::before{content:'\f0c1';font-family:'Font Awesome 6 Free';font-weight:900}.post-body h1:hover .header-anchor,.post-body h1:hover .headerlink,.post-body h2:hover .header-anchor,.post-body h2:hover .headerlink,.post-body h3:hover .header-anchor,.post-body h3:hover .headerlink,.post-body h4:hover .header-anchor,.post-body h4:hover .headerlink,.post-body h5:hover .header-anchor,.post-body h5:hover .headerlink,.post-body h6:hover .header-anchor,.post-body h6:hover .headerlink{opacity:.5}.post-body h1:hover .header-anchor:hover,.post-body h1:hover .headerlink:hover,.post-body h2:hover .header-anchor:hover,.post-body h2:hover .headerlink:hover,.post-body h3:hover .header-anchor:hover,.post-body h3:hover .headerlink:hover,.post-body h4:hover .header-anchor:hover,.post-body h4:hover .headerlink:hover,.post-body h5:hover .header-anchor:hover,.post-body h5:hover .headerlink:hover,.post-body h6:hover .header-anchor:hover,.post-body h6:hover .headerlink:hover{opacity:1}.post-body .exturl .fa{font-size:.875em;margin-left:4px}.post-body .fancybox+figcaption,.post-body img+figcaption{color:#999;font-size:.875em;font-weight:700;line-height:1;margin:-15px auto 15px;text-align:center}.post-body embed,.post-body iframe,.post-body img,.post-body video{margin-bottom:20px}.post-body .video-container{height:0;margin-bottom:20px;overflow:hidden;padding-top:75%;position:relative;width:100%}.post-body .video-container embed,.post-body .video-container iframe,.post-body .video-container object{height:100%;left:0;margin:0;position:absolute;top:0;width:100%}.post-gallery{display:flex;min-height:200px}.post-gallery .post-gallery-image{flex:1}.post-gallery .post-gallery-image:not(:first-child){clip-path:polygon(40px 0,100% 0,100% 100%,0 100%);margin-left:-20px}.post-gallery .post-gallery-image:not(:last-child){margin-right:-20px}.post-gallery .post-gallery-image img{height:100%;object-fit:cover;opacity:1;width:100%}.posts-expand .post-gallery{margin-bottom:60px}.posts-collapse .post-gallery{margin:15px 0}.posts-expand .post-header{font-size:1.125em;text-align:center}.posts-expand .post-title{font-size:1.5em;font-weight:400;margin:initial;overflow-wrap:break-word}.posts-expand .post-title-link{border-bottom:0;color:var(--link-color);display:inline-block;position:relative}.posts-expand .post-title-link::before{background:var(--link-color);bottom:0;content:'';height:2px;left:0;position:absolute;transform:scaleX(0);transition:transform .2s ease-in-out;width:100%}.posts-expand .post-title-link:hover::before{transform:scaleX(1)}.posts-expand .post-title-link .fa{font-size:.875em;margin-left:5px}.post-sticky-flag{display:inline-block;margin-right:8px;transform:rotate(30deg)}.posts-expand .post-meta-container{color:#999;font-family:Monda,Monda,'PingFang SC','Microsoft YaHei',sans-serif;font-size:.75em;margin-top:3px}.posts-expand .post-meta-container .post-description{font-size:.875em;margin-top:2px}.posts-expand .post-meta-container time{border-bottom:1px dashed #999}.post-meta{display:flex;flex-wrap:wrap;justify-content:center}:not(.post-meta-break)+.post-meta-item::before{content:'|';margin:0 .5em}.post-meta-item-icon{margin-right:3px}@media (max-width:991px){.post-body{text-align:justify}.post-meta-item-text{display:none}}.post-meta-break{flex-basis:100%;height:0}#busuanzi_container_page_pv{display:none}.post-nav{border-top:1px solid #eee;display:flex;gap:30px;justify-content:space-between;margin-top:1em;padding:10px 5px 0}.post-nav-item{flex:1}.post-nav-item a{border-bottom:0;display:block;font-size:.875em;line-height:1.6}.post-nav-item a:active{top:2px}.post-nav-item .fa{font-size:.75em}.post-nav-item:first-child .fa{margin-right:5px}.post-nav-item:last-child{text-align:right}.post-nav-item:last-child .fa{margin-left:5px}.post-footer{display:flex;flex-direction:column;justify-content:center}.post-eof{background:#ccc;height:1px;margin:80px auto 60px;width:8%}.post-block:last-of-type .post-eof{display:none}.post-copyright ul{list-style:none;overflow:hidden;padding:.5em 1em;position:relative;background:var(--card-bg-color);border-left:3px solid #ff2a2a;margin:1em 0 0}.post-copyright ul::after{content:'\f25e';font-family:'Font Awesome 6 Brands';font-size:200px;opacity:.1;position:absolute;right:-50px;top:-150px}.post-tags{margin-top:40px;text-align:left}.post-tags a{display:inline-block;font-size:.8125em}.post-tags a:not(:last-child){margin-right:10px}.social-like{border-top:1px solid #eee;font-size:.875em;margin-top:1em;padding-top:1em;display:flex;flex-wrap:wrap;justify-content:center}.social-like a{border-bottom:none}.reward-container{margin:1em 0 0;padding:1em 0;text-align:center}.reward-container button{background:0 0;color:#87daff;cursor:pointer;line-height:2;padding:0 15px;border:2px solid #87daff;border-radius:2px;outline:0;transition:.2s ease-in-out;vertical-align:text-top}.reward-container button:hover{background:#87daff;color:#fff}.post-reward{display:none;padding-top:20px}.post-reward.active{display:block}.post-reward div{display:inline-block}.post-reward div span{display:block}.post-reward div:hover span{animation:.1s linear infinite next-roll;pointer-events:none}.post-reward img{display:inline-block;margin:.8em 2em 0;max-width:100%;width:180px}@keyframes next-roll{from{transform:rotateZ(30deg)}to{transform:rotateZ(-30deg)}}.category-all-page .category-all-title{text-align:center}.category-all-page .category-all{margin-top:20px}.category-all-page .category-list{list-style:none;margin:0;padding:0}.category-all-page .category-list-item{margin:5px 10px}.category-all-page .category-list-count{color:#bbb}.category-all-page .category-list-count::before{content:' ('}.category-all-page .category-list-count::after{content:') '}.category-all-page .category-list-child{padding-left:10px}.event-list hr{background:#222;margin:20px 0 45px}.event-list hr::after{background:#222;color:#fff;content:'NOW';display:inline-block;font-weight:700;padding:0 5px}.event-list .event{--event-background:#222;--event-foreground:#bbb;--event-title:#fff;background:var(--event-background);padding:15px}.event-list .event .event-summary{border-bottom:0;color:var(--event-title);margin:0;padding:0 0 0 35px;position:relative}.event-list .event .event-summary::before{animation:1s ease-in-out infinite alternate dot-flash;background:var(--event-title);left:0;margin-top:-6px;position:absolute;top:50%;border-radius:50%;content:' ';height:12px;width:12px}.event-list .event:nth-of-type(odd) .event-summary::before{animation-delay:.5s}.event-list .event:not(:last-child){margin-bottom:20px}.event-list .event .event-relative-time{color:var(--event-foreground);display:inline-block;font-size:12px;font-weight:400;padding-left:12px}.event-list .event .event-details{color:var(--event-foreground);display:block;line-height:18px;padding:6px 0 6px 35px}.event-list .event .event-details::before{color:var(--event-foreground);display:inline-block;margin-right:9px;width:14px;font-family:'Font Awesome 6 Free';font-weight:900}.event-list .event .event-details.event-location::before{content:'\f041'}.event-list .event .event-details.event-duration::before{content:'\f017'}.event-list .event .event-details.event-description::before{content:'\f024'}.event-list .event-past{--event-background:#f5f5f5;--event-foreground:#999;--event-title:#222}@keyframes dot-flash{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.8)}}ul.breadcrumb{font-size:.75em;list-style:none;margin:1em 0;padding:0 2em;text-align:center}ul.breadcrumb li{display:inline}ul.breadcrumb li:not(:first-child)::before{content:'/\00a0';font-weight:400;padding:.5em}ul.breadcrumb li:last-child{font-weight:700}.tag-cloud{text-align:center}.tag-cloud a{display:inline-block;margin:10px}.tag-cloud-0{border-bottom-color:#aaa;color:#aaa}.tag-cloud-1{border-bottom-color:#9a9a9a;color:#9a9a9a}.tag-cloud-2{border-bottom-color:#8b8b8b;color:#8b8b8b}.tag-cloud-3{border-bottom-color:#7c7c7c;color:#7c7c7c}.tag-cloud-4{border-bottom-color:#6c6c6c;color:#6c6c6c}.tag-cloud-5{border-bottom-color:#5d5d5d;color:#5d5d5d}.tag-cloud-6{border-bottom-color:#4e4e4e;color:#4e4e4e}.tag-cloud-7{border-bottom-color:#3e3e3e;color:#3e3e3e}.tag-cloud-8{border-bottom-color:#2f2f2f;color:#2f2f2f}.tag-cloud-9{border-bottom-color:#202020;color:#202020}.tag-cloud-10{border-bottom-color:#111;color:#111}.search-active{overflow:hidden}.search-pop-overlay{background:rgba(0,0,0,0);display:flex;height:100%;left:0;position:fixed;top:0;transition:visibility .4s,background .4s;visibility:hidden;width:100%;z-index:40}.search-active .search-pop-overlay{background:rgba(0,0,0,.3);visibility:visible}.search-popup{background:var(--card-bg-color);border-radius:5px;height:80%;margin:auto;transform:scale(0);transition:transform .4s;width:700px}.search-active .search-popup{transform:scale(1)}@media (max-width:767px){.search-popup{border-radius:0;height:100%;width:100%}.pagination{margin:80px 0 0;text-align:center}}.search-popup .popup-btn-close,.search-popup .search-icon{color:#999;font-size:18px;padding:0 10px}.search-popup .popup-btn-close{cursor:pointer}.search-popup .popup-btn-close:hover .fa{color:#222}.search-popup .search-header{background:#eee;border-top-left-radius:5px;border-top-right-radius:5px;display:flex;padding:5px}.search-popup input.search-input{background:0 0;border:0;outline:0;width:100%}.search-popup input.search-input::-webkit-search-cancel-button{display:none}.search-popup .search-result-container{height:calc(100% - 55px);overflow:auto;padding:5px 25px}.search-popup .search-result-container hr{margin:5px 0 10px}.search-popup .search-result-container hr:first-child{display:none}.search-popup .search-result-list{margin:0 5px;padding:0;width:100%}.search-popup a.search-result-title{font-weight:700}.search-popup p.search-result{border-bottom:1px dashed #ccc;padding:5px 0}.search-popup .search-input-container{flex-grow:1;padding:2px}.search-popup .no-result{display:flex}.search-popup .search-result-icon{color:#ccc;margin:auto}mark.search-keyword{background:0 0;border-bottom:1px dashed #ff2a2a;color:#ff2a2a;font-weight:700}.use-motion .animated{animation-fill-mode:none;visibility:inherit}.use-motion .sidebar .animated{animation-fill-mode:both}hr{height:2px;margin:20px 0}.btn{padding:0 10px}.headband{display:none}.footer{background:var(--content-bg-color);color:var(--text-color);padding:10px 0}.column{background:var(--content-bg-color)}header.header{align-items:center;display:flex;padding:20px 0;margin:0 auto;width:700px}.site-meta{line-height:normal}.site-meta .site-title{font-weight:bolder}.logo-line{background:var(--brand-color);display:block;height:2px;margin:0 auto;width:75%}.use-motion .logo-line:first-of-type{transform:scaleX(0);transform-origin:left}.use-motion .logo-line:last-of-type{transform:scaleX(0);transform-origin:right}.site-subtitle{display:none}.site-nav{flex-grow:1}@media (max-width:767px){.footer-inner{text-align:center}header.header{display:block;padding:10px 0}.site-meta .brand{display:block}.logo-line{display:none}.site-nav{padding:0 10px}.main-menu{padding-top:10px}}.menu{padding:0}.menu .menu-item{margin:0}.menu .menu-item a{border-radius:2px;padding:0 10px;transition-property:background}.menu .menu-item .badge{background:#fff;border-radius:10px;color:#555;padding:1px 4px;text-shadow:1px 1px 0 rgba(0,0,0,.1)}.posts-expand.index .post-header{text-align:left}.posts-expand.index .post-meta-container{margin-top:5px}.posts-expand.index .post-meta{justify-content:flex-start}@media (max-width:767px){.menu .menu-item{margin-top:5px}.menu .menu-item a{text-align:left}.posts-expand.index .post-header{text-align:center}.posts-expand.index .post-meta{justify-content:center}header.header{width:auto}}.posts-expand .post-eof{display:none}.posts-expand .post-block:not(:first-of-type){margin-top:120px}.posts-expand .post-header{margin-bottom:20px}.posts-expand .post-tags a{background:var(--content-bg-color);border-bottom:0;padding:1px 5px}.posts-expand .post-tags a:hover{background:var(--menu-item-bg-color)}.posts-expand .post-nav{margin-top:40px}.post-button{margin-top:20px}.post-button .btn{background:0 0;border:0;border-bottom:2px solid var(--btn-default-border-color);padding:0;transition-property:border}.post-button .btn:hover{border-bottom-color:var(--btn-default-hover-border-color)}@media (min-width:1200px){header.header{width:800px}}.main-inner{margin:0 auto;width:700px;padding-bottom:80px}@media (max-width:767px){.main-inner{width:auto;padding-left:20px;padding-right:20px}}@media (min-width:1200px){.main-inner{width:800px}}@media (min-width:1600px){.main-inner,header.header{width:900px}}.post-block:first-of-type{padding-top:80px}@media (max-width:767px){.post-block:first-of-type{padding-top:60px}}@media (min-width:1200px){.sidebar-active{padding-right:320px}.sidebar-active .footer-fixed{right:320px}.sidebar-dimmer{display:none}}.sidebar{right:-320px;background:#222;bottom:0;max-height:100vh;overflow-y:auto;position:fixed;top:0;transition:.2s ease-out;width:320px;z-index:20}.sidebar-active .sidebar{right:0}.sidebar a{border-bottom-color:#555;color:#999}.sidebar a:hover{border-bottom-color:#eee;color:#eee}.links-of-author:not(:first-child){margin-top:15px}.links-of-author a{border-bottom-color:#555;display:inline-block;margin-bottom:10px;margin-right:10px;vertical-align:middle}.links-of-author a::before{background:#256a53;display:inline-block;margin-right:3px;transform:translateY(-2px);border-radius:50%;content:' ';height:4px;width:4px}.links-of-blogroll-item{padding:2px 10px}.links-of-blogroll-item a{box-sizing:border-box;display:inline-block;max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.popular-posts .popular-posts-item .popular-posts-link:hover{background:0 0}.sidebar-dimmer{background:#000;height:100%;left:0;opacity:0;position:fixed;top:0;transition:visibility .4s,opacity .4s;visibility:hidden;width:100%;z-index:10}.sidebar-active .sidebar-dimmer{opacity:.7;visibility:visible}.sub-menu{margin:10px 0}.sub-menu .menu-item{display:inline-block}.post-block{padding:25px;-webkit-box-shadow:0 0 5px rgba(202,203,203,.5);-moz-box-shadow:0 0 5px rgba(202,203,204,.5)}.post-body img{border-radius:1em}.post-body p a{color:#0593d3;border-bottom:none}.post-body p a:hover{color:#0477ab;text-decoration:underline}</style>
+
+<link rel="stylesheet" href="https://fonts.proxy.ustclug.org/css?family=Monda:300,300italic,400,400italic,700,700italic%7Cmonospace:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.20/fancybox/fancybox.css" integrity="sha256-RvRHGSuWAxZpXKV9lLDt2e+rZ+btzn48Wp4ueS3NZKs=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.zealot.top","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.18.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Windows 系统安全事件应急响应  1. Windows 的应急事件分类Windows 系统的应急事件，按照处理的方式，可分为下面几种类别：  病毒、木马、蠕虫事件  Web 服务器入侵事件或第三方服务入侵事件 系统入侵事件，如利用 Windows 的漏洞攻击入侵系统、利用弱口令入侵、利用其他服务的漏洞入侵，跟 Web 入侵有所区别，Web 入侵需要对 Web 日志进行分析，系统入侵只能查看">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WINDOWS 系统安全应急事件处置">
+<meta property="og:url" content="https://blog.zealot.top/2023/08/16/WINDOWS-%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E5%BA%94%E6%80%A5%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%BD%AE/index.html">
+<meta property="og:site_name" content="思想就是武器">
+<meta property="og:description" content="Windows 系统安全事件应急响应  1. Windows 的应急事件分类Windows 系统的应急事件，按照处理的方式，可分为下面几种类别：  病毒、木马、蠕虫事件  Web 服务器入侵事件或第三方服务入侵事件 系统入侵事件，如利用 Windows 的漏洞攻击入侵系统、利用弱口令入侵、利用其他服务的漏洞入侵，跟 Web 入侵有所区别，Web 入侵需要对 Web 日志进行分析，系统入侵只能查看">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161127003.png">
+<meta property="og:image" content="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161127474.png">
+<meta property="og:image" content="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161128925.png">
+<meta property="og:image" content="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161128706.png">
+<meta property="og:image" content="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161145893.png">
+<meta property="og:image" content="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161129060.png">
+<meta property="og:image" content="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161130958.png">
+<meta property="og:image" content="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161130108.png">
+<meta property="og:image" content="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161130351.png">
+<meta property="og:image" content="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161146889.png">
+<meta property="og:image" content="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161131851.png">
+<meta property="og:image" content="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161131300.png">
+<meta property="og:image" content="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161131696.png">
+<meta property="og:image" content="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161132524.png">
+<meta property="og:image" content="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161132804.png">
+<meta property="og:image" content="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161146565.png">
+<meta property="og:image" content="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161132801.png">
+<meta property="og:image" content="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161133896.png">
+<meta property="article:published_time" content="2023-08-16T03:37:00.000Z">
+<meta property="article:modified_time" content="2023-08-27T08:37:18.953Z">
+<meta property="article:author" content="Hank ZHU">
+<meta property="article:tag" content="windows">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161127003.png">
+
+
+<link rel="canonical" href="https://blog.zealot.top/2023/08/16/WINDOWS-%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E5%BA%94%E6%80%A5%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%BD%AE/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.zealot.top/2023/08/16/WINDOWS-%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E5%BA%94%E6%80%A5%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%BD%AE/","path":"2023/08/16/WINDOWS-系统安全应急事件处置/","title":"WINDOWS 系统安全应急事件处置"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>WINDOWS 系统安全应急事件处置 | 思想就是武器</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">思想就是武器</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">好好学习 天天向上</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-Windows-%E7%9A%84%E5%BA%94%E6%80%A5%E4%BA%8B%E4%BB%B6%E5%88%86%E7%B1%BB"><span class="nav-number">1.</span> <span class="nav-text">1. Windows 的应急事件分类</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E9%80%9A%E7%94%A8%E6%8E%92%E6%9F%A5%E6%80%9D%E8%B7%AF"><span class="nav-number">2.</span> <span class="nav-text">2. 通用排查思路</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-%E7%9B%B4%E6%8E%A5%E6%A3%80%E6%9F%A5%E7%9B%B8%E5%85%B3%E6%97%A5%E5%BF%97"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 直接检查相关日志</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-1-Windows-%E6%97%A5%E5%BF%97%E7%AE%80%E4%BB%8B"><span class="nav-number">2.1.1.</span> <span class="nav-text">2.1.1 Windows 日志简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-2-%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95%E4%BA%8B%E4%BB%B6"><span class="nav-number">2.1.2.</span> <span class="nav-text">2.1.2 远程登录事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-3-GUI-%E7%9A%84%E6%97%A5%E5%BF%97%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D"><span class="nav-number">2.1.3.</span> <span class="nav-text">2.1.3 GUI 的日志工具介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-4-PowerShell-%E6%97%A5%E5%BF%97%E6%93%8D%E4%BD%9C"><span class="nav-number">2.1.4.</span> <span class="nav-text">2.2.4 PowerShell 日志操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-5-Windows-%E6%97%A5%E5%BF%97%E5%88%A0%E9%99%A4%E5%92%8C%E6%97%A5%E5%BF%97%E9%9B%86%E4%B8%AD%E5%8C%96"><span class="nav-number">2.1.5.</span> <span class="nav-text">2.2.5 Windows 日志删除和日志集中化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-%E6%A3%80%E6%9F%A5%E8%B4%A6%E6%88%B7"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 检查账户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-%E6%A3%80%E6%9F%A5%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 检查网络连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-%E6%A3%80%E6%9F%A5%E8%BF%9B%E7%A8%8B"><span class="nav-number">2.4.</span> <span class="nav-text">2.4 检查进程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-1-%E5%86%85%E5%AD%98-dump"><span class="nav-number">2.4.1.</span> <span class="nav-text">2.4.1 内存 dump</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-2-%E5%86%85%E5%AD%98%E5%88%86%E6%9E%90"><span class="nav-number">2.4.2.</span> <span class="nav-text">2.4.2 内存分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-5-%E6%A3%80%E6%9F%A5%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8%E5%92%8C%E8%BF%90%E8%A1%8C%E6%9C%8D%E5%8A%A1"><span class="nav-number">2.5.</span> <span class="nav-text">2.5 检查开机启动和运行服务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-1-%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8"><span class="nav-number">2.5.1.</span> <span class="nav-text">2.5.1 开机启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-2-%E6%9F%A5%E7%9C%8B%E6%9C%8D%E5%8A%A1%E7%8A%B6%E6%80%81"><span class="nav-number">2.5.2.</span> <span class="nav-text">2.5.2 查看服务状态</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-6-%E6%A3%80%E6%9F%A5%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1"><span class="nav-number">2.6.</span> <span class="nav-text">2.6 检查计划任务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-7-%E6%A3%80%E6%9F%A5%E6%96%87%E4%BB%B6"><span class="nav-number">2.7.</span> <span class="nav-text">2.7 检查文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-8-%E6%A3%80%E6%9F%A5%E6%B3%A8%E5%86%8C%E8%A1%A8"><span class="nav-number">2.8.</span> <span class="nav-text">2.8 检查注册表</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-%E7%89%B9%E5%AE%9A%E4%BA%8B%E4%BB%B6%E7%97%95%E8%BF%B9%E6%A3%80%E6%9F%A5"><span class="nav-number">3.</span> <span class="nav-text">3. 特定事件痕迹检查</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-%E6%8C%96%E7%9F%BF%E7%97%85%E6%AF%92%E5%BA%94%E6%80%A5"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 挖矿病毒应急</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-1-%E4%BC%A0%E6%92%AD%E6%96%B9%E5%BC%8F"><span class="nav-number">3.1.1.</span> <span class="nav-text">3.1.1 传播方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-2-%E6%8C%96%E7%9F%BF%E7%A8%8B%E5%BA%8F%E7%89%B9%E7%82%B9"><span class="nav-number">3.1.2.</span> <span class="nav-text">3.1.2 挖矿程序特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-3-%E6%8C%96%E7%9F%BF%E7%A8%8B%E5%BA%8F%E5%BA%94%E6%80%A5%E7%9B%AE%E7%9A%84"><span class="nav-number">3.1.3.</span> <span class="nav-text">3.1.3 挖矿程序应急目的</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-%E5%8B%92%E7%B4%A2%E7%97%85%E6%AF%92%E4%BA%8B%E4%BB%B6%E5%BA%94%E6%80%A5"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 勒索病毒事件应急</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-1-%E4%BC%A0%E6%92%AD%E6%96%B9%E5%BC%8F"><span class="nav-number">3.2.1.</span> <span class="nav-text">3.2.1 传播方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-2-%E5%8B%92%E7%B4%A2%E7%97%85%E6%AF%92%E7%89%B9%E7%82%B9"><span class="nav-number">3.2.2.</span> <span class="nav-text">3.2.2 勒索病毒特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-3-%E5%8B%92%E7%B4%A2%E7%97%85%E6%AF%92%E5%BA%94%E6%80%A5%E7%9B%AE%E7%9A%84"><span class="nav-number">3.2.3.</span> <span class="nav-text">3.3.3 勒索病毒应急目的</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3-%E5%BA%94%E6%80%A5%E7%A4%BA%E4%BE%8B"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 应急示例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-Sysinternals-Utilities"><span class="nav-number">4.</span> <span class="nav-text">4. Sysinternals Utilities</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 常用工具介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-1-autoruns"><span class="nav-number">4.1.1.</span> <span class="nav-text">4.1.1 autoruns</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-2-procexp"><span class="nav-number">4.1.2.</span> <span class="nav-text">4.1.2 procexp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-3-ADExplorer"><span class="nav-number">4.1.3.</span> <span class="nav-text">4.1.3 ADExplorer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-4-TCPView"><span class="nav-number">4.1.4.</span> <span class="nav-text">4.1.4 TCPView</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-5-PSExec"><span class="nav-number">4.1.5.</span> <span class="nav-text">4.1.5 PSExec</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-6-LogonSessions"><span class="nav-number">4.1.6.</span> <span class="nav-text">4.1.6 LogonSessions</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-Troubleshooting-with-the-Windows-Sysinternals-Tools-2nd-Edition"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 Troubleshooting with the Windows Sysinternals Tools 2nd Edition</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-%E5%85%B6%E4%BB%96"><span class="nav-number">5.</span> <span class="nav-text">5. 其他</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83"><span class="nav-number">6.</span> <span class="nav-text">参考</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">6.0.0.1.</span> <span class="nav-text"></span></a></li></ol></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Hank ZHU"
+      src="/images/icon.png">
+  <p class="site-author-name" itemprop="name">Hank ZHU</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">78</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/xmzcl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;xmzcl" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:18976787@qq.com" title="E-Mail → mailto:18976787@qq.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/384272321" title="BiliBili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;384272321" rel="noopener me" target="_blank"><i class="fab fa-bilibili fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=18976787&site=qq&menu=yes" title="QQ → http:&#x2F;&#x2F;wpa.qq.com&#x2F;msgrd?v&#x3D;3&amp;uin&#x3D;18976787&amp;site&#x3D;qq&amp;menu&#x3D;yes" rel="noopener me" target="_blank"><i class="fab fa-qq fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.zealot.top/2023/08/16/WINDOWS-%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E5%BA%94%E6%80%A5%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/icon.png">
+      <meta itemprop="name" content="Hank ZHU">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="思想就是武器">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="WINDOWS 系统安全应急事件处置 | 思想就是武器">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          WINDOWS 系统安全应急事件处置
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-08-16 11:37:00" itemprop="dateCreated datePublished" datetime="2023-08-16T11:37:00+08:00">2023-08-16</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-08-27 16:37:18" itemprop="dateModified" datetime="2023-08-27T16:37:18+08:00">2023-08-27</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/" itemprop="url" rel="index"><span itemprop="name">技术分享</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>Windows 系统安全事件应急响应</p>
+<hr>
+<h1 id="1-Windows-的应急事件分类"><a href="#1-Windows-的应急事件分类" class="headerlink" title="1. Windows 的应急事件分类"></a>1. Windows 的应急事件分类</h1><p>Windows 系统的应急事件，按照处理的方式，可分为下面几种类别：</p>
+<ul>
+<li>病毒、木马、蠕虫事件</li>
+<li> Web 服务器入侵事件或第三方服务入侵事件</li>
+<li>系统入侵事件，如利用 Windows 的漏洞攻击入侵系统、利用弱口令入侵、利用其他服务的漏洞入侵，跟 Web 入侵有所区别，Web 入侵需要对 Web 日志进行分析，系统入侵只能查看 Windows 的事件日志。</li>
+<li>网络攻击事件（DDoS、ARP、DNS 劫持等）</li>
+</ul>
+<h1 id="2-通用排查思路"><a href="#2-通用排查思路" class="headerlink" title="2. 通用排查思路"></a>2. 通用排查思路</h1><blockquote>
+<p>入侵肯定会留下痕迹，另外重点强调的是不要一上来就各种查查查，问清楚谁在什么时间发现的主机异常情况，异常的现象是什么，受害用户做了什么样的紧急处理。问清楚主机异常情况后，需要动脑考虑为什么会产生某种异常，从现象反推可能的入侵思路，再考虑会在 Windows 主机上可能留下的痕迹，最后才是排除各种可能，确定入侵的过程。</p>
+</blockquote>
+<p>获取 Windows 的基本信息，如机器名称、操作系统版本、OS 安装时间、启动时间、域名、补丁安装情况，使用 <code>systeminfo</code> 命令获取。运行 <code>msinfo32</code> 也可以查看计算机的详细信息。</p>
+<h2 id="2-1-直接检查相关日志"><a href="#2-1-直接检查相关日志" class="headerlink" title="2.1 直接检查相关日志"></a>2.1 直接检查相关日志</h2><blockquote>
+<p>任何操作（人、程序、进程）都会导致产生相关日志</p>
+</blockquote>
+<h3 id="2-1-1-Windows-日志简介"><a href="#2-1-1-Windows-日志简介" class="headerlink" title="2.1.1 Windows 日志简介"></a>2.1.1 Windows 日志简介</h3><p>日志记录了系统中硬件、软件和系统问题的信息，同时还监视着系统中发生的事件。当服务器被入侵或者系统（应用）出现问题时，管理员可以根据日志迅速定位问题的关键，再快速处理问题，从而极大地提高工作效率和服务器的安全性。<br>Widdows 通过自带事件查看器管理日志，使用命令 <code>eventvwr.msc</code> 打开，或者 Windows 10 搜索框直接搜索<code>事件查看器</code>，或者使用<code>开始菜单</code> -<code>Windows 管理工具</code> - <code>事件查看器打开</code>。</p>
+<p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161127003.png"></p>
+<p>Windows 日志位置<br><strong>Windows 2000/Server2003/Windows XP</strong></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\%SystemRoot%\System32\Config\*.evt</span><br></pre></td></tr></tbody></table></figure>
+
+<p><strong>Windows Vista/7/10/Server2008:</strong></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\%SystemRoot%\System32\winevt\Logs\*.evtx</span><br></pre></td></tr></tbody></table></figure>
+
+<p>日志审核策略，使用命令 <code>auditpol /get /category:*</code></p>
+<p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161127474.png"></p>
+<p>其他一些可能会用到的事件日志的位置：</p>
+<ul>
+<li><p>C:\Windows\System32\WDI\LogFiles</p>
+<ul>
+<li>BootCKCL.etl</li>
+<li>ShutdownCKCL.etl</li>
+<li>SecondaryLogOnCKCL.etl</li>
+<li>WdiContext.etl.&lt;###&gt;</li>
+</ul>
+</li>
+<li><p>C:\Windows\System32\WDI\&lt;guid&gt;\&lt;guid&gt;</p>
+<ul>
+<li>snapshot.etl&lt;/guid&gt;&lt;/guid&gt;</li>
+</ul>
+</li>
+<li><p>C:\Windows\System32\LogFiles\WMI</p>
+<ul>
+<li>Wifi.etl</li>
+<li>LwNetLog.etl</li>
+</ul>
+</li>
+<li><p>C:\Windows\System32\SleepStudy</p>
+<ul>
+<li><p>UserNotPresentSession.etl</p>
+</li>
+<li><p>abnormal-shutdown-&lt;yyyy&gt;-&lt;mm&gt;-</p>
+<p>  -&lt;hh&gt;-&lt;mm&gt;-&lt;ss&gt;.etl&lt;/ss&gt;&lt;/mm&gt;&lt;/hh&gt;</p>
+<p>  &lt;/mm&gt;&lt;/yyyy&gt;</p>
+</li>
+<li><p>user-not-present-trace-&lt;yyyy&gt;-&lt;mm&gt;-</p>
+<p>  -&lt;hh&gt;-&lt;mm&gt;-&lt;ss&gt;.etl&lt;/ss&gt;&lt;/mm&gt;&lt;/hh&gt;</p>
+<p>  &lt;/mm&gt;&lt;/yyyy&gt;</p>
+</li>
+<li><p>ScreenOnPowerStudyTraceSession-&lt;yyyy&gt;-&lt;mm&gt;-</p>
+<p>  -&lt;hh&gt;-&lt;mm&gt;-&lt;ss&gt;.etl&lt;/ss&gt;&lt;/mm&gt;&lt;/hh&gt;</p>
+<p>  &lt;/mm&gt;&lt;/yyyy&gt;</p>
+</li>
+</ul>
+<p>  <strong>Windows 日志</strong>
+  </p>
+</li>
+<li><p>系统日志<br>  系统日志包含 Windows 系统组件记录的事件。例如，系统日志中会记录在启动过程中加载驱动程序或其他系统组件失败。系统组件所记录的事件类型由 Windows 预先确定。</p>
+</li>
+<li><p>应用程序日志<br>  应用程序日志包含由应用程序或程序记录的事件。例如，数据库程序可在应用程序日志中记录文件错误。程序开发人员决定记录哪些事件。</p>
+</li>
+<li><p>安全日志<br>  安全日志包含诸如有效和无效的登录尝试等事件，以及与资源使用相关的事件，如创建、打开或删除文件或其他对象。管理员可以指定在安全日志中记录什么事件。例如，如果已启用登录审核，则安全日志将记录对系统的登录尝试。</p>
+</li>
+</ul>
+<p>关于安全日志登录部分的事件 ID 和登录类型代码的含义见下面 2 个表。</p>
+<p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161128925.png"></p>
+<p>常用事件 ID 含义</p>
+<table>
+<thead>
+<tr>
+<th>Event ID(2000/XP/2003)</th>
+<th>Event ID(Vista/7/8/2008/2012)</th>
+<th> 描述</th>
+<th>日志名称</th>
+</tr>
+</thead>
+<tbody><tr>
+<td> 528</td>
+<td>4624</td>
+<td> 成功登录</td>
+<td> Security</td>
+</tr>
+<tr>
+<td>529</td>
+<td>4625</td>
+<td> 失败登录</td>
+<td> Security</td>
+</tr>
+<tr>
+<td>680</td>
+<td>4776</td>
+<td> 成功 / 失败的账户认证</td>
+<td> Security</td>
+</tr>
+<tr>
+<td>624</td>
+<td>4720</td>
+<td> 创建用户</td>
+<td> Security</td>
+</tr>
+<tr>
+<td>636</td>
+<td>4732</td>
+<td> 添加用户到启用安全性的本地组中</td>
+<td> Security</td>
+</tr>
+<tr>
+<td>632</td>
+<td>4728</td>
+<td> 添加用户到启用安全性的全局组中</td>
+<td> Security</td>
+</tr>
+<tr>
+<td>2934</td>
+<td>7030</td>
+<td> 服务创建错误</td>
+<td> System</td>
+</tr>
+<tr>
+<td>2944</td>
+<td>7040</td>
+<td>IPSEC 服务服务的启动类型已从禁用更改为自动启动</td>
+<td> System</td>
+</tr>
+<tr>
+<td>2949</td>
+<td>7045</td>
+<td> 服务创建</td>
+<td> System</td>
+</tr>
+</tbody></table>
+<p>登录类型 ID</p>
+<p>成功 / 失败登录事件提供的有用信息之一是用户 / 进程尝试登录（登录类型），但 Windows 将此信息显示为数字，下面是数字和对应的说明：</p>
+<table>
+<thead>
+<tr>
+<th><strong>登录类型</strong></th>
+<th><strong>登录类型</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td> 2</td>
+<td>Interactive</td>
+<td> 用户登录到本机</td>
+</tr>
+<tr>
+<td> 3</td>
+<td>Network</td>
+<td> 用户或计算手机从网络登录到本机，如果网络共享，或使用 net use 访问网络共享，net view 查看网络共享</td>
+</tr>
+<tr>
+<td> 4</td>
+<td>Batch</td>
+<td> 批处理登录类型，无需用户干预</td>
+</tr>
+<tr>
+<td> 5</td>
+<td>Service</td>
+<td> 服务控制管理器登录</td>
+</tr>
+<tr>
+<td> 7</td>
+<td>Unlock</td>
+<td> 用户解锁主机</td>
+</tr>
+<tr>
+<td> 8</td>
+<td>NetworkCleartext</td>
+<td> 用户从网络登录到此计算机，用户密码用非哈希的形式传递</td>
+</tr>
+<tr>
+<td> 9</td>
+<td>NewCredentials</td>
+<td> 进程或线程克隆了其当前令牌，但为出站连接指定了新凭据</td>
+</tr>
+<tr>
+<td> 10</td>
+<td>Remotelnteractive</td>
+<td> 使用终端服务或远程桌面连接登录</td>
+</tr>
+<tr>
+<td> 11</td>
+<td>Cachedlnteractive</td>
+<td> 用户使用本地存储在计算机上的凭据登录到计算机（域控制器可能无法验证凭据），如主机不能连接域控，以前使用域账户登录过这台主机，再登录就会产生这样日志</td>
+</tr>
+<tr>
+<td> 12</td>
+<td>CachedRemotelnteractive</td>
+<td> 与 Remotelnteractive 相同，内部用于审计目的</td>
+</tr>
+<tr>
+<td> 13</td>
+<td>CachedUnlock</td>
+<td> 登录尝试解锁</td>
+</tr>
+</tbody></table>
+<p>账户类型</p>
+<ul>
+<li>用户账户</li>
+<li>计算机账户：此帐户类型表示每个主机。 此帐户类型的名称以字符 “$” 结尾。 例如，“DESKTOP-SHCTJ7L $” 是计算机帐户的名称。</li>
+<li>服务账户：每个服务帐户都创建为特定服务的所有者。 例如，IUSR 是 IIS 的所有者，而 krbtgt 是作为密钥分发中心一部分的服务的所有者。</li>
+</ul>
+<p><strong>应用程序和服务日志</strong></p>
+<p>应用程序和服务日志是一种新类别的事件日志。这些日志存储来自单个应用程序或组件的事件，而非可能影响整个系统的事件。</p>
+<p>查看 PowerShell 的日志<br><code>Microsoft</code>-&gt;<code>Windows</code>-&gt;<code>PowerShell</code>-&gt;<code>OPtions</code></p>
+<h3 id="2-1-2-远程登录事件"><a href="#2-1-2-远程登录事件" class="headerlink" title="2.1.2 远程登录事件"></a>2.1.2 远程登录事件</h3><p>攻击者可能造成的远程登录事件</p>
+<p><strong>RDP</strong><br>攻击者使用 RDP 远程登录受害者计算机，源主机和目的主机都会生成相应事件。</p>
+<p>重要的事件 ID（安全日志，Security.evtx）</p>
+<ul>
+<li>4624：账户成功登录</li>
+<li> 4648：使用明文凭证尝试登录</li>
+<li> 4778：重新连接到一台 Windows 主机的会话</li>
+<li> 4779：断开到一台 Windows 主机的会话</li>
+</ul>
+<p>远程连接日志（<code>应用程序和服务日志</code> -&gt;<code>Microsoft</code>-&gt;<code>Windows</code>-&gt;-<code>TerminalServices</code>-&gt;<code>RemoteConnectionManager</code>-&gt;<code>Operational</code>），重要事件 ID 和含义：</p>
+<ul>
+<li>1149：用户认证成功</li>
+<li> 21：远程桌面服务：会话登录成功</li>
+<li> 24：远程桌面服务：会话已断开连接</li>
+<li> 25：远程桌面服务：会话重新连接成功</li>
+</ul>
+<p>远程连接日志关注 RemoteInteractive（10） 和 CachedRemoteInteractive（12）表明使用了 RDP ，因为这些登录类型专用于 RDP 使用。</p>
+<p><strong>计划任务和 AT</strong><br>关注的事件 ID</p>
+<ul>
+<li>4624：账户成功登录</li>
+</ul>
+<p>计划任务事件 Microsoft-Windows-TaskScheduler/Operational.evtx，计划任务 ID 含义：</p>
+<ul>
+<li>100：任务已开始</li>
+<li> 102：任务完成</li>
+<li> 106：已注册任务（关注点）</li>
+<li>107：在调度程序上触发任务</li>
+<li> 110：用户触发的任务</li>
+<li> 129：创建任务流程（推出）</li>
+<li>140：任务已更新</li>
+<li> 141：任务已删除</li>
+<li> 200：运行计划任务</li>
+<li> 325：启动请求排队</li>
+</ul>
+<p>统一后台进程管理器（UBPM）</p>
+<ul>
+<li>服务控制管理器 - 管理 Windows 服务</li>
+<li>任务计划程序 - 管理 Windows 任务</li>
+<li> Windows Management Instrumentation - 管理 WMI 供应商</li>
+<li> DCOM Server Process Launcher - 管理进程外 COM 应用程序</li>
+</ul>
+<p><strong>PSExec</strong><br>PSExec 是系统管理员的远程命令执行工具，包含在 “Sysinternals Suite” 工具中，但它通常也用于针对性攻击的横向移动。<br>PsExec 的典型行为</p>
+<ul>
+<li>在具有网络登录（类型 3）的远程计算机上将 PsExec 服务执行文件（默认值：PSEXESVC.exe）复制到<code>％SystemRoot％</code>。</li>
+<li>如果使用 <code>-c</code> 选项，则通过 $Admin 共享将文件复制到 ％SystemRoot％ 执行命令。</li>
+<li>注册服务（默认值：PSEXESVC），并启动服务以在远程计算机上执行该命令。</li>
+<li>停止服务（默认值：PSEXESVC），并在执行后删除远程计算机上的服务。</li>
+</ul>
+<p>PSExec 选项的重要选项：</p>
+<ul>
+<li>-r<ul>
+<li> 更改复制的文件名和远程计算机的服务名称<br>  （默认值：％SystemRoot％\ PSEXESVC.exe 和 PSEXESVC）</li>
+</ul>
+</li>
+<li>-s<ul>
+<li> 由 SYSTEM 帐户执行。</li>
+</ul>
+</li>
+<li>-C<ul>
+<li> 将程序复制到远程计算机</li>
+<li>被复制到 Admin$（％SystemRoot％）</li>
+</ul>
+</li>
+<li>-u<ul>
+<li> 使用特定凭据登录到远程计算机</li>
+<li>生成登录类型 2 和登录类型 3 的事件</li>
+</ul>
+</li>
+</ul>
+<p>可以从 <code>System.evtx</code> 中查找事件 ID 7045 发现 PSExec，相关的事件 ID</p>
+<ul>
+<li>Security.evtx<ul>
+<li>4624：帐户已成功登录</li>
+</ul>
+</li>
+<li> Ssystem.evtx<ul>
+<li>7045：系统中安装了服务</li>
+</ul>
+</li>
+</ul>
+<p>PsExec 在执行命令时在远程主机上创建服务，默认服务名称为 <code>PSEXESVC</code>，配合检测系统 7045 事件可以确定。<br>如果使用 <code>-r</code> 参数更改了默认的服务名称，通过以下特征可以检测 PSExec 的执行：</p>
+<ul>
+<li>PSExec 服务执行文件（默认值：PSEXESVC.exe）被复制到远程计算机上的 “％SystemRoot％” 目录中</li>
+<li>服务名称与没有 “.exe” 扩展名的执行名称相同</li>
+<li>服务以 “用户模式” 执行，而不是 “内核模式”</li>
+<li>“LocalSystem” 帐户用于服务帐户</li>
+<li>实际帐户用于执行服务执行文件，而不是 “SYSTEM”</li>
+</ul>
+<h3 id="2-1-3-GUI-的日志工具介绍"><a href="#2-1-3-GUI-的日志工具介绍" class="headerlink" title="2.1.3 GUI 的日志工具介绍"></a>2.1.3 GUI 的日志工具介绍</h3><p>Widnows 自带事件管理器就是很不错的日志工具，其他可以了解下 <a target="_blank" rel="noopener" href="https://eventlogxp.com/">Event Log Explorer</a></p>
+<p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161128706.png"></p>
+<p>可以将目标 IP 的所有日志文件复制出来，然后在其他电脑上使用 Event Log Explorer 进行分析。<br>其他一些工具：</p>
+<ul>
+<li>Microsoft Message Analyzer</li>
+<li>ETL Viewer</li>
+<li>Log Parser<ul>
+<li> 使用示例：<a target="_blank" rel="noopener" href="https://mlichtenberg.wordpress.com/2011/02/03/log-parser-rocks-more-than-50-examples/">https://mlichtenberg.wordpress.com/2011/02/03/log-parser-rocks-more-than-50-examples/</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="2-2-4-PowerShell-日志操作"><a href="#2-2-4-PowerShell-日志操作" class="headerlink" title="2.2.4 PowerShell 日志操作"></a>2.2.4 PowerShell 日志操作</h3><p>使用 <code>Get-WinEvent</code></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Get-WinEvent @{logname='application','system'} -MaxEvents 1</span><br></pre></td></tr></tbody></table></figure>
+
+<p>一些常见日志操作</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># Get-WinEvent帮助命令</span><br><span class="line">get-help Get-WinEvent</span><br><span class="line"></span><br><span class="line"># 列出所有事件日志</span><br><span class="line">Get-WinEvent -ListLog *</span><br><span class="line"></span><br><span class="line"># powershell管理员权限下获取安全事件日志</span><br><span class="line">Get-WinEvent -FilterHashtable @{LogName='Security'}</span><br><span class="line"></span><br><span class="line"># 过滤安全事件ID 4624</span><br><span class="line">Get-WinEvent -FilterHashtable @{LogName='Security';ID='4624'}</span><br><span class="line"></span><br><span class="line"># 查询今天的应用和系统日志，显示前2条</span><br><span class="line">Get-WinEvent @{logname='application','system';starttime=[datetime]::today } -MaxEvents 2</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161145893.png"></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"># 根据ID查询事件</span><br><span class="line">Get-WinEvent -LogName Microsoft-Windows-PowerShell/Operational | Where-Object {$_.ID -eq "4100" -or $_.ID -eq "4104"}</span><br><span class="line"></span><br><span class="line"># 查询指定时间内的事件</span><br><span class="line">$StartTime=Get-Date  -Year  2017  -Month  1  -Day  1  -Hour  15  -Minute  30</span><br><span class="line">$EndTime=Get-Date  -Year  2017  -Month  2  -Day  15  -Hour  20  -Minute  00</span><br><span class="line"></span><br><span class="line">Get-WinEvent -FilterHashtable @{LogName='System';StartTime=$StartTime;EndTime=$EndTime}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Get-EventLog 的使用可以参考：<a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-eventlog?view=powershell-5.1">https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-eventlog?view=powershell-5.1</a></p>
+<h3 id="2-2-5-Windows-日志删除和日志集中化"><a href="#2-2-5-Windows-日志删除和日志集中化" class="headerlink" title="2.2.5 Windows 日志删除和日志集中化"></a>2.2.5 Windows 日志删除和日志集中化</h3><p>攻击者入侵系统后，很可能会删除日志，比较粗暴的手法是直接删除所有日志和停止日志服务，对于应急来说删除掉的日志本身就是就是入侵的明显特征，根据文件创建时间也能大概判断入侵时间。另外有工具可以删除单条日志，这样只是分析 Windows 日志时对分析人员来说很难找到攻击痕迹，单条日志删除工具 <a target="_blank" rel="noopener" href="https://github.com/360-A-Team/EventCleaner%EF%BC%8C%E5%8F%A6%E5%A4%96%E5%8F%AF%E4%BB%A5%E5%8F%82%E8%80%83">https://github.com/360-A-Team/EventCleaner，另外可以参考</a> <pangu> </pangu><a target="_blank" rel="noopener" href="https://github.com/3gstudent/Eventlogedit-evtx--Evolution%E3%80%82">https://github.com/3gstudent/Eventlogedit-evtx--Evolution。</a></p>
+<p>对抗删除的的措施是实施日志集中化，从 Windows 7 开始，Windows 记录日志为 XML 格式，可以使用</p>
+<h2 id="2-2-检查账户"><a href="#2-2-检查账户" class="headerlink" title="2.2 检查账户"></a>2.2 检查账户</h2><p>检查账户的几种方式：</p>
+<ol>
+<li>在本地用户和组里查看，运行 <code>lusrmgr.msc</code></li>
+<li>使用 <code>net user</code> 列出当前登录账号，使用 <code>wmic UserAccount get</code> 列出当前系统所有账户</li>
+<li>检查注册表 <code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList</code>，<code>HKLM\SAM\Domains\Account\</code>（默认是 SYSTEM）权限，需要配置成管理员权限查看。</li>
+</ol>
+<p>SID 位于 <code>HKU\</code> 和 <code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList</code> 两个密钥中。 用户 SID 可以在值 “Profilelist” 下找到 Subkeys（在用户登录系统时创建）。 值 “ProfileImagePath” 将列出该特定用户的配置文件的路径。 在操作系统级别，SID 可识别无疑问题的帐户。 多用户系统看起来像这样</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">HKU\.DEFAULT</span><br><span class="line">HKU\S-1-5-18</span><br><span class="line">HKU\S-1-5-19</span><br><span class="line">HKU\S-1-5-20</span><br><span class="line">HKU\S-1-5-21-1116317227-3122546273-4014252621-1000</span><br><span class="line">HKU\S-1-5-21-1116317227-3122546273-4014252621-1000_Classes</span><br><span class="line">HKU\S-1-5-21-1116317227-3122546273-4014252621-1003</span><br><span class="line">HKU\S-1-5-21-1116317227-3122546273-4014252621-1003_Classes</span><br></pre></td></tr></tbody></table></figure>
+
+<p>前四个密钥是系统帐户，从计算机到计算机通常是相同的。 <code>HKU\.DEFAULT</code> 包含全局用户信息。 <code>HKU\S-1-5-18</code> 属于 “LocalSystem 帐户”。<code>HKU\S-1-5-19</code> 用于运行本地服务，是 “本地服务帐户”。<code>HKU\S-1-5-20</code> 是用于运行网络服务的 “NetworkService 帐户”。 其他子键是唯一的 SID，它们与已登录系统的各个用户相关联。 他们的解释如下：</p>
+<ul>
+<li>“S” 将字符串标识为 SID。</li>
+<li>“1” 是 SID 规范的版本。</li>
+<li>“5” 是标识符权限值。</li>
+<li>“21-1116317227-3122546273-4014252621” 是域或本地计算机标识符，因计算机与计算机不同，因为它对应于唯一的个人用户帐户。</li>
+<li>“1000” 是相对 ID（RID）。 默认情况下未创建的任何组或用户的 RID 均为 1000 或更高。</li>
+<li>“1000_Classes” 包含每用户文件关联和类注册。</li>
+<li>“1003” 是同一系统上另一个用户的相对 ID（RID）。</li>
+<li>“1003_Classes” 包含第二个用户的文件关联和类注册。</li>
+</ul>
+<h2 id="2-3-检查网络连接"><a href="#2-3-检查网络连接" class="headerlink" title="2.3 检查网络连接"></a>2.3 检查网络连接</h2><p>检查网络监听和连接的端口和应用程序</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -anob</span><br></pre></td></tr></tbody></table></figure>
+
+<p>输出主机上的所有侦听和活动连接，包括 PID 和连接到每个连接的程序的名称。 这也告诉 Netstat 返回连接的 IP 地址，而不是试图确定它们的主机名。</p>
+<ul>
+<li>-a ：显示所有连接和侦听端口。</li>
+<li>-b ：显示在创建每个连接或侦听端口时涉及的可执行程序。在某些情况下，已知可执行程序承载多个独立的组件，这些情况下，显示创建连接或侦听端口时涉及的组件序列。在此情况下，可执行程序的名称位于底部 [] 中，它调用的组件位于顶部，直至达到 TCP/IP。注意，此选项可能很耗时，并且在你没有足够权限时可能失败。</li>
+<li>-n ：以数字形式显示地址和端口号。</li>
+<li>-o ：显示拥有的与每个连接关联的进程 ID。</li>
+<li>-r ：显示路由表。</li>
+</ul>
+<p>路由</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -rn</span><br></pre></td></tr></tbody></table></figure>
+
+<p>结合 <code>findstr</code> 命令查找特定的端口或程序。</p>
+<p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161129060.png"></p>
+<p>发现的感觉异常的 IP 地址可以在威胁情报平台上查询，如果是已知的恶意 IP，可以比较快速的确认攻击方式。</p>
+<p>防火墙配置</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netsh firewall show all</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Windows 10 自带的网络连接可以参考：<br><a target="_blank" rel="noopener" href="https://betanews.com/2018/07/31/all-the-websites-windows-10-connects-to-clean-install/">https://betanews.com/2018/07/31/all-the-websites-windows-10-connects-to-clean-install/</a></p>
+<h2 id="2-4-检查进程"><a href="#2-4-检查进程" class="headerlink" title="2.4 检查进程"></a>2.4 检查进程</h2><p>进程通常结合网络查看异常，先检查异常的网络连接，再获取由哪个进程生成的网络连接</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">netstat -abno | find "port number"</span><br><span class="line"></span><br><span class="line">tasklist | findstr PID</span><br></pre></td></tr></tbody></table></figure>
+
+<p>使用 wmic 命令获取进程信息</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">wmic process | find "Proccess Id" &gt; proc.csv</span><br><span class="line"></span><br><span class="line">Get-WmiObject -Class Win32_Process</span><br><span class="line"></span><br><span class="line">Get-WmiObject -Query  "select * from win32_service where name='WinRM'" -ComputerName Server01, Server02 | Format-List -Property PSComputerName, Name, ExitCode, Name, ProcessID, StartMode, State, Status</span><br></pre></td></tr></tbody></table></figure>
+
+<p>PowerShell 的其他关于进程和网络的命令</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Get-Process</span><br><span class="line"></span><br><span class="line">Get-NetTCPConnection</span><br><span class="line">Get-NetTCPConnection -State Established</span><br><span class="line"></span><br><span class="line"># 进程跟服务的对应关系</span><br><span class="line">tasklist /svc</span><br></pre></td></tr></tbody></table></figure>
+
+<p>使用 SysinternalsSuite 的 procexp 可以获取进程比较详细的信息，比如真实路径、加载的 DLL 文件等、CPU 和内存使用情况等。</p>
+<p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161130958.png"></p>
+<p>当然也可以使用内存管理器。</p>
+<p>查看可疑的进程及其子进程。可以通过观察以下内容：</p>
+<ul>
+<li>没有签名验证信息的进程</li>
+<li>没有描述信息的进程</li>
+<li>进程的属主</li>
+<li>进程的路径是否合法</li>
+<li> CPU 或内存资源占用长时间过高的进程</li>
+</ul>
+<p>可以获取进程关联的文件 MD5 值，然后发送到威胁情报平台上辅助检查。进程关联的文件也可以使用在线病毒检测平台上直接检测。</p>
+<h3 id="2-4-1-内存-dump"><a href="#2-4-1-内存-dump" class="headerlink" title="2.4.1 内存 dump"></a>2.4.1 内存 dump</h3><p>有 2 种比较方便的方法：<br>第一种是使用系统自带功能，在计算机属性，系统属性，高级选项卡中选择 “启动和故障恢复设置”，选择完全转储内存，然后点击确定，系统会提示重启。</p>
+<p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161130108.png"></p>
+<p>重启后在配置的文件位置可以找到上次转储的内存文件。</p>
+<p>另外一种方法，使用 SysinternalsSuite 工具集的 notmyfault64 工具，在使用管理员权限的命令行模式下（cmd、PowerShell），运行</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">NotMyFault64.exe /crash</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="2-4-2-内存分析"><a href="#2-4-2-内存分析" class="headerlink" title="2.4.2 内存分析"></a>2.4.2 内存分析</h3><p>利用 Volatility 进行内存取证，分析入侵攻击痕迹，包括网络连接、进程、服务、驱动模块、DLL、handles、检测进程注入、检测 Meterpreter、cmd 历史命令、IE 浏览器历史记录、启动项、用户、shimcache、userassist、部分 rootkit 隐藏文件、cmdliner 等。</p>
+<p>参考：<a target="_blank" rel="noopener" href="https://xz.aliyun.com/t/2497">https://xz.aliyun.com/t/2497</a></p>
+<h2 id="2-5-检查开机启动和运行服务"><a href="#2-5-检查开机启动和运行服务" class="headerlink" title="2.5 检查开机启动和运行服务"></a>2.5 检查开机启动和运行服务</h2><h3 id="2-5-1-开机启动"><a href="#2-5-1-开机启动" class="headerlink" title="2.5.1 开机启动"></a>2.5.1 开机启动</h3><p>关于开机启动需要分析的位置：</p>
+<ul>
+<li>注册表中的关于开机启动的位置<ul>
+<li> HKLM\Software\Microsoft\Windows\CurrentVersion\Runonce</li>
+<li>HKLM\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run</li>
+<li>HKLM\Software\Microsoft\Windows\CurrentVersion\Run</li>
+<li>HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows\Run</li>
+<li>HKCU\Software\Microsoft\Windows\CurrentVersion\Run</li>
+<li>HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce</li>
+<li>(ProfilePath)\Start Menu\Programs\Startup</li>
+</ul>
+</li>
+<li> 开始菜单，启动项里（C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup）</li>
+<li>任务管理器，启动选项卡，或者运行 msconfig，查看启动选项卡</li>
+<li>运行 <code>gpedit.msc</code> 在本地组策略编辑器里查看开机运行脚本，包括计算机配置和用户配置的。</li>
+</ul>
+<p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161130351.png"></p>
+<ul>
+<li>使用 SysinternalsSuite 工具集的 Autoruns 工具查看开机启动项目</li>
+</ul>
+<p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161146889.png"></p>
+<h3 id="2-5-2-查看服务状态"><a href="#2-5-2-查看服务状态" class="headerlink" title="2.5.2 查看服务状态"></a>2.5.2 查看服务状态</h3><p>服务状态，自动启动配置，在 PowerShell 下可以运行：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Get-Service</span><br><span class="line"></span><br><span class="line"># 运行service命令</span><br><span class="line">service</span><br></pre></td></tr></tbody></table></figure>
+
+<p>运行 <code>services.msc</code> 可以打开 Windows 服务工具，常见的 GUI 界面。</p>
+<p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161131851.png"></p>
+<h2 id="2-6-检查计划任务"><a href="#2-6-检查计划任务" class="headerlink" title="2.6 检查计划任务"></a>2.6 检查计划任务</h2><p>存放计划任务的文件</p>
+<ul>
+<li>C:\Windows\System32\Tasks\</li>
+<li>C:\Windows\SysWOW64\Tasks\</li>
+<li>C:\Windows\tasks\</li>
+<li>*.job（指文件）</li>
+</ul>
+<p>使用命令查看计划任务</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">schtasks</span><br></pre></td></tr></tbody></table></figure>
+
+<p>运行 <code>taskschd.msc</code> 打开计划任务面板，或者从计算机管理进入，直接查看计划任务。</p>
+<p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161131300.png"></p>
+<p>也可以使用 SysinternalsSuite 工具集的 Autoruns 工具查看计划任务。</p>
+<h2 id="2-7-检查文件"><a href="#2-7-检查文件" class="headerlink" title="2.7 检查文件"></a>2.7 检查文件</h2><p>检查可疑文件的思路，一种是通过可疑进程（CPU 利用率、进程名）关联的文件，一种是按照时间现象关联的文件，文件大小也可以 作为辅助的判断方法，文件的操作可以使用 <code>Get-ChildItem</code> 命令查看。需要关注的文件位置：</p>
+<ul>
+<li>下载目录</li>
+<li>回收站文件</li>
+<li>程序临时文件</li>
+<li>历史文件记录</li>
+<li>应用程序打开历史</li>
+<li>搜索历史</li>
+<li>快捷方式（LNK）</li>
+<li>驱动 </li>
+</ul>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">driverquery</span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>进程 DLL 的关联查询 </li>
+</ul>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tasklist -M</span><br></pre></td></tr></tbody></table></figure>
+
+<ul>
+<li>共享文件</li>
+<li>最近的文件（% UserProfile%\Recent）</li>
+<li>文件更新</li>
+<li>已安装文件<ul>
+<li> hklm:\software\Microsoft\Windows\CurrentVersion\Uninstall\</li>
+</ul>
+</li>
+<li> 异常现象之前创建的文件</li>
+</ul>
+<h2 id="2-8-检查注册表"><a href="#2-8-检查注册表" class="headerlink" title="2.8 检查注册表"></a>2.8 检查注册表</h2><p>注册表目录含义：</p>
+<ol>
+<li>HKEY_CLASSES_ROOT（HKCR）：此处存储的信息可确保在 Windows 资源管理器中执行时打开正确的程序。它还包含有关拖放规则，快捷方式和用户界面信息的更多详细信息。</li>
+<li>HKEY_CURRENT_USER（HKCU）：包含当前登录系统的用户的配置信息，包括用户的文件夹，屏幕颜色和控制面板设置。HKEY_USERS 中特定于用户的分支的别名。通用信息通常适用于所有用户，并且是 HKU.DEFAULT。</li>
+<li>HKEY_LOCAL_MACHINE（H​​KLM）：包含运行操作系统的计算机硬件特定信息。它包括系统上安装的驱动器列表以及已安装硬件和应用程序的通用配置。</li>
+<li>HKEY_USERS（HKU）：包含系统上所有用户配置文件的配置信息，包括应用程序配置和可视设置。</li>
+<li>HKEY_CURRENT_CONFIG（HCU）：存储有关系统当前配置的信息。</li>
+</ol>
+<p>一些重要的注册表键</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">hklm:\Software\Microsoft\Windows\CurrentVersion\policies\system</span><br><span class="line">hklm:\Software\Microsoft\Active Setup\Installed Components</span><br><span class="line">hklm:\Software\Microsoft\Windows\CurrentVersion\App Paths</span><br><span class="line">hklm:\software\microsoft\windows nt\CurrentVersion\winlogon</span><br><span class="line">hklm:\software\microsoft\security center\svc</span><br><span class="line">hkcu:\Software\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths</span><br><span class="line">hkcu:\Software\Microsoft\Windows\CurrentVersion\explorer\RunMru</span><br><span class="line">hklm:\Software\Microsoft\Windows\CurrentVersion\explorer\Startmenu</span><br><span class="line">hklm:\System\CurrentControlSet\Control\Session Manager</span><br><span class="line">hklm:\Software\Microsoft\Windows\CurrentVersion\explorer\ShellFolders</span><br><span class="line">hklm:\Software\Microsoft\Windows\CurrentVersion\ShellExtensions\Approved</span><br><span class="line">hklm:\System\CurrentControlSet\Control\Session Manager\AppCertDlls</span><br><span class="line">hklm:\Software\Classes\exefile\shell\open\command</span><br><span class="line">hklm:\BCD00000000</span><br><span class="line">hklm:\system\currentcontrolset\control\lsa</span><br><span class="line">hklm:\Software \Microsoft\Windows\CurrentVersion\Explorer\BrowserHelper Objects</span><br><span class="line">hklm:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects</span><br><span class="line">hkcu:\Software\Microsoft\Internet Explorer\Extensions</span><br><span class="line">hklm:\Software\Microsoft\Internet Explorer\Extensions</span><br><span class="line">hklm:\Software\Wow6432Node\Microsoft\Internet Explorer\Extensions</span><br></pre></td></tr></tbody></table></figure>
+
+<p>活用注册表编辑器的搜索功能，根据进程名称、服务名称、文件名称搜索注册表。</p>
+<h1 id="3-特定事件痕迹检查"><a href="#3-特定事件痕迹检查" class="headerlink" title="3. 特定事件痕迹检查"></a>3. 特定事件痕迹检查</h1><h2 id="3-1-挖矿病毒应急"><a href="#3-1-挖矿病毒应急" class="headerlink" title="3.1 挖矿病毒应急"></a>3.1 挖矿病毒应急</h2><h3 id="3-1-1-传播方式"><a href="#3-1-1-传播方式" class="headerlink" title="3.1.1 传播方式"></a>3.1.1 传播方式</h3><p>通常可能的传播方式：</p>
+<ol>
+<li>通过社工、钓鱼方式下载和运行了挖矿程序（邮件、IM 等）</li>
+<li>利用计算机系统远程代码执行漏洞下载、上传和执行挖矿程序</li>
+<li>利用计算机 Web 或第三方软件漏洞获取计算机权限，然后下载和执行挖矿程序</li>
+<li>利用弱口令进入系统，下载和执行挖矿程序</li>
+<li>执行 Web 页面的挖矿 JS 脚本</li>
+</ol>
+<h3 id="3-1-2-挖矿程序特点"><a href="#3-1-2-挖矿程序特点" class="headerlink" title="3.1.2 挖矿程序特点"></a>3.1.2 挖矿程序特点</h3><ul>
+<li>CPU、GPU、内存利用率高；</li>
+<li>网络会连接一些矿工 IP，可以通过威胁情报获取。</li>
+</ul>
+<h3 id="3-1-3-挖矿程序应急目的"><a href="#3-1-3-挖矿程序应急目的" class="headerlink" title="3.1.3 挖矿程序应急目的"></a>3.1.3 挖矿程序应急目的</h3><ul>
+<li>找出入侵原因</li>
+<li>找到挖矿程序，并删除</li>
+</ul>
+<p>挖矿事件应急可能需要对样本进行分析，需要二进制的一些分析能力，通过提取样本后确认样本分类、行为、危害。</p>
+<h2 id="3-2-勒索病毒事件应急"><a href="#3-2-勒索病毒事件应急" class="headerlink" title="3.2 勒索病毒事件应急"></a>3.2 勒索病毒事件应急</h2><h3 id="3-2-1-传播方式"><a href="#3-2-1-传播方式" class="headerlink" title="3.2.1 传播方式"></a>3.2.1 传播方式</h3><p>通常可能的传播方式：</p>
+<ol>
+<li>通过社工、钓鱼方式下载和运行了勒索程序（邮件、IM 等）</li>
+<li>利用计算机系统远程代码执行漏洞下载、上传和执行勒索病毒</li>
+<li>利用计算机 Web 或第三方软件漏洞获取计算机权限，然后下载和执行勒索病毒</li>
+<li>利用弱口令进入计算机系统，下载和执行勒索病毒</li>
+</ol>
+<h3 id="3-2-2-勒索病毒特点"><a href="#3-2-2-勒索病毒特点" class="headerlink" title="3.2.2 勒索病毒特点"></a>3.2.2 勒索病毒特点</h3><ul>
+<li>各种数据文件和可执行程序生成奇怪的后缀名；</li>
+<li>明显的提示，要交赎金</li>
+</ul>
+<h3 id="3-3-3-勒索病毒应急目的"><a href="#3-3-3-勒索病毒应急目的" class="headerlink" title="3.3.3 勒索病毒应急目的"></a>3.3.3 勒索病毒应急目的</h3><ul>
+<li>如果是重要数据，交付赎金恢复数据；</li>
+<li>找到入侵的原因，排查同类漏洞，并进行加固（一般是重装）</li>
+</ul>
+<p>确认勒索病毒后要立即拔掉网线，限制传播范围。</p>
+<h2 id="3-3-应急示例"><a href="#3-3-应急示例" class="headerlink" title="3.3 应急示例"></a>3.3 应急示例</h2><ul>
+<li><a target="_blank" rel="noopener" href="http://blog.nsfocus.net/emergency-response-case-study/">http://blog.nsfocus.net/emergency-response-case-study/</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_27446553/article/details/81102198">https://blog.csdn.net/qq_27446553/article/details/81102198</a><br>  <a target="_blank" rel="noopener" href="http://vinc.top/2017/05/03/windows%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%EF%BC%8820170503%EF%BC%89/">http://vinc.top/2017/05/03/windows%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%EF%BC%8820170503%EF%BC%89/</a></li>
+<li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?src=11&amp;timestamp=1533106387&amp;ver=1033&amp;signature=8P*AjLzeMd*GnPg0SwF4o6I06Sx804FDLw6PUkEch4h8eCCyQEr8A9hbHaIHPrqR-WiIdoJPqMsmSVic4-gs*sd3j613UabGbt6z9mQT6p5fWutdawPYrht-VlixmLLS&amp;new=1">https://mp.weixin.qq.com/s?src=11×tamp=1533106387&amp;ver=1033&amp;signature=8P*AjLzeMd*GnPg0SwF4o6I06Sx804FDLw6PUkEch4h8eCCyQEr8A9hbHaIHPrqR-WiIdoJPqMsmSVic4-gs*sd3j613UabGbt6z9mQT6p5fWutdawPYrht-VlixmLLS&amp;new=1</a></li>
+<li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?src=11&amp;timestamp=1533106458&amp;ver=1033&amp;signature=8P*AjLzeMd*GnPg0SwF4o6I06Sx804FDLw6PUkEch4hJcF-gDfZJVqz2bzHZt6fF*EmCrKm*DXOl3CMpdqrFZwBPOuAKr1TQcF7qG2x72YvsE8D1nglxXyYenvA2HLqY&amp;new=1">https://mp.weixin.qq.com/s?src=11×tamp=1533106458&amp;ver=1033&amp;signature=8P*AjLzeMd*GnPg0SwF4o6I06Sx804FDLw6PUkEch4hJcF-gDfZJVqz2bzHZt6fF*EmCrKm*DXOl3CMpdqrFZwBPOuAKr1TQcF7qG2x72YvsE8D1nglxXyYenvA2HLqY&amp;new=1</a></li>
+</ul>
+<h1 id="4-Sysinternals-Utilities"><a href="#4-Sysinternals-Utilities" class="headerlink" title="4. Sysinternals Utilities"></a>4. Sysinternals Utilities</h1><p>工具中有些是命令行工具，有些是有 GUI 界面，作用：</p>
+<ul>
+<li>使用 Process Explorer 显示详细的流程和系统信息</li>
+<li>使用 Process Monitor 捕获低级系统事件，并快速过滤输出以缩小根本原因</li>
+<li>列出，分类和管理在您启动或登录计算机时运行的软件，或运行 Microsoft Office 或 Internet Explorer 时运行的软件</li>
+<li>验证文件，正在运行的程序以及这些程序中加载的模块的数字签名</li>
+<li>使用可以识别和清除恶意软件感染的 Autoruns，Process Explorer，Sigcheck 和 Process Monitor 功能</li>
+<li>检查文件，密钥，服务，共享和其他对象的权限</li>
+<li>使用 Sysmon 监控整个网络中与安全相关的事件</li>
+<li>当进程满足指定条件时生成内存转储</li>
+<li>远程执行进程，并关闭远程打开的文件</li>
+<li>管理 Active Directory 对象并跟踪 LDAP API 调用</li>
+<li>捕获有关处理器，内存和时钟的详细数据</li>
+<li>对无法启动的设备，文件使用中的错误，无法解释的通信以及许多其他问题进行故障排除</li>
+<li>了解其他地方没有详细记录的 Windows 核心概念</li>
+</ul>
+<p>下载：<a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/sysinternals/downloads/">https://docs.microsoft.com/en-us/sysinternals/downloads/</a></p>
+<h2 id="4-1-常用工具介绍"><a href="#4-1-常用工具介绍" class="headerlink" title="4.1 常用工具介绍"></a>4.1 常用工具介绍</h2><h3 id="4-1-1-autoruns"><a href="#4-1-1-autoruns" class="headerlink" title="4.1.1 autoruns"></a>4.1.1 autoruns</h3><p>可以方便的查看自启动、计划任务和运行服务，通过关联右键菜单可以获取更详细的内容。</p>
+<p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161131696.png"></p>
+<h3 id="4-1-2-procexp"><a href="#4-1-2-procexp" class="headerlink" title="4.1.2 procexp"></a>4.1.2 procexp</h3><p>查看进程的工具。</p>
+<p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161132524.png"></p>
+<h3 id="4-1-3-ADExplorer"><a href="#4-1-3-ADExplorer" class="headerlink" title="4.1.3 ADExplorer"></a>4.1.3 ADExplorer</h3><p>Active Directory Explorer（AD Explorer）是一种高级 Active Directory（AD）查看器和编辑器。 您可以使用 AD Explorer 轻松导航 AD 数据库，定义收藏位置，查看对象属性和属性，而无需打开对话框，编辑权限，查看对象的架构，以及执行可以保存和重新执行的复杂搜索。</p>
+<p>AD Explorer 还包括保存 AD 数据库快照以进行脱机查看和比较的功能。 加载已保存的快照时，您可以像实时数据库一样导航和浏览它。 如果您有两个 AD 数据库快照，则可以使用 AD Explorer 的比较功能查看它们之间更改的对象，属性和安全权限。</p>
+<p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161132804.png"></p>
+<h3 id="4-1-4-TCPView"><a href="#4-1-4-TCPView" class="headerlink" title="4.1.4 TCPView"></a>4.1.4 TCPView</h3><p>查看网络连接情况</p>
+<p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161146565.png"></p>
+<h3 id="4-1-5-PSExec"><a href="#4-1-5-PSExec" class="headerlink" title="4.1.5 PSExec"></a>4.1.5 PSExec</h3><p>像 Telnet 这样的实用程序和 Symantec 的 PC Anywhere 等远程控制程序允许您在远程系统上执行程序，但是设置起来很麻烦，并且要求您在要访问的远程系统上安装客户端软件。 PsExec 是一种轻量级的 telne t 替代品，可让您在其他系统上执行进程，完成控制台应用程序的完全交互，而无需手动安装客户端软件。 PsExec 最强大的用途包括在远程系统上启动交互式命令提示和 IpConfig 等远程启用工具，否则它们无法显示有关远程系统的信息。</p>
+<p>使用可以参考：<a target="_blank" rel="noopener" href="https://www.itprotoday.com/management-mobility/psexec">https://www.itprotoday.com/management-mobility/psexec</a></p>
+<h3 id="4-1-6-LogonSessions"><a href="#4-1-6-LogonSessions" class="headerlink" title="4.1.6 LogonSessions"></a>4.1.6 LogonSessions</h3><p>列出了当前活动的登录会话，如果指定 - p 选项，则列出每个会话中运行的进程。</p>
+<p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161132801.png"></p>
+<h2 id="4-2-Troubleshooting-with-the-Windows-Sysinternals-Tools-2nd-Edition"><a href="#4-2-Troubleshooting-with-the-Windows-Sysinternals-Tools-2nd-Edition" class="headerlink" title="4.2 Troubleshooting with the Windows Sysinternals Tools 2nd Edition"></a>4.2 Troubleshooting with the Windows Sysinternals Tools 2nd Edition</h2><p>这是一本书，介绍 Sysinternals 工具集的使用。</p>
+<h1 id="5-其他"><a href="#5-其他" class="headerlink" title="5. 其他"></a>5. 其他</h1><ul>
+<li>关注近期的安全事件趋势，定期查看 CNCERT 的安全报告，其他一些杀毒软件公司的论坛也要关注；</li>
+<li>结合近期的应急，对每次应急出现的新状况进行总结分析，一段时间内的应急需求基本是一致的；</li>
+<li>关注几个威胁情报中心，可以分析域名、IP、文件 MD5，比较方便判断攻击方式；</li>
+<li>准备好杀毒盘和 Live 盘，可以利用 U 盘做一个专用的应急响应工具包</li>
+<li> Webshell 查杀<ul>
+<li> D 盾_Web 查杀：<a target="_blank" rel="noopener" href="http://www.d99net.net/index.asp">http://www.d99net.net/index.asp</a></li>
+<li> 河马 webshell 查杀：<a target="_blank" rel="noopener" href="http://www.shellpub.com/">http://www.shellpub.com</a></li>
+<li> 深信服 Webshell 网站后门检测工具：<a target="_blank" rel="noopener" href="http://edr.sangfor.com.cn/backdoor_detection.html">http://edr.sangfor.com.cn/backdoor_detection.html</a></li>
+</ul>
+</li>
+<li> 勒索软件基本没有办法，重要数据只能交赎金，不过也是有些特定的勒索病毒能恢复文件</li>
+<li>如果未作 Windows 的日志集中化 ，如果入侵删掉所有日志， 大部分情况下只能呵呵，查一下可能的入侵链路上的其他设备、同网段设备有什么日志；</li>
+<li>弱口令是很常见的入侵事件原因；</li>
+<li>眼见为实，证据说话，不要被客户诱导；</li>
+<li>Windows 的攻击方式可以了解一下 <a target="_blank" rel="noopener" href="https://attack.mitre.org/wiki/Windows_Technique_Matrix">ATT&amp;CK 矩阵</a></li>
+</ul>
+<p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-08-16_202308161133896.png"></p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/17L_fQJ1qjSvt8UL7VSemg">https://mp.weixin.qq.com/s/17L_fQJ1qjSvt8UL7VSemg</a></li>
+<li><a target="_blank" rel="noopener" href="https://sect.iij.ad.jp/d/2018/05/044132/training_material_sample_for_eventlog_analysis.pdf">https://sect.iij.ad.jp/d/2018/05/044132/training_material_sample_for_eventlog_analysis.pdf</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/15310fd23f54">https://www.jianshu.com/p/15310fd23f54</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.sans.org/course/windows-forensic-analysis">https://www.sans.org/course/windows-forensic-analysis</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.sans.org/reading-room/whitepapers/forensics/live-response-powershell-34302">https://www.sans.org/reading-room/whitepapers/forensics/live-response-powershell-34302</a></li>
+</ul>
+<h4 id=""><a href="#" class="headerlink" title=""></a></h4>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>请我一杯咖啡吧！</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="Hank ZHU 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="/images/alipay.png" alt="Hank ZHU 支付宝">
+        <span>支付宝</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>原作者： </strong>Hank ZHU
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.zealot.top/2023/08/16/WINDOWS-%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8%E5%BA%94%E6%80%A5%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%BD%AE/" title="WINDOWS 系统安全应急事件处置">https://blog.zealot.top/2023/08/16/WINDOWS-系统安全应急事件处置/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/windows/" rel="tag"><i class="fa fa-tag"></i> windows</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/08/14/LINUX%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98bypy%E7%AC%94%E8%AE%B0/" rel="prev" title="LINUX 百度网盘 bypy 笔记">
+                  <i class="fa fa-angle-left"></i> LINUX 百度网盘 bypy 笔记
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2023/08/16/ESXI6-7%E6%97%A0%E6%B3%95%E8%AF%86%E5%88%ABEVC%E6%A8%A1%E5%BC%8F/" rel="next" title="ESXI6.7 无法识别 EVC 模式">
+                  ESXI6.7 无法识别 EVC 模式 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2018 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Hank ZHU</span>
+  </div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div><div>
+<!--添加网站运行时间-->
+<span>小破站已经在风雨中度过了</span>
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span>
+<script>
+    function createtime() {
+        const startTime = '09/27/2018 00:12:55',
+            start = new Date(startTime)
+        let mill = new Date() - start,
+            seconds = Math.floor(mill / 1000),
+            mins = Math.floor(seconds / 60),
+            hours = Math.floor(mins / 60),
+            days = Math.floor(hours / 24)
+        const time = {
+            seconds: seconds - mins * 60,
+            mins: mins - hours * 60,
+            hours: hours - days * 24,
+        }
+        for (const k in time) {
+            time[k] = `${time[k]}`.padStart(2, '0')
+        }
+        document.getElementById("timeDate").innerHTML = ` ${days} 天`
+        document.getElementById("times").innerHTML = ` ${time.hours} 小时 ${time.mins} 分 ${time.seconds} 秒`
+    }
+    setInterval(createtime, 500)
+</script>
+</div>
+
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.20/fancybox/fancybox.umd.js" integrity="sha256-q8XkJ6dj5VwSvzI8+nATCHHQG+Xv/dAZBCgqmu93zOY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '64px',
+  right: 'unset',
+  left: '32px',
+  time: '0.5s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#100f2c',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '🌓',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
+
+</body>
+</html>

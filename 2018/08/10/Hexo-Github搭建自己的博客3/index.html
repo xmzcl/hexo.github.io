@@ -1,0 +1,2430 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<style>:root{--body-bg-color:#fff;--content-bg-color:#f5f5f5;--card-bg-color:#f5f5f5;--text-color:#555;--blockquote-color:#666;--link-color:#555;--link-hover-color:#222;--brand-color:#222;--brand-hover-color:#222;--table-row-odd-bg-color:#f9f9f9;--table-row-hover-bg-color:#f5f5f5;--menu-item-bg-color:#ddd;--theme-color:#222;--btn-default-bg:transparent;--btn-default-color:var(--link-color);--btn-default-border-color:var(--link-color);--btn-default-hover-bg:transparent;--btn-default-hover-color:var(--link-hover-color);--btn-default-hover-border-color:var(--link-hover-color);--highlight-background:#f3f3f3;--highlight-foreground:#444;--highlight-gutter-background:#e1e1e1;--highlight-gutter-foreground:#555;color-scheme:light}html{line-height:1.15;-webkit-text-size-adjust:100%}details,main{display:block}pre{font-size:1em;overflow:auto;padding:10px}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}.table-container,textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}summary{display:list-item}[hidden],template{display:none}::selection{background:#262a30;color:#eee}body,html{height:100%}body{margin:0;background:var(--body-bg-color);box-sizing:border-box;color:var(--text-color);font-family:Monda,'PingFang SC','Microsoft YaHei',sans-serif;font-size:.8em;line-height:2;min-height:100%;position:relative;transition:padding .2s ease-in-out}h1,h2,h3,h4,h5,h6{font-family:Monda,Monda,'PingFang SC','Microsoft YaHei',sans-serif;font-weight:700;line-height:1.5;margin:30px 0 15px}h1{font-size:1.375em}h2{font-size:1.25em}h3{font-size:1.125em}h4{font-size:1em}h5{font-size:.875em}h6{font-size:.75em}p{margin:0 0 20px}a{background:0 0;border-bottom:1px solid #ccc;color:var(--link-color);cursor:pointer;outline:0;text-decoration:none;overflow-wrap:break-word}a:hover{border-bottom-color:var(--link-hover-color);color:var(--link-hover-color)}embed,iframe,img,video{display:block;margin-left:auto;margin-right:auto;max-width:100%}hr{box-sizing:content-box;overflow:visible;background-image:repeating-linear-gradient(-45deg,#ddd,#ddd 4px,transparent 4px,transparent 8px);border:0}blockquote{border-left:4px solid #ddd;color:var(--blockquote-color);margin:0;padding:0 15px}blockquote cite::before{content:'-';padding:0 5px}dt{font-weight:700}dd{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0;font-size:.875em;margin:0 0 20px;width:100%}tbody tr:nth-of-type(odd){background:var(--table-row-odd-bg-color)}tbody tr:hover{background:var(--table-row-hover-bg-color)}caption,td,th{padding:8px}td,th{border:1px solid #ddd;border-bottom:3px solid #ddd}th{font-weight:700;padding-bottom:10px}td{border-bottom-width:1px}.btn{background:var(--btn-default-bg);border:2px solid var(--btn-default-border-color);border-radius:0;color:var(--btn-default-color);display:inline-block;font-size:.875em;line-height:2;transition:background-color .2s ease-in-out}.btn:hover{background:var(--btn-default-hover-bg);border-color:var(--btn-default-hover-border-color);color:var(--btn-default-hover-color)}.btn+.btn{margin:0 0 8px 8px}.btn .fa-fw{text-align:left;width:1.285714285714286em}.toggle{line-height:0}.toggle .toggle-line{background:#fff;display:block;height:2px;left:0;position:relative;top:0;transition:.4s;width:100%}.toggle .toggle-line:first-child{margin-top:1px}.toggle .toggle-line:not(:first-child){margin-top:4px}.toggle.toggle-arrow :first-child{top:2px;transform:rotate(-45deg);width:50%}.toggle.toggle-arrow :last-child{top:-2px;transform:rotate(45deg);width:50%}.toggle.toggle-close :nth-child(2){opacity:0}.toggle.toggle-close :first-child{top:6px;transform:rotate(-45deg)}.toggle.toggle-close :last-child{top:-6px;transform:rotate(45deg)}/*!
+  Theme: Default
+  Description: Original highlight.js style
+  Author: (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
+  Maintainer: @highlightjs/core-team
+  Website: https://highlightjs.org/
+  License: see project LICENSE
+  Touched: 2021
+*/pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#f3f3f3;color:#444}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.code-container:hover .copy-btn,.highlight:hover .copy-btn{opacity:1}.code-container{position:relative}.copy-btn{color:#333;cursor:pointer;line-height:1.6;opacity:0;padding:2px 6px;position:absolute;transition:opacity .2s ease-in-out;color:var(--highlight-foreground);font-size:14px;right:0;top:2px}figure.highlight{border-radius:5px;box-shadow:0 10px 30px 0 rgba(0,0,0,.4);padding-top:30px;overflow:auto;position:relative}figure.highlight .table-container{border-radius:0 0 5px 5px}figure.highlight::before{background:#fc625d;box-shadow:20px 0 #fdbc40,40px 0 #35cd4b;left:12px;margin-top:-20px;position:absolute;border-radius:50%;content:' ';height:12px;width:12px}code,figure.highlight,kbd,pre{background:var(--highlight-background);color:var(--highlight-foreground)}figure.highlight,pre{line-height:1.6;margin:0 auto 20px}figure.highlight figcaption,pre .caption,pre figcaption{background:var(--highlight-gutter-background);color:var(--highlight-foreground);display:flow-root;font-size:.875em;line-height:1.2;padding:.5em}figure.highlight figcaption a,pre .caption a,pre figcaption a{color:var(--highlight-foreground);float:right}figure.highlight figcaption a:hover,pre .caption a:hover,pre figcaption a:hover{border-bottom-color:var(--highlight-foreground)}code,pre{font-family:monospace,consolas,Menlo,monospace,'PingFang SC','Microsoft YaHei'}code{border-radius:3px;font-size:.875em;padding:2px 4px;overflow-wrap:break-word}kbd{border:2px solid #ccc;border-radius:.2em;box-shadow:.1em .1em .2em rgba(0,0,0,.1);font-family:inherit;padding:.1em .3em;white-space:nowrap}figure.highlight pre{border:0;margin:0;padding:10px 0}figure.highlight table{border:0;margin:0;width:auto}figure.highlight td{border:0;padding:0}figure.highlight .gutter{-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;user-select:none}figure.highlight .gutter pre{background:var(--highlight-gutter-background);color:var(--highlight-gutter-foreground);padding-left:10px;padding-right:10px;text-align:right}figure.highlight .code pre{padding-left:10px;width:100%}figure.highlight .marked{background:rgba(0,0,0,.3)}pre .caption,pre figcaption{margin-bottom:10px}.gist table{width:auto}.gist table td{border:0}pre code{background:0 0;padding:0;text-shadow:none}.blockquote-center{border-left:0;margin:40px 0;padding:0;position:relative;text-align:center}.blockquote-center::after,.blockquote-center::before{left:0;line-height:1;opacity:.6;position:absolute;width:100%}.blockquote-center::before{border-top:1px solid #ccc;text-align:left;top:-20px;content:'\f10d';font-family:'Font Awesome 6 Free';font-weight:900}.blockquote-center::after{border-bottom:1px solid #ccc;bottom:-20px;text-align:right;content:'\f10e';font-family:'Font Awesome 6 Free';font-weight:900}.blockquote-center div,.blockquote-center p{text-align:center}.group-picture{margin-bottom:20px}.group-picture .group-picture-row{display:flex;gap:3px;margin-bottom:3px}.group-picture .group-picture-column{flex:1}.group-picture .group-picture-column img{height:100%;margin:0;object-fit:cover;width:100%}.post-body .label{color:#555;padding:0 2px}.post-body .label.default{background:#f0f0f0}.post-body .label.primary{background:#efe6f7}.post-body .label.info{background:#e5f2f8}.post-body .label.success{background:#e7f4e9}.post-body .label.warning{background:#fcf6e1}.post-body .label.danger{background:#fae8eb}.post-body .link-grid{display:grid;grid-gap:1.5rem;gap:1.5rem;grid-template-columns:1fr 1fr;margin-bottom:20px;padding:1rem}.post-body .link-grid .link-grid-container{border:solid #ddd;box-shadow:1rem 1rem .5rem rgba(0,0,0,.5);min-height:5rem;min-width:0;padding:.5rem;position:relative;transition:background .3s}.post-body .link-grid .link-grid-container:hover{animation:.5s next-shake;background:var(--card-bg-color)}.post-body .link-grid .link-grid-container:active{box-shadow:.5rem .5rem .25rem rgba(0,0,0,.5);transform:translate(.2rem,.2rem)}.post-body .link-grid .link-grid-container .link-grid-image{border:1px solid #ddd;border-radius:50%;box-sizing:border-box;height:5rem;padding:3px;position:absolute;width:5rem}.post-body .link-grid .link-grid-container p{margin:0 1rem 0 6rem}.post-body .link-grid .link-grid-container p:first-of-type{font-size:1.2em}.post-body .link-grid .link-grid-container p:last-of-type{font-size:.8em;line-height:1.3rem;opacity:.7}.post-body .link-grid .link-grid-container a{border:0;height:100%;left:0;position:absolute;top:0;width:100%}@keyframes next-shake{0%{transform:translate(1pt,1pt) rotate(0)}10%{transform:translate(-1pt,-2pt) rotate(-1deg)}20%{transform:translate(-3pt,0) rotate(1deg)}30%{transform:translate(3pt,2pt) rotate(0)}40%{transform:translate(1pt,-1pt) rotate(1deg)}50%{transform:translate(-1pt,2pt) rotate(-1deg)}60%{transform:translate(-3pt,1pt) rotate(0)}70%{transform:translate(3pt,1pt) rotate(-1deg)}80%{transform:translate(-1pt,-1pt) rotate(1deg)}90%{transform:translate(1pt,2pt) rotate(0)}100%{transform:translate(1pt,-2pt) rotate(-1deg)}}.post-body .note{border-radius:3px;margin-bottom:20px;padding:1em;position:relative;border:1px solid #eee;border-left-width:5px}.post-body .note summary{cursor:pointer;outline:0}.post-body .note summary p{display:inline}.post-body .note h2,.post-body .note h3,.post-body .note h4,.post-body .note h5,.post-body .note h6{border-bottom:initial;margin:0;padding-top:0}.post-body .note :first-child{margin-top:0}.post-body .note :last-child{margin-bottom:0}.post-body .note.default{border-left-color:#777}.post-body .note.default h2,.post-body .note.default h3,.post-body .note.default h4,.post-body .note.default h5,.post-body .note.default h6{color:#777}.post-body .note.primary{border-left-color:#6f42c1}.post-body .note.primary h2,.post-body .note.primary h3,.post-body .note.primary h4,.post-body .note.primary h5,.post-body .note.primary h6{color:#6f42c1}.post-body .note.info{border-left-color:#428bca}.post-body .note.info h2,.post-body .note.info h3,.post-body .note.info h4,.post-body .note.info h5,.post-body .note.info h6{color:#428bca}.post-body .note.success{border-left-color:#5cb85c}.post-body .note.success h2,.post-body .note.success h3,.post-body .note.success h4,.post-body .note.success h5,.post-body .note.success h6{color:#5cb85c}.post-body .note.warning{border-left-color:#f0ad4e}.post-body .note.warning h2,.post-body .note.warning h3,.post-body .note.warning h4,.post-body .note.warning h5,.post-body .note.warning h6{color:#f0ad4e}.post-body .note.danger{border-left-color:#d9534f}.post-body .note.danger h2,.post-body .note.danger h3,.post-body .note.danger h4,.post-body .note.danger h5,.post-body .note.danger h6{color:#d9534f}.post-body .tabs{margin-bottom:20px}.post-body .tabs,.tabs-comment{padding-top:10px}.post-body .tabs ul.nav-tabs,.tabs-comment ul.nav-tabs{background:var(--body-bg-color);display:flex;display:flex;flex-wrap:wrap;justify-content:center;margin:0;padding:0;position:-webkit-sticky;position:sticky;top:0;z-index:5}.post-body .tabs ul.nav-tabs li.tab,.tabs-comment ul.nav-tabs li.tab{border-bottom:1px solid #ddd;border-left:1px solid transparent;border-right:1px solid transparent;border-radius:0;border-top:3px solid transparent;flex-grow:1;list-style-type:none}@media (max-width:413px){.post-body .tabs ul.nav-tabs,.tabs-comment ul.nav-tabs{display:block;margin-bottom:5px}.post-body .tabs ul.nav-tabs li.tab,.tabs-comment ul.nav-tabs li.tab{border-bottom:1px solid transparent;border-left:3px solid transparent;border-right:1px solid transparent;border-top:1px solid transparent;border-radius:0}}.post-body .tabs ul.nav-tabs li.tab a,.tabs-comment ul.nav-tabs li.tab a{border-bottom:initial;display:block;line-height:1.8;padding:.25em .75em;text-align:center;transition:.2s ease-out}.post-body .tabs ul.nav-tabs li.tab a i[class^=fa],.tabs-comment ul.nav-tabs li.tab a i[class^=fa]{width:1.285714285714286em}.post-body .tabs ul.nav-tabs li.tab.active,.tabs-comment ul.nav-tabs li.tab.active{border-color:#fc6423 #ddd transparent}@media (max-width:413px){.post-body .tabs ul.nav-tabs li.tab.active,.tabs-comment ul.nav-tabs li.tab.active{border-color:#ddd #ddd #ddd #fc6423}}.post-body .tabs ul.nav-tabs li.tab.active a,.tabs-comment ul.nav-tabs li.tab.active a{cursor:default}.post-body .tabs .tab-content,.tabs-comment .tab-content{border:1px solid #ddd;border-radius:0;border-top-color:transparent}@media (max-width:413px){.post-body .tabs .tab-content,.tabs-comment .tab-content{border-radius:0;border-top-color:#ddd}}.post-body .tabs .tab-content .tab-pane,.tabs-comment .tab-content .tab-pane{padding:20px 20px 0}.post-body .tabs .tab-content .tab-pane:not(.active),.tabs-comment .tab-content .tab-pane:not(.active){display:none}.pagination .next,.pagination .page-number,.pagination .prev,.pagination .space{display:inline-block;margin:-1px 10px 0;padding:0 10px}.pagination .page-number.current{background:#ccc;border-color:#ccc;color:var(--content-bg-color)}.pagination{border-top:1px solid #eee;margin:120px 0 0;text-align:left}.pagination .next,.pagination .page-number,.pagination .prev{border-bottom:0;border-top:1px solid #eee;transition:border-color .2s ease-in-out}.pagination .next:hover,.pagination .page-number:hover,.pagination .prev:hover{border-top-color:var(--link-hover-color)}@media (max-width:767px){.post-body .link-grid{grid-template-columns:1fr}.pagination .next,.pagination .page-number,.pagination .prev,.pagination .space{margin:0 5px}.pagination{border-top:0}.pagination .next,.pagination .page-number,.pagination .prev{border-bottom:1px solid #eee;border-top:0}.pagination .next:hover,.pagination .page-number:hover,.pagination .prev:hover{border-bottom-color:var(--link-hover-color)}.site-meta{text-align:center}}.pagination .space{margin:0;padding:0}.comments{margin-top:60px;overflow:hidden}.comment-button-group{display:flex;display:flex;flex-wrap:wrap;justify-content:center;justify-content:center;margin:1em 0}.comment-button-group .comment-button{margin:.1em .2em}.comment-button-group .comment-button.active{background:var(--btn-default-hover-bg);border-color:var(--btn-default-hover-border-color);color:var(--btn-default-hover-color)}.comment-position{display:none}.comment-position.active{display:block}.tabs-comment{margin-top:4em;padding-top:0}.tabs-comment .comments{margin-top:0;padding-top:0}.headband{background:var(--theme-color);height:3px}@media (max-width:991px){.headband{display:none}}.site-brand-container{display:flex;flex-shrink:0;padding:0 10px}.use-motion .column,.use-motion .site-brand-container .toggle{opacity:0}.site-meta{flex-grow:1;text-align:center}.custom-logo-image{margin-top:20px}@media (max-width:991px){.custom-logo-image{display:none}}.brand{border-bottom:0;color:var(--brand-color);display:inline-block;padding:2px 1px}.brand:hover{color:var(--brand-hover-color)}.site-title{font-family:Monda,Monda,'PingFang SC','Microsoft YaHei',sans-serif;font-size:1.5em;font-weight:400;line-height:1.5;margin:0}.site-subtitle{color:#999;font-size:.8125em;margin:10px 0}.use-motion .custom-logo-image,.use-motion .site-subtitle,.use-motion .site-title{opacity:0;position:relative;top:-10px}.site-nav-right,.site-nav-toggle{display:none}.site-nav-right .toggle,.site-nav-toggle .toggle{color:var(--text-color);padding:10px;width:22px}.site-nav-right .toggle .toggle-line,.site-nav-toggle .toggle .toggle-line{background:var(--text-color);border-radius:1px}@media (max-width:767px){.site-nav-right,.site-nav-toggle{display:flex;flex-direction:column;justify-content:center}.site-nav{--scroll-height:0;height:0;overflow:hidden;transition:height .2s ease-in-out,visibility .2s ease-in-out;visibility:hidden}body:not(.site-nav-on) .site-nav .animated{animation:none}body.site-nav-on .site-nav{height:var(--scroll-height);visibility:unset}}.menu{margin:0;text-align:center}.menu-item{display:inline-block;list-style:none;margin:0 10px}@media (max-width:767px){.menu-item{display:block;margin-top:10px}.menu-item.menu-item-search{display:none}}.menu-item a{border-bottom:0;display:block;font-size:.8125em;transition:border-color .2s ease-in-out}.menu-item a.menu-item-active,.menu-item a:hover{background:var(--menu-item-bg-color)}.menu-item i[class^=fa]{margin-right:8px}.menu-item .badge{display:inline-block;font-weight:700;line-height:1;margin-left:.35em;margin-top:.35em;text-align:center;white-space:nowrap}.use-motion .menu-item{visibility:hidden}.book-mark-link{border-bottom:0;position:fixed;top:-10px;transition:top .3s;left:30px}@media (max-width:991px){.book-mark-link{left:20px;display:none}}.book-mark-link::before{color:#222;font-size:32px;line-height:1;content:'\f02e';font-family:'Font Awesome 6 Free';font-weight:900}.book-mark-link-fixed,.book-mark-link:hover{top:-2px}.sidebar-inner{color:#999;padding:18px 10px;text-align:center;display:flex;flex-direction:column;justify-content:center}.cc-license .cc-opacity{border-bottom:0;opacity:.7}.cc-license .cc-opacity:hover{opacity:.9}.cc-license img{display:inline-block}.site-author-image{border:2px solid #333;max-width:96px;padding:2px;border-radius:50%;transition:transform 1s ease-out}.site-author-image:hover{transform:rotateZ(360deg)}.site-author-name{color:#f5f5f5;font-weight:400;margin:5px 0 0}.site-description{color:#999;font-size:1em;margin-top:5px}.links-of-author a{font-size:.8125em}.sidebar .sidebar-button:not(:first-child){margin-top:15px}.sidebar .sidebar-button button{background:0 0;color:#fc6423;cursor:pointer;line-height:2;padding:0 15px;border:1px solid #fc6423;border-radius:4px}.sidebar .sidebar-button button:hover{background:#fc6423;color:#fff}.sidebar .sidebar-button button i[class^=fa]{margin-right:5px}.links-of-blogroll{font-size:.8125em}.links-of-blogroll-title{font-size:.875em;font-weight:600}.links-of-blogroll-list{list-style:none;margin:0;padding:0}.sidebar-nav{font-size:.875em;height:0;margin:0;overflow:hidden;padding-left:0;pointer-events:none;transition:height .2s ease-in-out,visibility .2s ease-in-out;visibility:hidden}.sidebar-nav-active .sidebar-nav{height:calc(2em + 1px);pointer-events:unset;visibility:unset}.sidebar-nav li{border-bottom:1px solid transparent;color:#666;cursor:pointer;display:inline-block;transition:border-bottom-color .2s ease-in-out,color .2s ease-in-out}.sidebar-nav li.sidebar-nav-overview{margin-left:10px}.sidebar-nav li:hover{color:#f5f5f5}.sidebar-overview-active .sidebar-nav-overview,.sidebar-toc-active .sidebar-nav-toc{border-bottom-color:#87daff;color:#87daff;transition-delay:0.2s}.sidebar-overview-active .sidebar-nav-overview:hover,.sidebar-toc-active .sidebar-nav-toc:hover{color:#87daff}.sidebar-panel-container{align-items:start;display:grid;flex:1;overflow-x:hidden;overflow-y:auto;padding-top:0;transition:padding-top .2s ease-in-out}.sidebar-nav-active .sidebar-panel-container{padding-top:20px}.sidebar-panel{animation:.2s ease-in-out deactivate-sidebar-panel;grid-area:1/1;height:0;opacity:0;overflow:hidden;pointer-events:none;transform:translateY(0);transition:.2s ease-in-out;transition-property:opacity,transform,visibility;visibility:hidden}.sidebar-nav-active .sidebar-panel,.sidebar-overview-active .sidebar-panel.post-toc-wrap{transform:translateY(-20px)}.sidebar-overview-active:not(.sidebar-nav-active) .sidebar-panel.post-toc-wrap{transition-delay:0s,0.2s,0s}.sidebar-overview-active .sidebar-panel.site-overview-wrap,.sidebar-toc-active .sidebar-panel.post-toc-wrap{animation-name:activate-sidebar-panel;height:auto;opacity:1;pointer-events:unset;transform:translateY(0);transition-delay:0.2s,0.2s,0s;visibility:unset}.sidebar-panel.site-overview-wrap{display:flex;flex-direction:column;justify-content:center;gap:10px;justify-content:flex-start}@keyframes deactivate-sidebar-panel{from{height:var(--inactive-panel-height,0)}to{height:var(--active-panel-height,0)}}@keyframes activate-sidebar-panel{from{height:var(--inactive-panel-height,auto)}to{height:var(--active-panel-height,auto)}}.sidebar-toggle{bottom:61px;height:16px;padding:5px;width:16px;background:#222;cursor:pointer;opacity:.8;position:fixed;z-index:30;right:30px}.sidebar-toggle:hover{opacity:1}@media (max-width:991px){.sidebar-toggle{right:20px;opacity:1}}.sidebar-toggle:hover .toggle-line{background:#87daff}@media (any-hover:hover){body:not(.sidebar-active) .sidebar-toggle:hover :first-child{top:2px;transform:rotate(-45deg);width:50%}body:not(.sidebar-active) .sidebar-toggle:hover :last-child{top:-2px;transform:rotate(45deg);width:50%}}.sidebar-active .sidebar-toggle :nth-child(2){opacity:0}.sidebar-active .sidebar-toggle :first-child{top:6px;transform:rotate(-45deg)}.sidebar-active .sidebar-toggle :last-child{top:-6px;transform:rotate(45deg)}.post-toc{font-size:.875em}.post-toc ol{list-style:none;margin:0;padding:0 2px 0 10px;text-align:left}.post-toc ol>:last-child{margin-bottom:5px}.post-toc ol>ol{padding-left:0}.post-toc ol a{transition:.2s ease-in-out}.post-toc .nav-item{line-height:1.8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.post-toc .nav .nav-child{--height:0;height:0;opacity:0;overflow:hidden;transition:.2s ease-in-out;visibility:hidden}.post-toc .nav .active>.nav-child{height:var(--height,auto);opacity:1;visibility:unset}.post-toc .nav .active>a{border-bottom-color:#87daff;color:#87daff}.post-toc .nav .active-current>a,.post-toc .nav .active-current>a:hover{color:#87daff}.site-state{display:flex;flex-wrap:wrap;justify-content:center;line-height:1.4}.site-state-item{padding:0 15px}.site-state-item a{border-bottom:0;display:block}.site-state-item-count{display:block;font-size:1.25em;font-weight:600}.site-state-item-name{color:inherit;font-size:.875em}.footer{color:#999;font-size:.875em;transition:left .2s ease-in-out,right .2s ease-in-out}.footer.footer-fixed{bottom:0;left:0;position:absolute;right:0}.footer-inner{box-sizing:border-box;text-align:left;display:flex;flex-direction:column;justify-content:center;margin:0 auto;width:700px}@media (max-width:767px){.menu-item .badge{float:right;margin-left:0}.footer-inner{width:auto}}@media (min-width:1200px){.footer-inner{width:800px}}@media (min-width:1600px){.footer-inner{width:900px}}.use-motion .footer{opacity:0}.languages{display:inline-block;font-size:1.125em;position:relative}.languages .lang-select-label span{margin:0 .5em}.languages .lang-select{height:100%;left:0;opacity:0;position:absolute;top:0;width:100%}.with-love{color:red;display:inline-block;margin:0 5px;animation:1.33s ease-in-out infinite icon-animate}.busuanzi-count #busuanzi_container_site_pv,.busuanzi-count #busuanzi_container_site_uv{display:none}@keyframes icon-animate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,50%,60%,70%,80%{transform:scale(1.1)}}.back-to-top{font-size:12px;margin:8px -10px -20px;opacity:0;transition:opacity .2s ease-in-out}.back-to-top span{margin-right:8px}.back-to-top .fa{text-align:center;width:26px}.back-to-top.back-to-top-on{cursor:pointer;opacity:.8}.back-to-top.back-to-top-on:hover{opacity:1}.reading-progress-bar{--progress:0;background:#37c6c0;height:3px;position:fixed;z-index:50;width:var(--progress);left:0;bottom:0}.rtl.post-body a,.rtl.post-body h1,.rtl.post-body h2,.rtl.post-body h3,.rtl.post-body h4,.rtl.post-body h5,.rtl.post-body h6,.rtl.post-body li,.rtl.post-body ol,.rtl.post-body p,.rtl.post-body ul{direction:rtl;font-family:UKIJ Ekran}.rtl.post-title{font-family:UKIJ Ekran}.post-button{text-align:left}.use-motion .collection-header,.use-motion .comments,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header{visibility:hidden}.posts-collapse .post-content{margin-bottom:35px;margin-left:35px;position:relative}@media (max-width:767px){.posts-collapse .post-content{margin-left:0;margin-right:0}}.posts-collapse .post-content .collection-title{font-size:1.125em;position:relative}.posts-collapse .post-content .collection-title::before{background:#999;border:1px solid #fff;margin-left:-6px;margin-top:-4px;position:absolute;top:50%;border-radius:50%;content:' ';height:10px;width:10px}.posts-collapse .post-content .collection-year{font-size:1.5em;font-weight:700;margin:60px 0;position:relative}.posts-collapse .post-content .collection-year::before{background:#bbb;margin-left:-4px;margin-top:-4px;position:absolute;top:50%;border-radius:50%;content:' ';height:8px;width:8px}.posts-collapse .post-content .collection-header{display:block;margin-left:20px}.posts-collapse .post-content .collection-header small{color:#bbb;margin-left:5px}.posts-collapse .post-content .post-header{border-bottom:1px dashed #ccc;margin:30px 2px 0;padding-left:15px;position:relative;transition:border .2s ease-in-out}.posts-collapse .post-content .post-header::before{background:#bbb;border:1px solid #fff;left:-6px;position:absolute;top:.75em;transition:background .2s ease-in-out;border-radius:50%;content:' ';height:6px;width:6px}.posts-collapse .post-content .post-header:hover{border-bottom-color:#666}.posts-collapse .post-content .post-header:hover::before{background:#222}.posts-collapse .post-content .post-meta-container{display:inline;font-size:.75em;margin-right:10px}.posts-collapse .post-content .post-title{display:inline}.posts-collapse .post-content .post-title a{border-bottom:0;color:var(--link-color)}.posts-collapse .post-content::before{background:#f5f5f5;content:' ';height:100%;margin-left:-2px;position:absolute;top:1.25em;width:4px}.post-body{font-family:Monda,Monda,'PingFang SC','Microsoft YaHei',sans-serif;overflow-wrap:break-word}@media (min-width:1200px){.post-body{font-size:1.125em}}@media (min-width:992px){.post-body{text-align:justify}}.post-body h1 .header-anchor,.post-body h1 .headerlink,.post-body h2 .header-anchor,.post-body h2 .headerlink,.post-body h3 .header-anchor,.post-body h3 .headerlink,.post-body h4 .header-anchor,.post-body h4 .headerlink,.post-body h5 .header-anchor,.post-body h5 .headerlink,.post-body h6 .header-anchor,.post-body h6 .headerlink{border-bottom-style:none;color:inherit;float:right;font-size:.875em;margin-left:10px;opacity:0}.post-body h1 .header-anchor::before,.post-body h1 .headerlink::before,.post-body h2 .header-anchor::before,.post-body h2 .headerlink::before,.post-body h3 .header-anchor::before,.post-body h3 .headerlink::before,.post-body h4 .header-anchor::before,.post-body h4 .headerlink::before,.post-body h5 .header-anchor::before,.post-body h5 .headerlink::before,.post-body h6 .header-anchor::before,.post-body h6 .headerlink::before{content:'\f0c1';font-family:'Font Awesome 6 Free';font-weight:900}.post-body h1:hover .header-anchor,.post-body h1:hover .headerlink,.post-body h2:hover .header-anchor,.post-body h2:hover .headerlink,.post-body h3:hover .header-anchor,.post-body h3:hover .headerlink,.post-body h4:hover .header-anchor,.post-body h4:hover .headerlink,.post-body h5:hover .header-anchor,.post-body h5:hover .headerlink,.post-body h6:hover .header-anchor,.post-body h6:hover .headerlink{opacity:.5}.post-body h1:hover .header-anchor:hover,.post-body h1:hover .headerlink:hover,.post-body h2:hover .header-anchor:hover,.post-body h2:hover .headerlink:hover,.post-body h3:hover .header-anchor:hover,.post-body h3:hover .headerlink:hover,.post-body h4:hover .header-anchor:hover,.post-body h4:hover .headerlink:hover,.post-body h5:hover .header-anchor:hover,.post-body h5:hover .headerlink:hover,.post-body h6:hover .header-anchor:hover,.post-body h6:hover .headerlink:hover{opacity:1}.post-body .exturl .fa{font-size:.875em;margin-left:4px}.post-body .fancybox+figcaption,.post-body img+figcaption{color:#999;font-size:.875em;font-weight:700;line-height:1;margin:-15px auto 15px;text-align:center}.post-body embed,.post-body iframe,.post-body img,.post-body video{margin-bottom:20px}.post-body .video-container{height:0;margin-bottom:20px;overflow:hidden;padding-top:75%;position:relative;width:100%}.post-body .video-container embed,.post-body .video-container iframe,.post-body .video-container object{height:100%;left:0;margin:0;position:absolute;top:0;width:100%}.post-gallery{display:flex;min-height:200px}.post-gallery .post-gallery-image{flex:1}.post-gallery .post-gallery-image:not(:first-child){clip-path:polygon(40px 0,100% 0,100% 100%,0 100%);margin-left:-20px}.post-gallery .post-gallery-image:not(:last-child){margin-right:-20px}.post-gallery .post-gallery-image img{height:100%;object-fit:cover;opacity:1;width:100%}.posts-expand .post-gallery{margin-bottom:60px}.posts-collapse .post-gallery{margin:15px 0}.posts-expand .post-header{font-size:1.125em;text-align:center}.posts-expand .post-title{font-size:1.5em;font-weight:400;margin:initial;overflow-wrap:break-word}.posts-expand .post-title-link{border-bottom:0;color:var(--link-color);display:inline-block;position:relative}.posts-expand .post-title-link::before{background:var(--link-color);bottom:0;content:'';height:2px;left:0;position:absolute;transform:scaleX(0);transition:transform .2s ease-in-out;width:100%}.posts-expand .post-title-link:hover::before{transform:scaleX(1)}.posts-expand .post-title-link .fa{font-size:.875em;margin-left:5px}.post-sticky-flag{display:inline-block;margin-right:8px;transform:rotate(30deg)}.posts-expand .post-meta-container{color:#999;font-family:Monda,Monda,'PingFang SC','Microsoft YaHei',sans-serif;font-size:.75em;margin-top:3px}.posts-expand .post-meta-container .post-description{font-size:.875em;margin-top:2px}.posts-expand .post-meta-container time{border-bottom:1px dashed #999}.post-meta{display:flex;flex-wrap:wrap;justify-content:center}:not(.post-meta-break)+.post-meta-item::before{content:'|';margin:0 .5em}.post-meta-item-icon{margin-right:3px}@media (max-width:991px){.post-body{text-align:justify}.post-meta-item-text{display:none}}.post-meta-break{flex-basis:100%;height:0}#busuanzi_container_page_pv{display:none}.post-nav{border-top:1px solid #eee;display:flex;gap:30px;justify-content:space-between;margin-top:1em;padding:10px 5px 0}.post-nav-item{flex:1}.post-nav-item a{border-bottom:0;display:block;font-size:.875em;line-height:1.6}.post-nav-item a:active{top:2px}.post-nav-item .fa{font-size:.75em}.post-nav-item:first-child .fa{margin-right:5px}.post-nav-item:last-child{text-align:right}.post-nav-item:last-child .fa{margin-left:5px}.post-footer{display:flex;flex-direction:column;justify-content:center}.post-eof{background:#ccc;height:1px;margin:80px auto 60px;width:8%}.post-block:last-of-type .post-eof{display:none}.post-copyright ul{list-style:none;overflow:hidden;padding:.5em 1em;position:relative;background:var(--card-bg-color);border-left:3px solid #ff2a2a;margin:1em 0 0}.post-copyright ul::after{content:'\f25e';font-family:'Font Awesome 6 Brands';font-size:200px;opacity:.1;position:absolute;right:-50px;top:-150px}.post-tags{margin-top:40px;text-align:left}.post-tags a{display:inline-block;font-size:.8125em}.post-tags a:not(:last-child){margin-right:10px}.social-like{border-top:1px solid #eee;font-size:.875em;margin-top:1em;padding-top:1em;display:flex;flex-wrap:wrap;justify-content:center}.social-like a{border-bottom:none}.reward-container{margin:1em 0 0;padding:1em 0;text-align:center}.reward-container button{background:0 0;color:#87daff;cursor:pointer;line-height:2;padding:0 15px;border:2px solid #87daff;border-radius:2px;outline:0;transition:.2s ease-in-out;vertical-align:text-top}.reward-container button:hover{background:#87daff;color:#fff}.post-reward{display:none;padding-top:20px}.post-reward.active{display:block}.post-reward div{display:inline-block}.post-reward div span{display:block}.post-reward div:hover span{animation:.1s linear infinite next-roll;pointer-events:none}.post-reward img{display:inline-block;margin:.8em 2em 0;max-width:100%;width:180px}@keyframes next-roll{from{transform:rotateZ(30deg)}to{transform:rotateZ(-30deg)}}.category-all-page .category-all-title{text-align:center}.category-all-page .category-all{margin-top:20px}.category-all-page .category-list{list-style:none;margin:0;padding:0}.category-all-page .category-list-item{margin:5px 10px}.category-all-page .category-list-count{color:#bbb}.category-all-page .category-list-count::before{content:' ('}.category-all-page .category-list-count::after{content:') '}.category-all-page .category-list-child{padding-left:10px}.event-list hr{background:#222;margin:20px 0 45px}.event-list hr::after{background:#222;color:#fff;content:'NOW';display:inline-block;font-weight:700;padding:0 5px}.event-list .event{--event-background:#222;--event-foreground:#bbb;--event-title:#fff;background:var(--event-background);padding:15px}.event-list .event .event-summary{border-bottom:0;color:var(--event-title);margin:0;padding:0 0 0 35px;position:relative}.event-list .event .event-summary::before{animation:1s ease-in-out infinite alternate dot-flash;background:var(--event-title);left:0;margin-top:-6px;position:absolute;top:50%;border-radius:50%;content:' ';height:12px;width:12px}.event-list .event:nth-of-type(odd) .event-summary::before{animation-delay:.5s}.event-list .event:not(:last-child){margin-bottom:20px}.event-list .event .event-relative-time{color:var(--event-foreground);display:inline-block;font-size:12px;font-weight:400;padding-left:12px}.event-list .event .event-details{color:var(--event-foreground);display:block;line-height:18px;padding:6px 0 6px 35px}.event-list .event .event-details::before{color:var(--event-foreground);display:inline-block;margin-right:9px;width:14px;font-family:'Font Awesome 6 Free';font-weight:900}.event-list .event .event-details.event-location::before{content:'\f041'}.event-list .event .event-details.event-duration::before{content:'\f017'}.event-list .event .event-details.event-description::before{content:'\f024'}.event-list .event-past{--event-background:#f5f5f5;--event-foreground:#999;--event-title:#222}@keyframes dot-flash{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.8)}}ul.breadcrumb{font-size:.75em;list-style:none;margin:1em 0;padding:0 2em;text-align:center}ul.breadcrumb li{display:inline}ul.breadcrumb li:not(:first-child)::before{content:'/\00a0';font-weight:400;padding:.5em}ul.breadcrumb li:last-child{font-weight:700}.tag-cloud{text-align:center}.tag-cloud a{display:inline-block;margin:10px}.tag-cloud-0{border-bottom-color:#aaa;color:#aaa}.tag-cloud-1{border-bottom-color:#9a9a9a;color:#9a9a9a}.tag-cloud-2{border-bottom-color:#8b8b8b;color:#8b8b8b}.tag-cloud-3{border-bottom-color:#7c7c7c;color:#7c7c7c}.tag-cloud-4{border-bottom-color:#6c6c6c;color:#6c6c6c}.tag-cloud-5{border-bottom-color:#5d5d5d;color:#5d5d5d}.tag-cloud-6{border-bottom-color:#4e4e4e;color:#4e4e4e}.tag-cloud-7{border-bottom-color:#3e3e3e;color:#3e3e3e}.tag-cloud-8{border-bottom-color:#2f2f2f;color:#2f2f2f}.tag-cloud-9{border-bottom-color:#202020;color:#202020}.tag-cloud-10{border-bottom-color:#111;color:#111}.search-active{overflow:hidden}.search-pop-overlay{background:rgba(0,0,0,0);display:flex;height:100%;left:0;position:fixed;top:0;transition:visibility .4s,background .4s;visibility:hidden;width:100%;z-index:40}.search-active .search-pop-overlay{background:rgba(0,0,0,.3);visibility:visible}.search-popup{background:var(--card-bg-color);border-radius:5px;height:80%;margin:auto;transform:scale(0);transition:transform .4s;width:700px}.search-active .search-popup{transform:scale(1)}@media (max-width:767px){.search-popup{border-radius:0;height:100%;width:100%}.pagination{margin:80px 0 0;text-align:center}}.search-popup .popup-btn-close,.search-popup .search-icon{color:#999;font-size:18px;padding:0 10px}.search-popup .popup-btn-close{cursor:pointer}.search-popup .popup-btn-close:hover .fa{color:#222}.search-popup .search-header{background:#eee;border-top-left-radius:5px;border-top-right-radius:5px;display:flex;padding:5px}.search-popup input.search-input{background:0 0;border:0;outline:0;width:100%}.search-popup input.search-input::-webkit-search-cancel-button{display:none}.search-popup .search-result-container{height:calc(100% - 55px);overflow:auto;padding:5px 25px}.search-popup .search-result-container hr{margin:5px 0 10px}.search-popup .search-result-container hr:first-child{display:none}.search-popup .search-result-list{margin:0 5px;padding:0;width:100%}.search-popup a.search-result-title{font-weight:700}.search-popup p.search-result{border-bottom:1px dashed #ccc;padding:5px 0}.search-popup .search-input-container{flex-grow:1;padding:2px}.search-popup .no-result{display:flex}.search-popup .search-result-icon{color:#ccc;margin:auto}mark.search-keyword{background:0 0;border-bottom:1px dashed #ff2a2a;color:#ff2a2a;font-weight:700}.use-motion .animated{animation-fill-mode:none;visibility:inherit}.use-motion .sidebar .animated{animation-fill-mode:both}hr{height:2px;margin:20px 0}.btn{padding:0 10px}.headband{display:none}.footer{background:var(--content-bg-color);color:var(--text-color);padding:10px 0}.column{background:var(--content-bg-color)}header.header{align-items:center;display:flex;padding:20px 0;margin:0 auto;width:700px}.site-meta{line-height:normal}.site-meta .site-title{font-weight:bolder}.logo-line{background:var(--brand-color);display:block;height:2px;margin:0 auto;width:75%}.use-motion .logo-line:first-of-type{transform:scaleX(0);transform-origin:left}.use-motion .logo-line:last-of-type{transform:scaleX(0);transform-origin:right}.site-subtitle{display:none}.site-nav{flex-grow:1}@media (max-width:767px){.footer-inner{text-align:center}header.header{display:block;padding:10px 0}.site-meta .brand{display:block}.logo-line{display:none}.site-nav{padding:0 10px}.main-menu{padding-top:10px}}.menu{padding:0}.menu .menu-item{margin:0}.menu .menu-item a{border-radius:2px;padding:0 10px;transition-property:background}.menu .menu-item .badge{background:#fff;border-radius:10px;color:#555;padding:1px 4px;text-shadow:1px 1px 0 rgba(0,0,0,.1)}.posts-expand.index .post-header{text-align:left}.posts-expand.index .post-meta-container{margin-top:5px}.posts-expand.index .post-meta{justify-content:flex-start}@media (max-width:767px){.menu .menu-item{margin-top:5px}.menu .menu-item a{text-align:left}.posts-expand.index .post-header{text-align:center}.posts-expand.index .post-meta{justify-content:center}header.header{width:auto}}.posts-expand .post-eof{display:none}.posts-expand .post-block:not(:first-of-type){margin-top:120px}.posts-expand .post-header{margin-bottom:20px}.posts-expand .post-tags a{background:var(--content-bg-color);border-bottom:0;padding:1px 5px}.posts-expand .post-tags a:hover{background:var(--menu-item-bg-color)}.posts-expand .post-nav{margin-top:40px}.post-button{margin-top:20px}.post-button .btn{background:0 0;border:0;border-bottom:2px solid var(--btn-default-border-color);padding:0;transition-property:border}.post-button .btn:hover{border-bottom-color:var(--btn-default-hover-border-color)}@media (min-width:1200px){header.header{width:800px}}.main-inner{margin:0 auto;width:700px;padding-bottom:80px}@media (max-width:767px){.main-inner{width:auto;padding-left:20px;padding-right:20px}}@media (min-width:1200px){.main-inner{width:800px}}@media (min-width:1600px){.main-inner,header.header{width:900px}}.post-block:first-of-type{padding-top:80px}@media (max-width:767px){.post-block:first-of-type{padding-top:60px}}@media (min-width:1200px){.sidebar-active{padding-right:320px}.sidebar-active .footer-fixed{right:320px}.sidebar-dimmer{display:none}}.sidebar{right:-320px;background:#222;bottom:0;max-height:100vh;overflow-y:auto;position:fixed;top:0;transition:.2s ease-out;width:320px;z-index:20}.sidebar-active .sidebar{right:0}.sidebar a{border-bottom-color:#555;color:#999}.sidebar a:hover{border-bottom-color:#eee;color:#eee}.links-of-author:not(:first-child){margin-top:15px}.links-of-author a{border-bottom-color:#555;display:inline-block;margin-bottom:10px;margin-right:10px;vertical-align:middle}.links-of-author a::before{background:#256a53;display:inline-block;margin-right:3px;transform:translateY(-2px);border-radius:50%;content:' ';height:4px;width:4px}.links-of-blogroll-item{padding:2px 10px}.links-of-blogroll-item a{box-sizing:border-box;display:inline-block;max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.popular-posts .popular-posts-item .popular-posts-link:hover{background:0 0}.sidebar-dimmer{background:#000;height:100%;left:0;opacity:0;position:fixed;top:0;transition:visibility .4s,opacity .4s;visibility:hidden;width:100%;z-index:10}.sidebar-active .sidebar-dimmer{opacity:.7;visibility:visible}.sub-menu{margin:10px 0}.sub-menu .menu-item{display:inline-block}.post-block{padding:25px;-webkit-box-shadow:0 0 5px rgba(202,203,203,.5);-moz-box-shadow:0 0 5px rgba(202,203,204,.5)}.post-body img{border-radius:1em}.post-body p a{color:#0593d3;border-bottom:none}.post-body p a:hover{color:#0477ab;text-decoration:underline}</style>
+
+<link rel="stylesheet" href="https://fonts.proxy.ustclug.org/css?family=Monda:300,300italic,400,400italic,700,700italic%7Cmonospace:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.20/fancybox/fancybox.css" integrity="sha256-RvRHGSuWAxZpXKV9lLDt2e+rZ+btzn48Wp4ueS3NZKs=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.zealot.top","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.18.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="上篇把 hexo 的配置讲的差不多了，现在我们讲一下 hexo 里的内容编辑. 文章抬头设置12345678---tags:- hexo- ccscategories: 技术分享top: truepassword: 123456--- 上面这个抬头就是建立了 hexo 和 ccs 标签，技术分享的分类，以及把这篇文章置顶，访问该篇文章需要输入密码 123456. 语法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[原创] Hexo+Github 搭建自己的博客 --- 心得汇总 2018 版（内容编辑篇）">
+<meta property="og:url" content="https://blog.zealot.top/2018/08/10/Hexo-Github%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A23/index.html">
+<meta property="og:site_name" content="思想就是武器">
+<meta property="og:description" content="上篇把 hexo 的配置讲的差不多了，现在我们讲一下 hexo 里的内容编辑. 文章抬头设置12345678---tags:- hexo- ccscategories: 技术分享top: truepassword: 123456--- 上面这个抬头就是建立了 hexo 和 ccs 标签，技术分享的分类，以及把这篇文章置顶，访问该篇文章需要输入密码 123456. 语法">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.baidu.com/img/bd_logo1.png?where=super">
+<meta property="og:image" content="https://www.baidu.com/img/bd_logo1.png?where=super">
+<meta property="article:published_time" content="2018-08-10T04:15:48.000Z">
+<meta property="article:modified_time" content="2023-08-27T08:37:18.953Z">
+<meta property="article:author" content="Hank ZHU">
+<meta property="article:tag" content="hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.baidu.com/img/bd_logo1.png?where=super">
+
+
+<link rel="canonical" href="https://blog.zealot.top/2018/08/10/Hexo-Github%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A23/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.zealot.top/2018/08/10/Hexo-Github%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A23/","path":"2018/08/10/Hexo-Github搭建自己的博客3/","title":"[原创] Hexo+Github 搭建自己的博客 --- 心得汇总 2018 版（内容编辑篇）"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>[原创] Hexo+Github 搭建自己的博客 --- 心得汇总 2018 版（内容编辑篇） | 思想就是武器</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">思想就是武器</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">好好学习 天天向上</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E6%8A%AC%E5%A4%B4%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">文章抬头设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E7%BA%A7%E6%A0%87%E9%A2%98%EF%BC%9A"><span class="nav-number">2.1.</span> <span class="nav-text">分级标题：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number"></span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%BC%BA%E8%B0%83%EF%BC%9A"><span class="nav-number">1.2.</span> <span class="nav-text">文字强调：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8"><span class="nav-number">1.3.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E7%94%A8"><span class="nav-number">1.4.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E6%9C%AC%E5%B1%85%E4%B8%AD%E7%9A%84%E5%BC%95%E7%94%A8"><span class="nav-number">1.5.</span> <span class="nav-text">文本居中的引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E5%89%B2%E7%BA%BF"><span class="nav-number">1.6.</span> <span class="nav-text">分割线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E7%BA%BF%E5%92%8C%E4%B8%8B%E5%88%92%E7%BA%BF"><span class="nav-number">1.7.</span> <span class="nav-text">删除线和下划线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%8C%E5%86%85%E4%BB%A3%E7%A0%81"><span class="nav-number">1.8.</span> <span class="nav-text">行内代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="nav-number">1.9.</span> <span class="nav-text">代码块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%96%E9%93%BE"><span class="nav-number">1.10.</span> <span class="nav-text">外链</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%92%E5%85%A5%E5%9B%BE%E5%83%8F"><span class="nav-number">1.11.</span> <span class="nav-text">插入图像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%A9%E8%BF%9B%EF%BC%9A"><span class="nav-number">1.12.</span> <span class="nav-text">缩进：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8D%A2%E8%A1%8C"><span class="nav-number">1.13.</span> <span class="nav-text">换行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BD%AC%E4%B9%89%E7%AC%A6"><span class="nav-number">1.14.</span> <span class="nav-text">转义符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%84%9A%E6%B3%A8"><span class="nav-number">1.15.</span> <span class="nav-text">脚注</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%A8%E6%A0%BC"><span class="nav-number">1.16.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8A%E6%A0%87%E4%B8%8E%E4%B8%8B%E6%A0%87"><span class="nav-number">1.17.</span> <span class="nav-text">上标与下标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E4%BD%93%E5%8A%A0%E5%A4%A7%E5%92%8C%E7%BC%A9%E5%B0%8F"><span class="nav-number">1.18.</span> <span class="nav-text">字体加大和缩小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0ICO%E5%9B%BE%E6%A0%87"><span class="nav-number">1.19.</span> <span class="nav-text">添加 ICO 图标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Bootstrap%E6%A0%87%E6%B3%A8"><span class="nav-number">1.20.</span> <span class="nav-text">Bootstrap 标注</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E6%96%87%E5%AD%97%E9%A2%9C%E8%89%B2"><span class="nav-number">1.21.</span> <span class="nav-text">设置文字颜色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%85%E5%8A%9E%E4%BA%8B%E5%AE%9C%E5%88%97%E8%A1%A8"><span class="nav-number">1.22.</span> <span class="nav-text">待办事宜列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%8C%E5%86%85HTML%E5%85%83%E7%B4%A0"><span class="nav-number">1.23.</span> <span class="nav-text">行内 HTML 元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%85%E5%8A%A9%E6%8E%92%E7%89%88%E7%AC%A6%E5%8F%B7"><span class="nav-number">1.24.</span> <span class="nav-text">辅助排版符号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B1%85%E4%B8%AD%E5%92%8C%E5%8F%B3%E5%AF%B9%E9%BD%90"><span class="nav-number">1.25.</span> <span class="nav-text">居中和右对齐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%89%E9%A1%B9%E5%8D%A1"><span class="nav-number">1.26.</span> <span class="nav-text">选项卡</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%89%E9%92%AE%E6%A0%B7%E5%BC%8F"><span class="nav-number">1.27.</span> <span class="nav-text">按钮样式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">效果展示：更多关于按钮的使用点这里</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AC%E4%B9%89%E7%A0%81"><span class="nav-number">3.</span> <span class="nav-text">转义码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%9C%E8%89%B2%E8%A1%A8"><span class="nav-number">4.</span> <span class="nav-text">颜色表</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Hank ZHU"
+      src="/images/icon.png">
+  <p class="site-author-name" itemprop="name">Hank ZHU</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">78</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/xmzcl" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;xmzcl" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:18976787@qq.com" title="E-Mail → mailto:18976787@qq.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/384272321" title="BiliBili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;384272321" rel="noopener me" target="_blank"><i class="fab fa-bilibili fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=18976787&site=qq&menu=yes" title="QQ → http:&#x2F;&#x2F;wpa.qq.com&#x2F;msgrd?v&#x3D;3&amp;uin&#x3D;18976787&amp;site&#x3D;qq&amp;menu&#x3D;yes" rel="noopener me" target="_blank"><i class="fab fa-qq fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.zealot.top/2018/08/10/Hexo-Github%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A23/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/icon.png">
+      <meta itemprop="name" content="Hank ZHU">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="思想就是武器">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="[原创] Hexo+Github 搭建自己的博客 --- 心得汇总 2018 版（内容编辑篇） | 思想就是武器">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          [原创] Hexo+Github 搭建自己的博客 --- 心得汇总 2018 版（内容编辑篇）
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2018-08-10 12:15:48" itemprop="dateCreated datePublished" datetime="2018-08-10T12:15:48+08:00">2018-08-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-08-27 16:37:18" itemprop="dateModified" datetime="2023-08-27T16:37:18+08:00">2023-08-27</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%8E%9F%E5%88%9B/" itemprop="url" rel="index"><span itemprop="name">原创</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>上篇把 hexo 的配置讲的差不多了，现在我们讲一下 hexo 里的内容编辑.</p>
+<h2 id="文章抬头设置"><a href="#文章抬头设置" class="headerlink" title="文章抬头设置"></a>文章抬头设置</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">tags:</span><br><span class="line">- hexo</span><br><span class="line">- ccs</span><br><span class="line">categories: 技术分享</span><br><span class="line">top: true</span><br><span class="line">password: 123456</span><br><span class="line">---</span><br></pre></td></tr></tbody></table></figure>
+<p>上面这个抬头就是建立了 <code>hexo</code> 和 <code>ccs</code> 标签，<code>技术分享</code>的分类，以及把这篇文章置顶，访问该篇文章需要输入密码 123456.</p>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><h3 id="分级标题："><a href="#分级标题：" class="headerlink" title="分级标题："></a>分级标题：</h3><p>行首加 “#” 表示不同级别的标题 (H1-H6)。“#” 后最好空一格。H1 最大，H6 最小。# H1## H2### H3#### H4##### H5###### H6</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示:</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><hr>
+<h3 id="文字强调："><a href="#文字强调：" class="headerlink" title="文字强调："></a>文字强调：</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">*斜体文字*</span><br><span class="line">**加粗文字**</span><br><span class="line">***粗斜体文字***</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示:<br><em>斜体文字</em><br><strong>加粗文字</strong><br><em><strong>粗斜体文字</strong></em></p>
+<hr>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>*+- 表示无序列表。</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">* 测试</span><br><span class="line">* 测试1</span><br><span class="line">* 测试2</span><br><span class="line">+ 测试3</span><br><span class="line">+ 测试4</span><br><span class="line">+ 测试5</span><br><span class="line">- 测试6</span><br><span class="line">- 测试7</span><br><span class="line">- 测试8</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示:</p>
+<ul>
+<li>测试</li>
+<li>测试 1</li>
+<li> 测试 2</li>
+</ul>
+<ul>
+<li> 测试 3</li>
+<li> 测试 4</li>
+<li> 测试 5</li>
+</ul>
+<ul>
+<li> 测试 6</li>
+<li> 测试 7</li>
+<li> 测试 8</li>
+</ul>
+<p>数字和点 1.2.3. 表示有序列表。字符后须空一格。</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. 测试1</span><br><span class="line">2. 测试2</span><br><span class="line">3. 测试3</span><br><span class="line">4. 测试4</span><br><span class="line">5. 测试5</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示:</p>
+<ol>
+<li>测试 1</li>
+<li> 测试 2</li>
+<li> 测试 3</li>
+<li> 测试 4</li>
+<li> 测试 5</li>
+</ol>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; 引用 &gt;&gt; 引用中的引用</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示:</p>
+<blockquote>
+<p>引用 &gt;&gt; 引用中的引用</p>
+</blockquote>
+<h3 id="文本居中的引用"><a href="#文本居中的引用" class="headerlink" title="文本居中的引用"></a>文本居中的引用</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">{% cq %} 文本居中的引用</span><br><span class="line">测试</span><br><span class="line">测试2  {% endcq %}</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示：</p>
+<blockquote class="blockquote-center">
+<p> 文本居中的引用<br>测试<br>测试 2  </p>
+
+</blockquote>
+
+<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">***</span><br><span class="line"></span><br><span class="line">---</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示:</p>
+<hr>
+<hr>
+<h3 id="删除线和下划线"><a href="#删除线和下划线" class="headerlink" title="删除线和下划线"></a>删除线和下划线</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">~~删除线~~</span><br><span class="line">&lt;u&gt;下划线&lt;/u&gt;</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示:<br><del>删除线</del><br><u>下划线</u></p>
+<h3 id="行内代码"><a href="#行内代码" class="headerlink" title="行内代码"></a>行内代码</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`hello world`</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示:<br><code>hell world</code></p>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>行首敲四个缩进空格，或者某段文本上下一行均加 ```, 或者某段文本上下一行均加～～～</p>
+<p>效果展示:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">代码块测试!</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="外链"><a href="#外链" class="headerlink" title="外链"></a>外链</h3><p>描述即外链的名称，可以随意修改.</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[描述](http://www.baidu.com)</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示:<br><a target="_blank" rel="noopener" href="http://www.baidu.com/">描述</a></p>
+<h3 id="插入图像"><a href="#插入图像" class="headerlink" title="插入图像"></a>插入图像</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![图像测试](https://www.baidu.com/img/bd_logo1.png?where=super)  #markdown插入的图片，无法设置大小</span><br><span class="line">&lt;img src=""https://www.baidu.com/img/bd_logo1.png?where=super" width="50%" height="50%" /&gt; #img src插入图片可以设置图片的大小</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示:<br><img src="https://www.baidu.com/img/bd_logo1.png?where=super" alt="图像测试"><br><img src="https://www.baidu.com/img/bd_logo1.png?where=super" width="50%" height="50%"> </p>
+<h3 id="缩进："><a href="#缩进：" class="headerlink" title="缩进："></a>缩进：</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　　　输入法中半角改为全角，缩进效果如同Word。或段首加几个，即缩进几格。</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示:<br>　　　输入法中半角改为全角，缩进效果如同 Word。或段首加几个，即缩进几格。</p>
+<h3 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在行中加&lt;br&gt;即换行，在行末加&lt;p&gt;即空行；在行中插入分隔线&lt;hr/&gt;测试分隔线中。</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示:<br>在行中加<br>即换行，在行末加</p><p>即空行；在行中插入分隔线</p><hr>测试分隔线中。<p></p>
+<h3 id="转义符"><a href="#转义符" class="headerlink" title="转义符"></a>转义符</h3><p>在特殊字符前面加 \ 可使特殊字符转换为正常字符，而不是被识别为 markdown 语法符号。如：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\\\`\*\_\{\}\[\]\(\)\#\+\-\.\!</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示:<br>\`*_{}[]()#+-.!</p>
+<h3 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">比如test[^1\],脚注2是[^2\]是这样的</span><br></pre></td></tr></tbody></table></figure>
+
+<p>效果展示:<br>比如 test<a href="%E8%84%9A%E6%B3%A8%E5%86%85%E5%AE%B9">^1</a>, 脚注 2 是 <a href="%E6%B5%8B%E8%AF%95%E8%84%9A%E6%B3%A8">^2</a> 是这样的</p>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p>使用竖线 “|” 分割开，表头下面加上横线，如下所示：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">姓名|性别|年龄|分数|</span><br><span class="line">|---|:---:|:--|---:| </span><br><span class="line">|张三|男|8|60|</span><br><span class="line">|李四|女|20|90|</span><br><span class="line">|默认|居中|左对齐|右对齐|</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示:</p>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th align="center">性别</th>
+<th align="left">年龄</th>
+<th align="right">分数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>张三</td>
+<td align="center">男</td>
+<td align="left"> 8</td>
+<td align="right">60</td>
+</tr>
+<tr>
+<td> 李四</td>
+<td align="center">女</td>
+<td align="left"> 20</td>
+<td align="right">90</td>
+</tr>
+<tr>
+<td> 默认</td>
+<td align="center">居中</td>
+<td align="left">左对齐</td>
+<td align="right">右对齐</td>
+</tr>
+</tbody></table>
+<h3 id="上标与下标"><a href="#上标与下标" class="headerlink" title="上标与下标"></a>上标与下标</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">测试文字&lt;sub&gt;这是下标文本&lt;/sub&gt;</span><br><span class="line"></span><br><span class="line">测试文字&lt;sup&gt;这是上标文本&lt;/sup&gt;</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示:<br>测试文字<sub>这是下标文本</sub></p>
+<p>测试文字<sup>这是上标文本</sup></p>
+<h3 id="字体加大和缩小"><a href="#字体加大和缩小" class="headerlink" title="字体加大和缩小"></a>字体加大和缩小</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;small&gt;&lt;small&gt;最小字号&lt;/small&gt;&lt;/small&gt;</span><br><span class="line">&lt;small&gt;小字号&lt;/small&gt;</span><br><span class="line">&lt;big&gt;大字号&lt;/big&gt;</span><br><span class="line">&lt;big&gt;&lt;big&gt;大大字号&lt;/big&gt;&lt;/big&gt;</span><br><span class="line">&lt;big&gt;&lt;big&gt;&lt;big&gt;大大大字号&lt;/big&gt;&lt;/big&gt;&lt;/big&gt;</span><br><span class="line">&lt;big&gt;&lt;big&gt;&lt;big&gt;&lt;big&gt;继续加可以继续大下去&lt;/big&gt;&lt;/big&gt;&lt;/big&gt;&lt;/big&gt;</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示:<br><small><small>最小字号</small></small><br><small>小字号</small><br><big>大字号</big><br><big><big>大大字号</big></big><br><big><big><big>大大大字号</big></big></big><br><big><big><big><big>继续加可以继续大下去</big></big></big></big></p>
+<h3 id="添加ICO图标"><a href="#添加ICO图标" class="headerlink" title="添加ICO图标"></a>添加 ICO 图标</h3><p>可以在 <a target="_blank" rel="noopener" href="https://fontawesome.com/v4.7.0/icons/">Font Awesome</a> 官网查找 ICO 图标，然后通过 <code>class</code> 方法添加。</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;i class="fa fa-pencil"&gt;&lt;/i&gt; 铅笔</span><br><span class="line">&lt;i class="fa fa-cloud-upload"&gt;&lt;/i&gt; 上传</span><br><span class="line">&lt;i class="fa fa-download"&gt;&lt;/i&gt; 下载</span><br><span class="line">&lt;i class="fa fa-download fa-lg"&gt;&lt;/i&gt; 下载变大 33%</span><br><span class="line">&lt;i class="fa fa-download fa-2x"&gt;&lt;/i&gt; 下载两倍大</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示：<br><i class="fa fa-pencil"></i> 铅笔<br><i class="fa fa-cloud-upload"></i> 上传<br><i class="fa fa-download"></i> 下载<br><i class="fa fa-download fa-lg"></i> 下载变大 33%<br><i class="fa fa-download fa-2x"></i> 下载两倍大</p>
+<h3 id="Bootstrap标注"><a href="#Bootstrap标注" class="headerlink" title="Bootstrap标注"></a>Bootstrap 标注</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">{% note class_name %} 文字内容 (md class_name supported) {% endnote %}</span><br><span class="line">{% note primary %} 文字内容 (md primary supported) {% endnote %}</span><br><span class="line">{% note default %} 文字内容 (md default supported) {% endnote %}</span><br><span class="line">{% note success %} 文字内容 (md success supported) {% endnote %}</span><br><span class="line">{% note info %} 文字内容 (md info supported) {% endnote %}</span><br><span class="line">{% note warning %} 文字内容 (md warning supported) {% endnote %}</span><br><span class="line">{% note danger %} 文字内容 (md danger supported) {% endnote %}</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示：</p>
+<details class="note "><summary><p>class_name</p>
+</summary>
+<p>文字内容 (md class_name supported) </p>
+
+</details>
+<div class="note primary"><p>文字内容 (md primary supported) </p>
+</div>
+<div class="note default"><p>文字内容 (md default supported) </p>
+</div>
+<div class="note success"><p>文字内容 (md success supported) </p>
+</div>
+<div class="note info"><p>文字内容 (md info supported) </p>
+</div>
+<div class="note warning"><p>文字内容 (md warning supported) </p>
+</div>
+<div class="note danger"><p>文字内容 (md danger supported) </p>
+</div>
+
+<h3 id="设置文字颜色"><a href="#设置文字颜色" class="headerlink" title="设置文字颜色"></a>设置文字颜色</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;font color="red"&gt;&lt;big&gt;测试内容&lt;/big&gt;&lt;/font&gt;</span><br><span class="line">&lt;font color="#0000FF"&gt;测试内容&lt;/font&gt;</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示：<br><font color="red"><big>测试内容</big></font><br><font color="#0000FF">测试内容</font></p>
+<h3 id="待办事宜列表"><a href="#待办事宜列表" class="headerlink" title="待办事宜列表"></a>待办事宜列表</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- [ ] 支持以 PDF 格式导出文稿</span><br><span class="line">- [ ] 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率</span><br><span class="line">- [x] 新增 Todo 列表功能</span><br><span class="line">- [x] 修复 LaTex 公式渲染问题</span><br><span class="line">- [x] 新增 LaTex 公式编号功能</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示：</p>
+<ul>
+<li><input disabled="" type="checkbox"> 支持以 PDF 格式导出文稿</li>
+<li><input disabled="" type="checkbox"> 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率</li>
+<li><input checked="" disabled="" type="checkbox"> 新增 Todo 列表功能</li>
+<li><input checked="" disabled="" type="checkbox"> 修复 LaTex 公式渲染问题</li>
+<li><input checked="" disabled="" type="checkbox"> 新增 LaTex 公式编号功能</li>
+</ul>
+<h3 id="行内HTML元素"><a href="#行内HTML元素" class="headerlink" title="行内HTML元素"></a>行内 HTML 元素</h3><p><code>&lt;kbd&gt;</code> 标签定义键盘文本。</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;kbd&gt;Ctrl&lt;kbd&gt;+&lt;kbd&gt;Alt&lt;kbd&gt;+&lt;kbd&gt;Del&lt;kbd&gt; 重启电脑</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示：<br><kbd>Ctrl <kbd>+ <kbd>Alt <kbd>+ <kbd>Del <kbd> 重启电脑</kbd></kbd></kbd></kbd></kbd></kbd></p>
+<h3 id="辅助排版符号"><a href="#辅助排版符号" class="headerlink" title="辅助排版符号"></a>辅助排版符号</h3><p>键盘打不出的，复制 - 粘贴即可</p>
+<p>直角引号比较古典，尤其用在标题中：「」和『』代替 “ ”</p>
+<p>▍这个加在分级标题前效果好</p>
+<p>▏这个在段落前等于是空格</p>
+<p>各种三角 ▷ ◁ ▶ ◀ △▽▲▼</p>
+<p>➥ 和 → 还有 ˉˉ↴ 以及 ➨ 起引导视线的作用</p>
+<p>☛ 这个是点击</p>
+<p>☑ 和 ✔ 是已经选择，OK</p>
+<p>✘ 是错误，删除，NO</p>
+<p>✄ 是剪切</p>
+<p>❐ 这个是复制粘贴</p>
+<p>✚ 是添加，补充，选项</p>
+<p>☷ 是列表，调整格式</p>
+<p>① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩ 这样的数字是不是很酷</p>
+<p>罗马数字（Ⅰ・Ⅱ・Ⅲ・Ⅳ・Ⅴ・Ⅵ・Ⅶ・Ⅷ・Ⅸ・Ⅹ・Ⅺ・Ⅻ）比较优雅复古</p>
+<h3 id="居中和右对齐"><a href="#居中和右对齐" class="headerlink" title="居中和右对齐"></a>居中和右对齐</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 居中 --&gt;</span><br><span class="line">&lt;center&gt;内容&lt;/center&gt;</span><br><span class="line">&lt;!-- 右对齐 --&gt;</span><br><span class="line">&lt;div style="text-align:right"&gt;内容&lt;/div&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>效果展示：</p>
+<!-- 居中 -->
+<center>内容</center>
+<!-- 右对齐 -->
+<div style="text-align:right">内容</div>
+
+<h3 id="选项卡"><a href="#选项卡" class="headerlink" title="选项卡"></a>选项卡</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">{% tabs 选项卡, 2 %}</span><br><span class="line">&lt;!-- tab --&gt;</span><br><span class="line">**这是选项卡 1** 呵呵哈哈哈哈哈哈</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab --&gt;</span><br><span class="line">**这是选项卡 2** 额。。。</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab --&gt;</span><br><span class="line">**这是选项卡 3** 哇，你找到我了！</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">{% endtabs %}</span><br></pre></td></tr></tbody></table></figure>
+<p>效果展示：</p>
+<div class="tabs" id="选项卡"><ul class="nav-tabs"><li class="tab"><a href="#选项卡-1">选项卡 1</a></li><li class="tab active"><a href="#选项卡-2">选项卡 2</a></li><li class="tab"><a href="#选项卡-3">选项卡 3</a></li></ul><div class="tab-content"><div class="tab-pane" id="选项卡-1"><p><strong>这是选项卡 1</strong> 呵呵哈哈哈哈哈哈</p></div><div class="tab-pane active" id="选项卡-2"><p><strong>这是选项卡 2</strong> 额。。。</p></div><div class="tab-pane" id="选项卡-3"><p><strong>这是选项卡 3</strong> 哇，你找到我了！</p></div></div></div>
+
+<h3 id="按钮样式"><a href="#按钮样式" class="headerlink" title="按钮样式"></a>按钮样式</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{% btn https://almostover.ru/2016-01/hexo-theme-next-test/#Button-tag-test, 更多关于按钮的使用点这里, download fa-lg fa-fw %}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="效果展示："><a href="#效果展示：" class="headerlink" title="效果展示："></a>效果展示：<br><a class="btn" target="_blank" rel="noopener" href="https://almostover.ru/2016-01/hexo-theme-next-test/#Button-tag-test"><i class="fa fa-download fa-lg fa-fw"></i>更多关于按钮的使用点这里</a></h2><h2 id="转义码"><a href="#转义码" class="headerlink" title="转义码"></a>转义码</h2><table>
+<thead>
+<tr>
+<th align="center">字符</th>
+<th align="center">转义码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center"><code>&amp;#09;</code></td>
+<td>制表符 Horizontal tab</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"><code>&amp;#10;</code></td>
+<td>换行 Line feed</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"><code>&amp;#13;</code></td>
+<td>回车 Carriage Return</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"><code>&amp;#32;</code></td>
+<td>Space</td>
+</tr>
+<tr>
+<td align="center">!</td>
+<td align="center"><code>&amp;#33;</code></td>
+<td>惊叹号 Exclamation mark</td>
+</tr>
+<tr>
+<td align="center">”</td>
+<td align="center"><code>&amp;#34;</code></td>
+<td>uot; 双引号 Quotation mark</td>
+</tr>
+<tr>
+<td align="center">#</td>
+<td align="center"><code>&amp;#35;</code></td>
+<td>数字标志 Number sign</td>
+</tr>
+<tr>
+<td align="center">$</td>
+<td align="center"><code>&amp;#36;</code></td>
+<td>美元标志 Dollar sign</td>
+</tr>
+<tr>
+<td align="center">%</td>
+<td align="center"><code>&amp;#37;</code></td>
+<td>百分号 Percent sign</td>
+</tr>
+<tr>
+<td align="center">&amp;</td>
+<td align="center"><code>&amp;#38;</code></td>
+<td>mp; Ampersand</td>
+</tr>
+<tr>
+<td align="center">‘</td>
+<td align="center"><code>&amp;#39;</code></td>
+<td>单引号 Apostrophe</td>
+</tr>
+<tr>
+<td align="center">(</td>
+<td align="center"><code>&amp;#40;</code></td>
+<td>小括号左边部分 Left parenthesi</td>
+</tr>
+<tr>
+<td align="center">)</td>
+<td align="center"><code>&amp;#41;</code></td>
+<td>小括号右边部分 Right parenthes</td>
+</tr>
+<tr>
+<td align="center">*</td>
+<td align="center"><code>&amp;#42;</code></td>
+<td>星号 Asterisk</td>
+</tr>
+<tr>
+<td align="center">+</td>
+<td align="center"><code>&amp;#43;</code></td>
+<td>加号 Plus sign</td>
+</tr>
+<tr>
+<td align="center">,</td>
+<td align="center"><code>&amp;#44;</code></td>
+<td>逗号 Comma</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center"><code>&amp;#45;</code></td>
+<td>连字号 Hyphen</td>
+</tr>
+<tr>
+<td align="center">.</td>
+<td align="center"><code>&amp;#46;</code></td>
+<td>句号 Period (fullstop)</td>
+</tr>
+<tr>
+<td align="center">/</td>
+<td align="center"><code>&amp;#47;</code></td>
+<td>斜杠 Solidus (slash)</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center"><code>&amp;#48;</code></td>
+<td>数字 0 Digit 0</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center"><code>&amp;#49;</code></td>
+<td>数字 1 Digit 1</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center"><code>&amp;#50;</code></td>
+<td>数字 2 Digit 2</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center"><code>&amp;#51;</code></td>
+<td>数字 3 Digit 3</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center"><code>&amp;#52;</code></td>
+<td>数字 4 Digit 4</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center"><code>&amp;#53;</code></td>
+<td>数字 5 Digit 5</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center"><code>&amp;#54;</code></td>
+<td>数字 6 Digit 6</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center"><code>&amp;#55;</code></td>
+<td>数字 7 Digit 7</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center"><code>&amp;#56;</code></td>
+<td>数字 8 Digit 8</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center"><code>&amp;#57;</code></td>
+<td>数字 9 Digit 9</td>
+</tr>
+<tr>
+<td align="center">:</td>
+<td align="center"><code>&amp;#58;</code></td>
+<td>冒号 Colon</td>
+</tr>
+<tr>
+<td align="center">;</td>
+<td align="center"><code>&amp;#59;</code></td>
+<td>分号 Semicolon</td>
+</tr>
+<tr>
+<td align="center">&lt;</td>
+<td align="center"><code>&amp;#60;</code></td>
+<td>小于号 Less than</td>
+</tr>
+<tr>
+<td align="center">=</td>
+<td align="center"><code>&amp;#61;</code></td>
+<td>等于符号 Equals sign</td>
+</tr>
+<tr>
+<td align="center">&gt;</td>
+<td align="center"><code>&amp;#62;</code></td>
+<td>大于号 Greater than</td>
+</tr>
+<tr>
+<td align="center">?</td>
+<td align="center"><code>&amp;#63;</code></td>
+<td>问号 Question mark</td>
+</tr>
+<tr>
+<td align="center">@</td>
+<td align="center"><code>&amp;#64;</code></td>
+<td>Commercial at</td>
+</tr>
+<tr>
+<td align="center">A</td>
+<td align="center"><code>&amp;#65;</code></td>
+<td>大写 A Capital A</td>
+</tr>
+<tr>
+<td align="center">B</td>
+<td align="center"><code>&amp;#66;</code></td>
+<td>大写 B Capital B</td>
+</tr>
+<tr>
+<td align="center">C</td>
+<td align="center"><code>&amp;#67;</code></td>
+<td>大写 C Capital C</td>
+</tr>
+<tr>
+<td align="center">D</td>
+<td align="center"><code>&amp;#68;</code></td>
+<td>大写 D Capital D</td>
+</tr>
+<tr>
+<td align="center">E</td>
+<td align="center"><code>&amp;#69;</code></td>
+<td>大写 E Capital E</td>
+</tr>
+<tr>
+<td align="center">F</td>
+<td align="center"><code>&amp;#70;</code></td>
+<td>大写 F Capital F</td>
+</tr>
+<tr>
+<td align="center">G</td>
+<td align="center"><code>&amp;#71;</code></td>
+<td>大写 G Capital G</td>
+</tr>
+<tr>
+<td align="center">H</td>
+<td align="center"><code>&amp;#72;</code></td>
+<td>大写 H Capital H</td>
+</tr>
+<tr>
+<td align="center">I</td>
+<td align="center"><code>&amp;#73;</code></td>
+<td>大写 J Capital I</td>
+</tr>
+<tr>
+<td align="center">J</td>
+<td align="center"><code>&amp;#74;</code></td>
+<td>大写 K Capital J</td>
+</tr>
+<tr>
+<td align="center">K</td>
+<td align="center"><code>&amp;#75;</code></td>
+<td>大写 L Capital K</td>
+</tr>
+<tr>
+<td align="center">L</td>
+<td align="center"><code>&amp;#76;</code></td>
+<td>大写 K Capital L</td>
+</tr>
+<tr>
+<td align="center">M</td>
+<td align="center"><code>&amp;#77;</code></td>
+<td>大写 M Capital M</td>
+</tr>
+<tr>
+<td align="center">N</td>
+<td align="center"><code>&amp;#78;</code></td>
+<td>大写 N Capital N</td>
+</tr>
+<tr>
+<td align="center">O</td>
+<td align="center"><code>&amp;#79;</code></td>
+<td>大写 O Capital O</td>
+</tr>
+<tr>
+<td align="center">P</td>
+<td align="center"><code>&amp;#80;</code></td>
+<td>大写 P Capital P</td>
+</tr>
+<tr>
+<td align="center">Q</td>
+<td align="center"><code>&amp;#81;</code></td>
+<td>大写 Q Capital Q</td>
+</tr>
+<tr>
+<td align="center">R</td>
+<td align="center"><code>&amp;#82;</code></td>
+<td>大写 R Capital R</td>
+</tr>
+<tr>
+<td align="center">S</td>
+<td align="center"><code>&amp;#83;</code></td>
+<td>大写 S Capital S</td>
+</tr>
+<tr>
+<td align="center">T</td>
+<td align="center"><code>&amp;#84;</code></td>
+<td>大写 T Capital T</td>
+</tr>
+<tr>
+<td align="center">U</td>
+<td align="center"><code>&amp;#85;</code></td>
+<td>大写 U Capital U</td>
+</tr>
+<tr>
+<td align="center">V</td>
+<td align="center"><code>&amp;#86;</code></td>
+<td>大写 V Capital V</td>
+</tr>
+<tr>
+<td align="center">W</td>
+<td align="center"><code>&amp;#87;</code></td>
+<td>大写 W Capital W</td>
+</tr>
+<tr>
+<td align="center">X</td>
+<td align="center"><code>&amp;#88;</code></td>
+<td>大写 X Capital X</td>
+</tr>
+<tr>
+<td align="center">Y</td>
+<td align="center"><code>&amp;#89;</code></td>
+<td>大写 Y Capital Y</td>
+</tr>
+<tr>
+<td align="center">Z</td>
+<td align="center"><code>&amp;#90;</code></td>
+<td>大写 Z Capital Z</td>
+</tr>
+<tr>
+<td align="center">[</td>
+<td align="center"><code>&amp;#91;</code></td>
+<td>中括号左边部分 Left square b</td>
+</tr>
+<tr>
+<td align="center">|<code>&amp;#92;</code></td>
+<td align="center">反斜杠 Reverse solidus (</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">]</td>
+<td align="center"><code>&amp;#93;</code></td>
+<td>中括号右边部分 Right square br</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center"><code>&amp;#94;</code></td>
+<td>Caret</td>
+</tr>
+<tr>
+<td align="center">_</td>
+<td align="center"><code>&amp;#95;</code></td>
+<td>下划线 Horizontal bar (und</td>
+</tr>
+<tr>
+<td align="center">`</td>
+<td align="center"><code>&amp;#96;</code></td>
+<td>尖重音符 Acute accent</td>
+</tr>
+<tr>
+<td align="center">a</td>
+<td align="center"><code>&amp;#97;</code></td>
+<td>小写 a Small a</td>
+</tr>
+<tr>
+<td align="center">b</td>
+<td align="center"><code>&amp;#98;</code></td>
+<td>小写 b Small b</td>
+</tr>
+<tr>
+<td align="center">c</td>
+<td align="center"><code>&amp;#99;</code></td>
+<td>小写 c Small c</td>
+</tr>
+<tr>
+<td align="center">d</td>
+<td align="center"><code>&amp;#100;</code></td>
+<td>小写 d Small d</td>
+</tr>
+<tr>
+<td align="center">e</td>
+<td align="center"><code>&amp;#101;</code></td>
+<td>小写 e Small e</td>
+</tr>
+<tr>
+<td align="center">f</td>
+<td align="center"><code>&amp;#102;</code></td>
+<td>小写 f Small f</td>
+</tr>
+<tr>
+<td align="center">g</td>
+<td align="center"><code>&amp;#103;</code></td>
+<td>小写 g Small g</td>
+</tr>
+<tr>
+<td align="center">h</td>
+<td align="center"><code>&amp;#104;</code></td>
+<td>小写 h Small h</td>
+</tr>
+<tr>
+<td align="center">i</td>
+<td align="center"><code>&amp;#105;</code></td>
+<td>小写 i Small i</td>
+</tr>
+<tr>
+<td align="center">j</td>
+<td align="center"><code>&amp;#106;</code></td>
+<td>小写 j Small j</td>
+</tr>
+<tr>
+<td align="center">k</td>
+<td align="center"><code>&amp;#107;</code></td>
+<td>小写 k Small k</td>
+</tr>
+<tr>
+<td align="center">l</td>
+<td align="center"><code>&amp;#108;</code></td>
+<td>小写 l Small l</td>
+</tr>
+<tr>
+<td align="center">m</td>
+<td align="center"><code>&amp;#109;</code></td>
+<td>小写 m Small m</td>
+</tr>
+<tr>
+<td align="center">n</td>
+<td align="center"><code>&amp;#110;</code></td>
+<td>小写 n Small n</td>
+</tr>
+<tr>
+<td align="center">o</td>
+<td align="center"><code>&amp;#111;</code></td>
+<td>小写 o Small o</td>
+</tr>
+<tr>
+<td align="center">p</td>
+<td align="center"><code>&amp;#112;</code></td>
+<td>小写 p Small p</td>
+</tr>
+<tr>
+<td align="center">q</td>
+<td align="center"><code>&amp;#113;</code></td>
+<td>小写 q Small q</td>
+</tr>
+<tr>
+<td align="center">r</td>
+<td align="center"><code>&amp;#114;</code></td>
+<td>小写 r Small r</td>
+</tr>
+<tr>
+<td align="center">s</td>
+<td align="center"><code>&amp;#115;</code></td>
+<td>小写 s Small s</td>
+</tr>
+<tr>
+<td align="center">t</td>
+<td align="center"><code>&amp;#116;</code></td>
+<td>小写 t Small t</td>
+</tr>
+<tr>
+<td align="center">u</td>
+<td align="center"><code>&amp;#117;</code></td>
+<td>小写 u Small u</td>
+</tr>
+<tr>
+<td align="center">v</td>
+<td align="center"><code>&amp;#118;</code></td>
+<td>小写 v Small v</td>
+</tr>
+<tr>
+<td align="center">w</td>
+<td align="center"><code>&amp;#119;</code></td>
+<td>小写 w Small w</td>
+</tr>
+<tr>
+<td align="center">x</td>
+<td align="center"><code>&amp;#120;</code></td>
+<td>小写 x Small x</td>
+</tr>
+<tr>
+<td align="center">y</td>
+<td align="center"><code>&amp;#121;</code></td>
+<td>小写 y Small y</td>
+</tr>
+<tr>
+<td align="center">z</td>
+<td align="center"><code>&amp;#122;</code></td>
+<td>小写 z Small z</td>
+</tr>
+<tr>
+<td align="center">{</td>
+<td align="center"><code>&amp;#123;</code></td>
+<td>大括号左边部分 Left curly bra</td>
+</tr>
+<tr>
+<td align="center">|<code>&amp;#124;</code></td>
+<td align="center">竖线 Vertical bar</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">}</td>
+<td align="center"><code>&amp;#125;</code></td>
+<td>大括号右边部分 Right curly br</td>
+</tr>
+<tr>
+<td align="center">~</td>
+<td align="center"><code>&amp;#126;</code></td>
+<td>Tilde</td>
+</tr>
+<tr>
+<td align="center">—</td>
+<td align="center"><code>&amp;#127;</code></td>
+<td>未使用 Unused</td>
+</tr>
+<tr>
+<td align="center">&amp;</td>
+<td align="center"><code>&amp;#160;</code></td>
+<td>空格 Nonbreaking space</td>
+</tr>
+<tr>
+<td align="center">¡</td>
+<td align="center"><code>&amp;#161;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">￠</td>
+<td align="center"><code>&amp;#162;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">￡</td>
+<td align="center"><code>&amp;#163;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">¤</td>
+<td align="center"><code>&amp;#164;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">￥</td>
+<td align="center"><code>&amp;#165;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">|<code>&amp;#166;</code></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">§</td>
+<td align="center"><code>&amp;#167;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">¨</td>
+<td align="center"><code>&amp;#168;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">©</td>
+<td align="center"><code>&amp;#169;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">a</td>
+<td align="center"><code>&amp;#170;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">«</td>
+<td align="center"><code>&amp;#171;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">¬</td>
+<td align="center"><code>&amp;#172;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">­</td>
+<td align="center"><code>&amp;#173;</code></td>
+<td>­ Soft hyphen</td>
+</tr>
+<tr>
+<td align="center">®</td>
+<td align="center"><code>&amp;#174;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ˉ</td>
+<td align="center"><code>&amp;#175;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">°</td>
+<td align="center"><code>&amp;#176;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">±</td>
+<td align="center"><code>&amp;#177;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center"><code>&amp;#178;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center"><code>&amp;#179;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">′</td>
+<td align="center"><code>&amp;#180;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">μ</td>
+<td align="center"><code>&amp;#181;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">¶</td>
+<td align="center"><code>&amp;#182;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">·</td>
+<td align="center"><code>&amp;#183;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">¸</td>
+<td align="center"><code>&amp;#184;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center"><code>&amp;#185;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">o</td>
+<td align="center"><code>&amp;#186;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">»</td>
+<td align="center"><code>&amp;#187;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">¼</td>
+<td align="center"><code>&amp;#188;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">½</td>
+<td align="center"><code>&amp;#189;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">¾</td>
+<td align="center"><code>&amp;#190;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">¿</td>
+<td align="center"><code>&amp;#191;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">à</td>
+<td align="center"><code>&amp;#192;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">á</td>
+<td align="center"><code>&amp;#193;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Â</td>
+<td align="center"><code>&amp;#194;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ã</td>
+<td align="center"><code>&amp;#195;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ä</td>
+<td align="center"><code>&amp;#196;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Å</td>
+<td align="center"><code>&amp;#197;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Æ</td>
+<td align="center"><code>&amp;#198;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ç</td>
+<td align="center"><code>&amp;#199;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">è</td>
+<td align="center"><code>&amp;#200;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">é</td>
+<td align="center"><code>&amp;#201;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ê</td>
+<td align="center"><code>&amp;#202;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ë</td>
+<td align="center"><code>&amp;#203;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ì</td>
+<td align="center"><code>&amp;#204;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">í</td>
+<td align="center"><code>&amp;#205;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Î</td>
+<td align="center"><code>&amp;#206;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ï</td>
+<td align="center"><code>&amp;#207;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">D</td>
+<td align="center"><code>&amp;#208;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ñ</td>
+<td align="center"><code>&amp;#209;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ò</td>
+<td align="center"><code>&amp;#210;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ó</td>
+<td align="center"><code>&amp;#211;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ô</td>
+<td align="center"><code>&amp;#212;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Õ</td>
+<td align="center"><code>&amp;#213;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ö</td>
+<td align="center"><code>&amp;#214;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">×</td>
+<td align="center"><code>&amp;#215;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ø</td>
+<td align="center"><code>&amp;#216;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ù</td>
+<td align="center"><code>&amp;#217;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ú</td>
+<td align="center"><code>&amp;#218;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Û</td>
+<td align="center"><code>&amp;#219;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ü</td>
+<td align="center"><code>&amp;#220;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Y</td>
+<td align="center"><code>&amp;#221;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">T</td>
+<td align="center"><code>&amp;#222;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ß</td>
+<td align="center"><code>&amp;#223;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">à</td>
+<td align="center"><code>&amp;#224;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">á</td>
+<td align="center"><code>&amp;#225;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">a</td>
+<td align="center"><code>&amp;#226;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ã</td>
+<td align="center"><code>&amp;#227;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ä</td>
+<td align="center"><code>&amp;#228;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">å</td>
+<td align="center"><code>&amp;#229;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">æ</td>
+<td align="center"><code>&amp;#230;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ç</td>
+<td align="center"><code>&amp;#231;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">è</td>
+<td align="center"><code>&amp;#232;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">é</td>
+<td align="center"><code>&amp;#233;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ê</td>
+<td align="center"><code>&amp;#234;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ë</td>
+<td align="center"><code>&amp;#235;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ì</td>
+<td align="center"><code>&amp;#236;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">í</td>
+<td align="center"><code>&amp;#237;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">î</td>
+<td align="center"><code>&amp;#238;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ï</td>
+<td align="center"><code>&amp;#239;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">e</td>
+<td align="center"><code>&amp;#240;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ñ</td>
+<td align="center"><code>&amp;#241;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ò</td>
+<td align="center"><code>&amp;#242;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ó</td>
+<td align="center"><code>&amp;#243;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ô</td>
+<td align="center"><code>&amp;#244;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">õ</td>
+<td align="center"><code>&amp;#245;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ö</td>
+<td align="center"><code>&amp;#246;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">÷</td>
+<td align="center"><code>&amp;#247;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ø</td>
+<td align="center"><code>&amp;#248;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ù</td>
+<td align="center"><code>&amp;#249;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ú</td>
+<td align="center"><code>&amp;#250;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">û</td>
+<td align="center"><code>&amp;#251;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ü</td>
+<td align="center"><code>&amp;#252;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">y</td>
+<td align="center"><code>&amp;#253;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">t</td>
+<td align="center"><code>&amp;#254;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ÿ</td>
+<td align="center"><code>&amp;#255;</code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ƒ</td>
+<td align="center"><code>&amp;fnof; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Α</td>
+<td align="center"><code>&amp;Alpha; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Β</td>
+<td align="center"><code>&amp;Beta; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Γ</td>
+<td align="center"><code>&amp;Gamma; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Δ</td>
+<td align="center"><code>&amp;Delta; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ε</td>
+<td align="center"><code>&amp;Epsilon; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ζ</td>
+<td align="center"><code>&amp;Zeta; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Η</td>
+<td align="center"><code>&amp;Eta; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Θ</td>
+<td align="center"><code>&amp;Theta; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ι</td>
+<td align="center"><code>&amp;Iota; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Κ</td>
+<td align="center"><code>&amp;Kappa; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Λ</td>
+<td align="center"><code>&amp;Lambda; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Μ</td>
+<td align="center"><code>&amp;Mu; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ν</td>
+<td align="center"><code>&amp;Nu; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ξ</td>
+<td align="center"><code>&amp;Xi; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ο</td>
+<td align="center"><code>&amp;Omicron; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Π</td>
+<td align="center"><code>&amp;Pi; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ρ</td>
+<td align="center"><code>&amp;Rho; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Σ</td>
+<td align="center"><code>&amp;Sigma; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Τ</td>
+<td align="center"><code>&amp;Tau; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Υ</td>
+<td align="center"><code>&amp;Upsilon; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Φ</td>
+<td align="center"><code>&amp;Phi; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Χ</td>
+<td align="center"><code>&amp;Chi; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ψ</td>
+<td align="center"><code>&amp;Psi; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ω</td>
+<td align="center"><code>&amp;Omega; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">α</td>
+<td align="center"><code>&amp;alpha; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">β</td>
+<td align="center"><code>&amp;beta; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">γ</td>
+<td align="center"><code>&amp;gamma; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">δ</td>
+<td align="center"><code>&amp;delta; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ε</td>
+<td align="center"><code>&amp;epsilon; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ζ</td>
+<td align="center"><code>&amp;zeta; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">η</td>
+<td align="center"><code>&amp;eta; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">θ</td>
+<td align="center"><code>&amp;theta; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ι</td>
+<td align="center"><code>&amp;iota; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">κ</td>
+<td align="center"><code>&amp;kappa; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">λ</td>
+<td align="center"><code>&amp;lambda; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">μ</td>
+<td align="center"><code>&amp;mu; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ν</td>
+<td align="center"><code>&amp;nu; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ξ</td>
+<td align="center"><code>&amp;xi; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ο</td>
+<td align="center"><code>&amp;omicron; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">π</td>
+<td align="center"><code>&amp;pi; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ρ</td>
+<td align="center"><code>&amp;rho; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ς</td>
+<td align="center"><code>&amp;sigmaf; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">σ</td>
+<td align="center"><code>&amp;sigma; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">τ</td>
+<td align="center"><code>&amp;tau; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">υ</td>
+<td align="center"><code>&amp;upsilon; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">φ</td>
+<td align="center"><code>&amp;phi; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">χ</td>
+<td align="center"><code>&amp;chi; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ψ</td>
+<td align="center"><code>&amp;psi; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ω</td>
+<td align="center"><code>&amp;omega; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ϑ</td>
+<td align="center"><code>&amp;thetasym; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ϒ</td>
+<td align="center"><code>&amp;upsih; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ϖ</td>
+<td align="center"><code>&amp;piv; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">•</td>
+<td align="center"><code>&amp;bull; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">…</td>
+<td align="center"><code>&amp;hellip; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">′</td>
+<td align="center"><code>&amp;prime; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">″</td>
+<td align="center"><code>&amp;Prime; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">￣</td>
+<td align="center"><code>&amp;oline; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⁄</td>
+<td align="center"><code>&amp;frasl; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">℘</td>
+<td align="center"><code>&amp;weierp; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ℑ</td>
+<td align="center"><code>&amp;image; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ℜ</td>
+<td align="center"><code>&amp;real; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">™</td>
+<td align="center"><code>&amp;trade; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ℵ</td>
+<td align="center"><code>&amp;alefsym; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">←</td>
+<td align="center"><code>&amp;larr; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">↑</td>
+<td align="center"><code>&amp;uarr; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">→</td>
+<td align="center"><code>&amp;rarr; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">↓</td>
+<td align="center"><code>&amp;darr; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">↔</td>
+<td align="center"><code>&amp;harr; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">↵</td>
+<td align="center"><code>&amp;crarr; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⇐</td>
+<td align="center"><code>&amp;lArr; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⇑</td>
+<td align="center"><code>&amp;uArr; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⇒</td>
+<td align="center"><code>&amp;rArr; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⇓</td>
+<td align="center"><code>&amp;dArr; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⇔</td>
+<td align="center"><code>&amp;hArr; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∀</td>
+<td align="center"><code>&amp;forall; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∂</td>
+<td align="center"><code>&amp;part; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∃</td>
+<td align="center"><code>&amp;exist; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∅</td>
+<td align="center"><code>&amp;empty; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∇</td>
+<td align="center"><code>&amp;nabla; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∈</td>
+<td align="center"><code>&amp;isin; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∉</td>
+<td align="center"><code>&amp;notin; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∋</td>
+<td align="center"><code>&amp;ni; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∏</td>
+<td align="center"><code>&amp;prod; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∑</td>
+<td align="center"><code>&amp;sum; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">−</td>
+<td align="center"><code>&amp;minus; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∗</td>
+<td align="center"><code>&amp;lowast; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">√</td>
+<td align="center"><code>&amp;radic; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∝</td>
+<td align="center"><code>&amp;prop; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∞</td>
+<td align="center"><code>&amp;infin; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∠</td>
+<td align="center"><code>&amp;ang; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∧</td>
+<td align="center"><code>&amp;and; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∨</td>
+<td align="center"><code>&amp;or; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∩</td>
+<td align="center"><code>&amp;cap; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∪</td>
+<td align="center"><code>&amp;cup; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∫</td>
+<td align="center"><code>&amp;int; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">∴</td>
+<td align="center"><code>&amp;there4; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">～</td>
+<td align="center"><code>&amp;sim; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">≅</td>
+<td align="center"><code>&amp;cong; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">≈</td>
+<td align="center"><code>&amp;asymp; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">≠</td>
+<td align="center"><code>&amp;ne; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">≡</td>
+<td align="center"><code>&amp;equiv; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">≤</td>
+<td align="center"><code>&amp;le; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">≥</td>
+<td align="center"><code>&amp;ge; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⊂</td>
+<td align="center"><code>&amp;sub; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⊃</td>
+<td align="center"><code>&amp;sup; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⊄</td>
+<td align="center"><code>&amp;nsub; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⊆</td>
+<td align="center"><code>&amp;sube; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⊇</td>
+<td align="center"><code>&amp;supe; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⊕</td>
+<td align="center"><code>&amp;oplus; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⊗</td>
+<td align="center"><code>&amp;otimes; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⊥</td>
+<td align="center"><code>&amp;perp; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⋅</td>
+<td align="center"><code>&amp;sdot; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⌈</td>
+<td align="center"><code>&amp;lceil; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⌉</td>
+<td align="center"><code>&amp;rceil; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⌊</td>
+<td align="center"><code>&amp;lfloor; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⌋</td>
+<td align="center"><code>&amp;rfloor; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⟨</td>
+<td align="center"><code>&amp;lang; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">⟩</td>
+<td align="center"><code>&amp;rang; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">◊</td>
+<td align="center"><code>&amp;loz; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">♠</td>
+<td align="center"><code>&amp;spades; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">♣</td>
+<td align="center"><code>&amp;clubs; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">♥</td>
+<td align="center"><code>&amp;hearts; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">♦</td>
+<td align="center"><code>&amp;diams; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">“</td>
+<td align="center"><code>&amp;quot; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">&amp;</td>
+<td align="center"><code>&amp;amp; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">&lt;</td>
+<td align="center"><code>&amp;lt; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">&gt;</td>
+<td align="center"><code>&amp;gt; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Œ</td>
+<td align="center"><code>&amp;OElig; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">œ</td>
+<td align="center"><code>&amp;oelig; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Š</td>
+<td align="center"><code>&amp;Scaron; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">š</td>
+<td align="center"><code>&amp;scaron; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">Ÿ</td>
+<td align="center"><code>&amp;Yuml; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">ˆ</td>
+<td align="center"><code>&amp;circ; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">˜</td>
+<td align="center"><code>&amp;tilde; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">&amp;</td>
+<td align="center"><code>nsp; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">&amp;</td>
+<td align="center"><code>msp; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">&amp;</td>
+<td align="center"><code>hinsp; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">‌</td>
+<td align="center"><code>&amp;zwnj; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">‍</td>
+<td align="center"><code>&amp;zwj; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">‎</td>
+<td align="center"><code>&amp;lrm; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">‏</td>
+<td align="center"><code>&amp;rlm; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">–</td>
+<td align="center"><code>&amp;ndash; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">—</td>
+<td align="center"><code>&amp;mdash; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">‘</td>
+<td align="center"><code>&amp;lsquo; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">’</td>
+<td align="center"><code>&amp;rsquo; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">‚</td>
+<td align="center"><code>&amp;sbquo; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">“</td>
+<td align="center"><code>&amp;ldquo; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">”</td>
+<td align="center"><code>&amp;rdquo; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">„</td>
+<td align="center"><code>&amp;bdquo; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">†</td>
+<td align="center"><code>&amp;dagger; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">‡</td>
+<td align="center"><code>&amp;Dagger; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">‰</td>
+<td align="center"><code>&amp;permil; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">‹</td>
+<td align="center"><code>&amp;lsaquo; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">›</td>
+<td align="center"><code>&amp;rsaquo; </code></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">€</td>
+<td align="center"><code>&amp;euro;</code></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="颜色表"><a href="#颜色表" class="headerlink" title="颜色表"></a><font color="#0000FF">颜色表</font></h2><table><tbody><tr><th>颜色名</th><th>十六进制颜色值</th><th>颜色</th></tr><tr><td><font color="AliceBlue"> AliceBlue</font></td><td><font color="#F0F8FF">#F0F8FF</font></td><td bgcolor="#F0F8FF">rgb(240, 248, 255)</td></tr><tr><td><font color="AntiqueWhite">AntiqueWhite</font></td><td><font color="#FAEBD7">#FAEBD7</font></td><td bgcolor="#FAEBD7">rgb(250, 235, 215)</td></tr><tr><td><font color="Aqua">Aqua</font></td><td><font color="#00FFFF">#00FFFF</font></td><td bgcolor="#00FFFF">rgb(0, 255, 255)</td></tr><tr><td><font color="Aquamarine">Aquamarine</font></td><td><font color="#7FFFD4">#7FFFD4</font></td><td bgcolor="#7FFFD4">rgb(127, 255, 212)</td></tr><tr><td><font color="Azure">Azure</font></td><td><font color="#F0FFFF">#F0FFFF</font></td><td bgcolor="#F0FFFF">rgb(240, 255, 255)</td></tr><tr><td><font color="Beige">Beige</font></td><td><font color="#F5F5DC">#F5F5DC</font></td><td bgcolor="#F5F5DC">rgb(245, 245, 220)</td></tr><tr><td><font color="Bisque">Bisque</font></td><td><font color="#FFE4C4">#FFE4C4</font></td><td bgcolor="#FFE4C4">rgb(255, 228, 196)</td></tr><tr><td><font color="Black">Black</font></td><td><font color="#000000">#000000</font></td><td bgcolor="#000000">rgb(0, 0, 0)</td></tr><tr><td><font color="BlanchedAlmond">BlanchedAlmond</font></td><td><font color="#FFEBCD">#FFEBCD</font></td><td bgcolor="#FFEBCD">rgb(255, 235, 205)</td></tr><tr><td><font color="Blue">Blue</font></td><td><font color="#0000FF">#0000FF</font></td><td bgcolor="#0000FF">rgb(0, 0, 255)</td></tr><tr><td><font color="BlueViolet">BlueViolet</font></td><td><font color="#8A2BE2">#8A2BE2</font></td><td bgcolor="#8A2BE2">rgb(138, 43, 226)</td></tr><tr><td><font color="Brown">Brown</font></td><td><font color="#A52A2A">#A52A2A</font></td><td bgcolor="#A52A2A">rgb(165, 42, 42)</td></tr><tr><td><font color="BurlyWood">BurlyWood</font></td><td><font color="#DEB887">#DEB887</font></td><td bgcolor="#DEB887">rgb(222, 184, 135)</td></tr><tr><td><font color="CadetBlue">CadetBlue</font></td><td><font color="#5F9EA0">#5F9EA0</font></td><td bgcolor="#5F9EA0">rgb(95, 158, 160)</td></tr><tr><td><font color="Chartreuse">Chartreuse</font></td><td><font color="#7FFF00">#7FFF00</font></td><td bgcolor="#7FFF00">rgb(127, 255, 0)</td></tr><tr><td><font color="Chocolate">Chocolate</font></td><td><font color="#D2691E">#D2691E</font></td><td bgcolor="#D2691E">rgb(210, 105, 30)</td></tr><tr><td><font color="Coral">Coral</font></td><td><font color="#FF7F50">#FF7F50</font></td><td bgcolor="#FF7F50">rgb(255, 127, 80)</td></tr><tr><td><font color="CornflowerBlue">CornflowerBlue</font></td><td><font color="#6495ED">#6495ED</font></td><td bgcolor="#6495ED">rgb(100, 149, 237)</td></tr><tr><td><font color="Cornsilk">Cornsilk</font></td><td><font color="#FFF8DC">#FFF8DC</font></td><td bgcolor="#FFF8DC">rgb(255, 248, 220)</td></tr><tr><td><font color="Crimson">Crimson</font></td><td><font color="#DC143C">#DC143C</font></td><td bgcolor="#DC143C">rgb(220, 20, 60)</td></tr><tr><td><font color="Cyan">Cyan</font></td><td><font color="#00FFFF">#00FFFF</font></td><td bgcolor="#00FFFF">rgb(0, 255, 255)</td></tr><tr><td><font color="DarkBlue">DarkBlue</font></td><td><font color="#00008B">#00008B</font></td><td bgcolor="#00008B">rgb(0, 0, 139)</td></tr><tr><td><font color="DarkCyan">DarkCyan</font></td><td><font color="#008B8B">#008B8B</font></td><td bgcolor="#008B8B">rgb(0, 139, 139)</td></tr><tr><td><font color="DarkGoldenRod">DarkGoldenRod</font></td><td><font color="#B8860B">#B8860B</font></td><td bgcolor="#B8860B">rgb(184, 134, 11)</td></tr><tr><td><font color="DarkGray">DarkGray</font></td><td><font color="#A9A9A9">#A9A9A9</font></td><td bgcolor="#A9A9A9">rgb(169, 169, 169)</td></tr><tr><td><font color="DarkGreen">DarkGreen</font></td><td><font color="#006400">#006400</font></td><td bgcolor="#006400">rgb(0, 100, 0)</td></tr><tr><td><font color="DarkKhaki">DarkKhaki</font></td><td><font color="#BDB76B">#BDB76B</font></td><td bgcolor="#BDB76B">rgb(189, 183, 107)</td></tr><tr><td><font color="DarkMagenta">DarkMagenta</font></td><td><font color="#8B008B">#8B008B</font></td><td bgcolor="#8B008B">rgb(139, 0, 139)</td></tr><tr><td><font color="DarkOliveGreen">DarkOliveGreen</font></td><td><font color="#556B2F">#556B2F</font></td><td bgcolor="#556B2F">rgb(85, 107, 47)</td></tr><tr><td><font color="Darkorange">Darkorange</font></td><td><font color="#FF8C00">#FF8C00</font></td><td bgcolor="#FF8C00">rgb(255, 140, 0)</td></tr><tr><td><font color="DarkOrchid">DarkOrchid</font></td><td><font color="#9932CC">#9932CC</font></td><td bgcolor="#9932CC">rgb(153, 50, 204)</td></tr><tr><td><font color="DarkRed">DarkRed</font></td><td><font color="#8B0000">#8B0000</font></td><td bgcolor="#8B0000">rgb(139, 0, 0)</td></tr><tr><td><font color="DarkSalmon">DarkSalmon</font></td><td><font color="#E9967A">#E9967A</font></td><td bgcolor="#E9967A">rgb(233, 150, 122)</td></tr><tr><td><font color="DarkSeaGreen">DarkSeaGreen</font></td><td><font color="#8FBC8F">#8FBC8F</font></td><td bgcolor="#8FBC8F">rgb(143, 188, 143)</td></tr><tr><td><font color="DarkSlateBlue">DarkSlateBlue</font></td><td><font color="#483D8B">#483D8B</font></td><td bgcolor="#483D8B">rgb(72, 61, 139)</td></tr><tr><td><font color="DarkSlateGray">DarkSlateGray</font></td><td><font color="#2F4F4F">#2F4F4F</font></td><td bgcolor="#2F4F4F">rgb(47, 79, 79)</td></tr><tr><td><font color="DarkTurquoise">DarkTurquoise</font></td><td><font color="#00CED1">#00CED1</font></td><td bgcolor="#00CED1">rgb(0, 206, 209)</td></tr><tr><td><font color="DarkViolet">DarkViolet</font></td><td><font color="#9400D3">#9400D3</font></td><td bgcolor="#9400D3">rgb(148, 0, 211)</td></tr><tr><td><font color="DeepPink">DeepPink</font></td><td><font color="#FF1493">#FF1493</font></td><td bgcolor="#FF1493">rgb(255, 20, 147)</td></tr><tr><td><font color="DeepSkyBlue">DeepSkyBlue</font></td><td><font color="#00BFFF">#00BFFF</font></td><td bgcolor="#00BFFF">rgb(0, 191, 255)</td></tr><tr><td><font color="DimGray">DimGray</font></td><td><font color="#696969">#696969</font></td><td bgcolor="#696969">rgb(105, 105, 105)</td></tr><tr><td><font color="DodgerBlue">DodgerBlue</font></td><td><font color="#1E90FF">#1E90FF</font></td><td bgcolor="#1E90FF">rgb(30, 144, 255)</td></tr><tr><td><font color="Feldspar">Feldspar</font></td><td><font color="#D19275">#D19275</font></td><td bgcolor="#D19275">rgb(209, 146, 117)</td></tr><tr><td><font color="FireBrick">FireBrick</font></td><td><font color="#B22222">#B22222</font></td><td bgcolor="#B22222">rgb(178, 34, 34)</td></tr><tr><td><font color="FloralWhite">FloralWhite</font></td><td><font color="#FFFAF0">#FFFAF0</font></td><td bgcolor="#FFFAF0">rgb(255, 250, 240)</td></tr><tr><td><font color="ForestGreen">ForestGreen</font></td><td><font color="#228B22">#228B22</font></td><td bgcolor="#228B22">rgb(34, 139, 34)</td></tr><tr><td><font color="Fuchsia">Fuchsia</font></td><td><font color="#FF00FF">#FF00FF</font></td><td bgcolor="#FF00FF">rgb(255, 0, 255)</td></tr><tr><td><font color="Gainsboro">Gainsboro</font></td><td><font color="#DCDCDC">#DCDCDC</font></td><td bgcolor="#DCDCDC">rgb(220, 220, 220)</td></tr><tr><td><font color="GhostWhite">GhostWhite</font></td><td><font color="#F8F8FF">#F8F8FF</font></td><td bgcolor="#F8F8FF">rgb(248, 248, 255)</td></tr><tr><td><font color="Gold">Gold</font></td><td><font color="#FFD700">#FFD700</font></td><td bgcolor="#FFD700">rgb(255, 215, 0)</td></tr><tr><td><font color="GoldenRod">GoldenRod</font></td><td><font color="#DAA520">#DAA520</font></td><td bgcolor="#DAA520">rgb(218, 165, 32)</td></tr><tr><td><font color="Gray">Gray</font></td><td><font color="#808080">#808080</font></td><td bgcolor="#808080">rgb(128, 128, 128)</td></tr><tr><td><font color="Green">Green</font></td><td><font color="#008000">#008000</font></td><td bgcolor="#008000">rgb(0, 128, 0)</td></tr><tr><td><font color="GreenYellow">GreenYellow</font></td><td><font color="#ADFF2F">#ADFF2F</font></td><td bgcolor="#ADFF2F">rgb(173, 255, 47)</td></tr><tr><td><font color="HoneyDew">HoneyDew</font></td><td><font color="#F0FFF0">#F0FFF0</font></td><td bgcolor="#F0FFF0">rgb(240, 255, 240)</td></tr><tr><td><font color="HotPink">HotPink</font></td><td><font color="#FF69B4">#FF69B4</font></td><td bgcolor="#FF69B4">rgb(255, 105, 180)</td></tr><tr><td><font color="IndianRed">IndianRed</font></td><td><font color="#CD5C5C">#CD5C5C</font></td><td bgcolor="#CD5C5C">rgb(205, 92, 92)</td></tr><tr><td><font color="Indigo">Indigo</font></td><td><font color="#4B0082">#4B0082</font></td><td bgcolor="#4B0082">rgb(75, 0, 130)</td></tr><tr><td><font color="Ivory">Ivory</font></td><td><font color="#FFFFF0">#FFFFF0</font></td><td bgcolor="#FFFFF0">rgb(255, 255, 240)</td></tr><tr><td><font color="Khaki">Khaki</font></td><td><font color="#F0E68C">#F0E68C</font></td><td bgcolor="#F0E68C">rgb(240, 230, 140)</td></tr><tr><td><font color="Lavender">Lavender</font></td><td><font color="#E6E6FA">#E6E6FA</font></td><td bgcolor="#E6E6FA">rgb(230, 230, 250)</td></tr><tr><td><font color="LavenderBlush">LavenderBlush</font></td><td><font color="#FFF0F5">#FFF0F5</font></td><td bgcolor="#FFF0F5">rgb(255, 240, 245)</td></tr><tr><td><font color="LawnGreen">LawnGreen</font></td><td><font color="#7CFC00">#7CFC00</font></td><td bgcolor="#7CFC00">rgb(124, 252, 0)</td></tr><tr><td><font color="LemonChiffon">LemonChiffon</font></td><td><font color="#FFFACD">#FFFACD</font></td><td bgcolor="#FFFACD">rgb(255, 250, 205)</td></tr><tr><td><font color="LightBlue">LightBlue</font></td><td><font color="#ADD8E6">#ADD8E6</font></td><td bgcolor="#ADD8E6">rgb(173, 216, 230)</td></tr><tr><td><font color="LightCoral">LightCoral</font></td><td><font color="#F08080">#F08080</font></td><td bgcolor="#F08080">rgb(240, 128, 128)</td></tr><tr><td><font color="LightCyan">LightCyan</font></td><td><font color="#E0FFFF">#E0FFFF</font></td><td bgcolor="#E0FFFF">rgb(224, 255, 255)</td></tr><tr><td><font color="LightGoldenRodYellow">LightGoldenRodYellow</font></td><td><font color="#FAFAD2">#FAFAD2</font></td><td bgcolor="#FAFAD2">rgb(250, 250, 210)</td></tr><tr><td><font color="LightGrey">LightGrey</font></td><td><font color="#D3D3D3">#D3D3D3</font></td><td bgcolor="#D3D3D3">rgb(211, 211, 211)</td></tr><tr><td><font color="LightGreen">LightGreen</font></td><td><font color="#90EE90">#90EE90</font></td><td bgcolor="#90EE90">rgb(144, 238, 144)</td></tr><tr><td><font color="LightPink">LightPink</font></td><td><font color="#FFB6C1">#FFB6C1</font></td><td bgcolor="#FFB6C1">rgb(255, 182, 193)</td></tr><tr><td><font color="LightSalmon">LightSalmon</font></td><td><font color="#FFA07A">#FFA07A</font></td><td bgcolor="#FFA07A">rgb(255, 160, 122)</td></tr><tr><td><font color="LightSeaGreen">LightSeaGreen</font></td><td><font color="#20B2AA">#20B2AA</font></td><td bgcolor="#20B2AA">rgb(32, 178, 170)</td></tr><tr><td><font color="LightSkyBlue">LightSkyBlue</font></td><td><font color="#87CEFA">#87CEFA</font></td><td bgcolor="#87CEFA">rgb(135, 206, 250)</td></tr><tr><td><font color="LightSlateBlue">LightSlateBlue</font></td><td><font color="#8470FF">#8470FF</font></td><td bgcolor="#8470FF">rgb(132, 112, 255)</td></tr><tr><td><font color="LightSlateGray">LightSlateGray</font></td><td><font color="#778899">#778899</font></td><td bgcolor="#778899">rgb(119, 136, 153)</td></tr><tr><td><font color="LightSteelBlue">LightSteelBlue</font></td><td><font color="#B0C4DE">#B0C4DE</font></td><td bgcolor="#B0C4DE">rgb(176, 196, 222)</td></tr><tr><td><font color="LightYellow">LightYellow</font></td><td><font color="#FFFFE0">#FFFFE0</font></td><td bgcolor="#FFFFE0">rgb(255, 255, 224)</td></tr><tr><td><font color="Lime">Lime</font></td><td><font color="#00FF00">#00FF00</font></td><td bgcolor="#00FF00">rgb(0, 255, 0)</td></tr><tr><td><font color="LimeGreen">LimeGreen</font></td><td><font color="#32CD32">#32CD32</font></td><td bgcolor="#32CD32">rgb(50, 205, 50)</td></tr><tr><td><font color="Linen">Linen</font></td><td><font color="#FAF0E6">#FAF0E6</font></td><td bgcolor="#FAF0E6">rgb(250, 240, 230)</td></tr><tr><td><font color="Magenta">Magenta</font></td><td><font color="#FF00FF">#FF00FF</font></td><td bgcolor="#FF00FF">rgb(255, 0, 255)</td></tr><tr><td><font color="Maroon">Maroon</font></td><td><font color="#800000">#800000</font></td><td bgcolor="#800000">rgb(128, 0, 0)</td></tr><tr><td><font color="MediumAquaMarine">MediumAquaMarine</font></td><td><font color="#66CDAA">#66CDAA</font></td><td bgcolor="#66CDAA">rgb(102, 205, 170)</td></tr><tr><td><font color="MediumBlue">MediumBlue</font></td><td><font color="#0000CD">#0000CD</font></td><td bgcolor="#0000CD">rgb(0, 0, 205)</td></tr><tr><td><font color="MediumOrchid">MediumOrchid</font></td><td><font color="#BA55D3">#BA55D3</font></td><td bgcolor="#BA55D3">rgb(186, 85, 211)</td></tr><tr><td><font color="MediumPurple">MediumPurple</font></td><td><font color="#9370D8">#9370D8</font></td><td bgcolor="#9370D8">rgb(147, 112, 216)</td></tr><tr><td><font color="MediumSeaGreen">MediumSeaGreen</font></td><td><font color="#3CB371">#3CB371</font></td><td bgcolor="#3CB371">rgb(60, 179, 113)</td></tr><tr><td><font color="MediumSlateBlue">MediumSlateBlue</font></td><td><font color="#7B68EE">#7B68EE</font></td><td bgcolor="#7B68EE">rgb(123, 104, 238)</td></tr><tr><td><font color="MediumSpringGreen">MediumSpringGreen</font></td><td><font color="#00FA9A">#00FA9A</font></td><td bgcolor="#00FA9A">rgb(0, 250, 154)</td></tr><tr><td><font color="MediumTurquoise">MediumTurquoise</font></td><td><font color="#48D1CC">#48D1CC</font></td><td bgcolor="#48D1CC">rgb(72, 209, 204)</td></tr><tr><td><font color="MediumVioletRed">MediumVioletRed</font></td><td><font color="#C71585">#C71585</font></td><td bgcolor="#C71585">rgb(199, 21, 133)</td></tr><tr><td><font color="MidnightBlue">MidnightBlue</font></td><td><font color="#191970">#191970</font></td><td bgcolor="#191970">rgb(25, 25, 112)</td></tr><tr><td><font color="MintCream">MintCream</font></td><td><font color="#F5FFFA">#F5FFFA</font></td><td bgcolor="#F5FFFA">rgb(245, 255, 250)</td></tr><tr><td><font color="MistyRose">MistyRose</font></td><td><font color="#FFE4E1">#FFE4E1</font></td><td bgcolor="#FFE4E1">rgb(255, 228, 225)</td></tr><tr><td><font color="Moccasin">Moccasin</font></td><td><font color="#FFE4B5">#FFE4B5</font></td><td bgcolor="#FFE4B5">rgb(255, 228, 181)</td></tr><tr><td><font color="NavajoWhite">NavajoWhite</font></td><td><font color="#FFDEAD">#FFDEAD</font></td><td bgcolor="#FFDEAD">rgb(255, 222, 173)</td></tr><tr><td><font color="Navy">Navy</font></td><td><font color="#000080">#000080</font></td><td bgcolor="#000080">rgb(0, 0, 128)</td></tr><tr><td><font color="OldLace">OldLace</font></td><td><font color="#FDF5E6">#FDF5E6</font></td><td bgcolor="#FDF5E6">rgb(253, 245, 230)</td></tr><tr><td><font color="Olive">Olive</font></td><td><font color="#808000">#808000</font></td><td bgcolor="#808000">rgb(128, 128, 0)</td></tr><tr><td><font color="OliveDrab">OliveDrab</font></td><td><font color="#6B8E23">#6B8E23</font></td><td bgcolor="#6B8E23">rgb(107, 142, 35)</td></tr><tr><td><font color="Orange">Orange</font></td><td><font color="#FFA500">#FFA500</font></td><td bgcolor="#FFA500">rgb(255, 165, 0)</td></tr><tr><td><font color="OrangeRed">OrangeRed</font></td><td><font color="#FF4500">#FF4500</font></td><td bgcolor="#FF4500">rgb(255, 69, 0)</td></tr><tr><td><font color="Orchid">Orchid</font></td><td><font color="#DA70D6">#DA70D6</font></td><td bgcolor="#DA70D6">rgb(218, 112, 214)</td></tr><tr><td><font color="PaleGoldenRod">PaleGoldenRod</font></td><td><font color="#EEE8AA">#EEE8AA</font></td><td bgcolor="#EEE8AA">rgb(238, 232, 170)</td></tr><tr><td><font color="PaleGreen">PaleGreen</font></td><td><font color="#98FB98">#98FB98</font></td><td bgcolor="#98FB98">rgb(152, 251, 152)</td></tr><tr><td><font color="PaleTurquoise">PaleTurquoise</font></td><td><font color="#AFEEEE">#AFEEEE</font></td><td bgcolor="#AFEEEE">rgb(175, 238, 238)</td></tr><tr><td><font color="PaleVioletRed">PaleVioletRed</font></td><td><font color="#D87093">#D87093</font></td><td bgcolor="#D87093">rgb(216, 112, 147)</td></tr><tr><td><font color="PapayaWhip">PapayaWhip</font></td><td><font color="#FFEFD5">#FFEFD5</font></td><td bgcolor="#FFEFD5">rgb(255, 239, 213)</td></tr><tr><td><font color="PeachPuff">PeachPuff</font></td><td><font color="#FFDAB9">#FFDAB9</font></td><td bgcolor="#FFDAB9">rgb(255, 218, 185)</td></tr><tr><td><font color="Peru">Peru</font></td><td><font color="#CD853F">#CD853F</font></td><td bgcolor="#CD853F">rgb(205, 133, 63)</td></tr><tr><td><font color="Pink">Pink</font></td><td><font color="#FFC0CB">#FFC0CB</font></td><td bgcolor="#FFC0CB">rgb(255, 192, 203)</td></tr><tr><td><font color="Plum">Plum</font></td><td><font color="#DDA0DD">#DDA0DD</font></td><td bgcolor="#DDA0DD">rgb(221, 160, 221)</td></tr><tr><td><font color="PowderBlue">PowderBlue</font></td><td><font color="#B0E0E6">#B0E0E6</font></td><td bgcolor="#B0E0E6">rgb(176, 224, 230)</td></tr><tr><td><font color="Purple">Purple</font></td><td><font color="#800080">#800080</font></td><td bgcolor="#800080">rgb(128, 0, 128)</td></tr><tr><td><font color="Red">Red</font></td><td><font color="#FF0000">#FF0000</font></td><td bgcolor="#FF0000">rgb(255, 0, 0)</td></tr><tr><td><font color="RosyBrown">RosyBrown</font></td><td><font color="#BC8F8F">#BC8F8F</font></td><td bgcolor="#BC8F8F">rgb(188, 143, 143)</td></tr><tr><td><font color="RoyalBlue">RoyalBlue</font></td><td><font color="#4169E1">#4169E1</font></td><td bgcolor="#4169E1">rgb(65, 105, 225)</td></tr><tr><td><font color="SaddleBrown">SaddleBrown</font></td><td><font color="#8B4513">#8B4513</font></td><td bgcolor="#8B4513">rgb(139, 69, 19)</td></tr><tr><td><font color="Salmon">Salmon</font></td><td><font color="#FA8072">#FA8072</font></td><td bgcolor="#FA8072">rgb(250, 128, 114)</td></tr><tr><td><font color="SandyBrown">SandyBrown</font></td><td><font color="#F4A460">#F4A460</font></td><td bgcolor="#F4A460">rgb(244, 164, 96)</td></tr><tr><td><font color="SeaGreen">SeaGreen</font></td><td><font color="#2E8B57">#2E8B57</font></td><td bgcolor="#2E8B57">rgb(46, 139, 87)</td></tr><tr><td><font color="SeaShell">SeaShell</font></td><td><font color="#FFF5EE">#FFF5EE</font></td><td bgcolor="#FFF5EE">rgb(255, 245, 238)</td></tr><tr><td><font color="Sienna">Sienna</font></td><td><font color="#A0522D">#A0522D</font></td><td bgcolor="#A0522D">rgb(160, 82, 45)</td></tr><tr><td><font color="Silver">Silver</font></td><td><font color="#C0C0C0">#C0C0C0</font></td><td bgcolor="#C0C0C0">rgb(192, 192, 192)</td></tr><tr><td><font color="SkyBlue">SkyBlue</font></td><td><font color="#87CEEB">#87CEEB</font></td><td bgcolor="#87CEEB">rgb(135, 206, 235)</td></tr><tr><td><font color="SlateBlue">SlateBlue</font></td><td><font color="#6A5ACD">#6A5ACD</font></td><td bgcolor="#6A5ACD">rgb(106, 90, 205)</td></tr><tr><td><font color="SlateGray">SlateGray</font></td><td><font color="#708090">#708090</font></td><td bgcolor="#708090">rgb(112, 128, 144)</td></tr><tr><td><font color="Snow">Snow</font></td><td><font color="#FFFAFA">#FFFAFA</font></td><td bgcolor="#FFFAFA">rgb(255, 250, 250)</td></tr><tr><td><font color="SpringGreen">SpringGreen</font></td><td><font color="#00FF7F">#00FF7F</font></td><td bgcolor="#00FF7F">rgb(0, 255, 127)</td></tr><tr><td><font color="SteelBlue">SteelBlue</font></td><td><font color="#4682B4">#4682B4</font></td><td bgcolor="#4682B4">rgb(70, 130, 180)</td></tr><tr><td><font color="Tan">Tan</font></td><td><font color="#D2B48C">#D2B48C</font></td><td bgcolor="#D2B48C">rgb(210, 180, 140)</td></tr><tr><td><font color="Teal">Teal</font></td><td><font color="#008080">#008080</font></td><td bgcolor="#008080">rgb(0, 128, 128)</td></tr><tr><td><font color="Thistle">Thistle</font></td><td><font color="#D8BFD8">#D8BFD8</font></td><td bgcolor="#D8BFD8">rgb(216, 191, 216)</td></tr><tr><td><font color="Tomato">Tomato</font></td><td><font color="#FF6347">#FF6347</font></td><td bgcolor="#FF6347">rgb(255, 99, 71)</td></tr><tr><td><font color="Turquoise">Turquoise</font></td><td><font color="#40E0D0">#40E0D0</font></td><td bgcolor="#40E0D0">rgb(64, 224, 208)</td></tr><tr><td><font color="Violet">Violet</font></td><td><font color="#EE82EE">#EE82EE</font></td><td bgcolor="#EE82EE">rgb(238, 130, 238)</td></tr><tr><td><font color="VioletRed">VioletRed</font></td><td><font color="#D02090">#D02090</font></td><td bgcolor="#D02090">rgb(208, 32, 144)</td></tr><tr><td><font color="Wheat">Wheat</font></td><td><font color="#F5DEB3">#F5DEB3</font></td><td bgcolor="#F5DEB3">rgb(245, 222, 179)</td></tr><tr><td><font color="White">White</font></td><td><font color="#FFFFFF">#FFFFFF</font></td><td bgcolor="#FFFFFF">rgb(255, 255, 255)</td></tr><tr><td><font color="WhiteSmoke">WhiteSmoke</font></td><td><font color="#F5F5F5">#F5F5F5</font></td><td bgcolor="#F5F5F5">rgb(245, 245, 245)</td></tr><tr><td><font color="Yellow">Yellow</font></td><td><font color="#FFFF00">#FFFF00</font></td><td bgcolor="#FFFF00">rgb(255, 255, 0)</td></tr><tr><td><font color="YellowGreen">YellowGreen</font></td><td><font color="#9ACD32">#9ACD32</font></td><td bgcolor="#9ACD32">rgb(154, 205, 50)</td></tr></tbody></table>
+
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>请我一杯咖啡吧！</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="Hank ZHU 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="/images/alipay.png" alt="Hank ZHU 支付宝">
+        <span>支付宝</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Hank ZHU
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.zealot.top/2018/08/10/Hexo-Github%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A23/" title="[原创] Hexo+Github 搭建自己的博客 --- 心得汇总 2018 版（内容编辑篇）">https://blog.zealot.top/2018/08/10/Hexo-Github搭建自己的博客3/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2018/08/10/ESXI%E6%89%93%E9%80%A0%E6%9C%80%E5%BC%BA%E5%AE%B6%E5%BA%AD%E8%BD%AF%E8%B7%AF%E7%94%B1%E7%B3%BB%E7%BB%9F-ROS-LEDE-%E5%85%A8%E8%83%BDNAS/" rel="prev" title="[原创] ESXI 打造最强家庭软路由系统 ROS+LEDE + 全能 NAS 方案 (2018 版)">
+                  <i class="fa fa-angle-left"></i> [原创] ESXI 打造最强家庭软路由系统 ROS+LEDE + 全能 NAS 方案 (2018 版)
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2018/08/10/Linux%E4%B8%8B%E9%85%8D%E7%BD%AELVM-%E9%80%BB%E8%BE%91%E5%8D%B7%E7%AE%A1%E7%90%86%EF%BC%89/" rel="next" title="Linux 下配置 LVM (逻辑卷管理）">
+                  Linux 下配置 LVM (逻辑卷管理） <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2018 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Hank ZHU</span>
+  </div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div><div>
+<!--添加网站运行时间-->
+<span>小破站已经在风雨中度过了</span>
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span>
+<script>
+    function createtime() {
+        const startTime = '09/27/2018 00:12:55',
+            start = new Date(startTime)
+        let mill = new Date() - start,
+            seconds = Math.floor(mill / 1000),
+            mins = Math.floor(seconds / 60),
+            hours = Math.floor(mins / 60),
+            days = Math.floor(hours / 24)
+        const time = {
+            seconds: seconds - mins * 60,
+            mins: mins - hours * 60,
+            hours: hours - days * 24,
+        }
+        for (const k in time) {
+            time[k] = `${time[k]}`.padStart(2, '0')
+        }
+        document.getElementById("timeDate").innerHTML = ` ${days} 天`
+        document.getElementById("times").innerHTML = ` ${time.hours} 小时 ${time.mins} 分 ${time.seconds} 秒`
+    }
+    setInterval(createtime, 500)
+</script>
+</div>
+
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.20/fancybox/fancybox.umd.js" integrity="sha256-q8XkJ6dj5VwSvzI8+nATCHHQG+Xv/dAZBCgqmu93zOY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '64px',
+  right: 'unset',
+  left: '32px',
+  time: '0.5s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#100f2c',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '🌓',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
+
+</body>
+</html>
