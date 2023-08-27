@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>快速查询 Linux 性能</title>
+    <url>/2023/08/27/%E5%BF%AB%E9%80%9F%E6%9F%A5%E8%AF%A2linux%E6%80%A7%E8%83%BD/</url>
+    <content><![CDATA[<h2 id="uptime"><a href="#uptime" class="headerlink" title="uptime"></a>uptime</h2><p>这三个数字是指数阻尼移动和平均值，具有 1 分钟、5 分钟和 15 分钟常数。这三个数字给予我们了解负载是如何随时间变化的。例如，如果要求您检查有问题的服务器，而 1 分钟的值远低于 15 分钟的值，则您可能登录得太晚，错过了问题。<br><strong>如果一分钟的值，远小于 15 分钟的值。证明现在不处于问题发生时期。</strong><br><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-07-21_202307211328577.png"></p>
+<h2 id="dmesg-tail"><a href="#dmesg-tail" class="headerlink" title="dmesg | tail"></a>dmesg | tail</h2><p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-07-21_202307211334209.png"><br>这将查看最近 10 条系统消息 (如果有的话)。查找可能导致性能问题的错误。上面的例子包括 oom-killer 和 TCP 丢弃请求。<br>千万不要错过这一步！dmesg. 总是值得检查的。</p>
+<h2 id="vmstat-1"><a href="#vmstat-1" class="headerlink" title="vmstat 1"></a>vmstat 1</h2><p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-07-21_202307211341417.png"><br>vmstat (8）是虚拟内存 stat 的缩写，是一个常用的工具（几十年前首次为 BSD 创建）。它会在每行打印关键服务器统计信息的摘要。<br>vmstat 以参数 1 运行，以打印一秒摘要。输出的第一行 (在此版本的 vmstat 中）有一些列显示自靴子以来的平均值，而不是前一秒。现在，跳过第一行，除非你想学习和记住哪一列是哪一列。</p>
+<p>r: CPU 上运行并等待一轮的进程数。这为确定 CPU 饱和度提供了比负– - - -“”–.—–.’.-.-.–.- - —.-“.<br>载平均值更好的信号，因为它不包括 I/O。解释：大于 CPU 计数的 “r” 值是饱和。<br>free: 可用内存（KB）。如果数位数太多，说明您有足够的可用内存。作为命令 7 包含的 “free -m” 命令更好地解释了空闲内存的状态。<br>si，so: 换入和换出。如果这些都是非零的，则内存不足。<br>us，sy，id，wa，st: 这些是所有 CPU 平均 CPU 时间的细分。它们是用户时间、系统时间（内核）、空闲时间、等待 I/O 时间和窃取时间（由其他来宾或 Xen（来宾自己的隔离驱动程序域)<br>CPU 时间明细表将通过添加用户 + 系统时间来确认 CPU 是否忙碌。恒定的等待 I/O 指向磁盘瓶颈；这是 CPU 空闲的地方，因为任务被阻塞，等待挂起的磁盘 I/O。您可以将等待 I/O 视为 CPU 空闲的另一种形式，它提供了它们空闲的线索。<br>系统时间是 I/O 处理所必需的。如果系统平均时间超过 20%，则值得进一步探索：也许内核正在低效地处理 I/O。<br>在上面的例子中，CPU 时间几乎完全是用户级的，而是指向应用程序级的使用。CPU 的平均利用率也超过 90%。这不一定是个问题；使用 “r” 列检查饱和度。</p>
+<h2 id="mpstat-P-ALL-1"><a href="#mpstat-P-ALL-1" class="headerlink" title="mpstat -P ALL 1"></a>mpstat -P ALL 1</h2><p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-07-21_202307211351362.png"><br>此命令打印每个 CPU 的 CPU 时间明细，可用于检查是否存在不平衡。单个热 CPU 可以是单线程应用程序的证据。</p>
+<h2 id="pidstat-1"><a href="#pidstat-1" class="headerlink" title="pidstat 1"></a>pidstat 1</h2><p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-07-21_202307211356795.png"><br>Pidstat 有点像 top 的每进程摘要，但打印滚动摘要而不是清除屏幕。这对于观察一段时间内的模式非常有用，也可以将所看到的（复制 - n - 粘贴）记录到调查记录中。<br>上面的示例确定了两个负责消耗 CPU 的 java 进程。% CPU 列是所有 CPU 的总和；1591% 的数据显示 Java 进程消耗了近 16 个 CPU.</p>
+<h2 id="iostat-xz-1"><a href="#iostat-xz-1" class="headerlink" title="iostat -xz 1"></a>iostat -xz 1</h2><p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-07-21_202307211400884.png"><br>这是了解数据块设备（磁盘）、应用的工作负载和产生的性能的一个很好的工具。寻找:<br>r/s、w/s、rkB/s、wkB/s: 这些是传输到设备的读、写、读 KB 和写 KB 每秒。使用这些参数来描述工作负载。性能问题可能仅仅是由于施加了过大的负载。<br>await: I/O 的平均时间，单位为毫秒。这是应用程序遭受的时间，因为它包括排队的时间和服务的时间。大于预期的平均时间可能是器件饱和或器件问题的指示。<br>avgqu-sz: 发送到设备的平均请求数。大于 1 的值可能是饱和的证据（尽管设备通常可以并行地处理请求，特别是面向多个后端磁盘的虚拟设备）。<br>% util: 设备利用率。这是一个真正的忙碌百分比，显示设备每秒钟工作的时间。大于 60% 的值通常会导致性能较差（这应该在 await 中看到），尽管这取决于设备。接近 100% 的值通常表示饱和。<br>如果存储设备是一个逻辑磁盘设备，前面有许多后端磁盘，那么 100% 的利用率可能只是意味着一些 I/O 在 100% 的时间被处理，然而，后端磁盘可能远未饱和，并且可能能够处理更多的工作。<br>请记住，性能不佳的磁盘 I/O 不一定是应用程序的问题。许多技术通常用于异步地执行 I/O，使得应用程序不会直接阻塞和遭受延迟（例如，用于读取的预读和用于写入的缓冲)</p>
+<h2 id="free-m"><a href="#free-m" class="headerlink" title="free -m"></a>free -m</h2><p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-07-21_202307211405275.png"><br>右侧两列显示:<br>buffers: For the buffer cache, used for block device I/O.buffers: 用于缓冲区缓存，用于块设备 I/O。<br>cached: For the page cache,used by file systems.cached: 用于页面缓存，由文件系统使用。</p>
+<h2 id="sar-n-DEV-1"><a href="#sar-n-DEV-1" class="headerlink" title="sar -n DEV 1"></a>sar -n DEV 1</h2><p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-07-21_202307211408407.png"><br>使用此工具检查网络接口吞吐量: rxkB/s 和 txkB/s，作为工作负载的度量，还检查是否达到任何限制。在上面的例子中，eth0 receive 达到 22 Mbytes/s，也就是 176 Mbits/sec（远低于 1 Gbit/sec 的限制）。<br>此版本还提供了 % ifutil 表示设备利用率（全双工双向最大值），这也是我们使用 Brendan 的 nicstat 工具来测量的。就像 nicstat 一样，这很难得到正确的答案，并且在这个例子中似乎不起作用（0.00)</p>
+<h2 id="sar-n-TCP-ETCP-1"><a href="#sar-n-TCP-ETCP-1" class="headerlink" title="sar -n TCP,ETCP 1"></a>sar -n TCP,ETCP 1</h2><p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-07-21_202307211412991.png"><br>这是一些关键 TCP 指标的总结视图。这些措施包括:<br>active/s: 每秒本地发起的 TCP 连接数（例如，via connect ()) 。<br>passive/s: 每秒远程发起的 TCP 连接数（例如，通过 accept ())。<br>retrans/s: 每秒 TCP 重传次数。<br>主动计数和被动计数通常可用作服务器负载的粗略度量：新接受的连接数（被动）和下游连接数（主动）。将主动视为出站，将被动视为入站可能会有所帮助，但这并不严格意义上是正确的（例如，考虑本地主机到本地主机的连接）。<br>重传是网络或服务器问题的标志；它可能是不可靠的网络 (例如，公共因特网），或者可能是由于服务器过载并丢弃分组。上面的例子显示了每秒只有一个新的 TCP 连接。</p>
+<h2 id="top"><a href="#top" class="headerlink" title="top"></a>top</h2><p><img src="https://host.zealot.top:8929/ppi/images/raw/master/pictures/2023-07-21_202307211415883.png"><br>top 命令包含了我们前面检查过的许多指标。运行它可以很方便地查看是否有任何东西看起来与以前的命令有很大的不同，这表明 load 是可变的。<br>top 的一个缺点是，随着时间的推移，很难看到模式，这在 vmstat 和 pidstat 这样的工具中可能会更清楚，它们提供滚动输出。如果暂停输出的速度不够快 (Ctrl-S 暂停，Ctrl-Q 继续)，并且屏幕清除，间歇性问题的证据也可能丢失。</p>
+]]></content>
+      <categories>
+        <category>技术分享</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Yaml 基础</title>
     <url>/2023/08/24/Yaml%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<h2 id="YAML-基础"><a href="#YAML-基础" class="headerlink" title="YAML 基础"></a>YAML 基础</h2><p>它的基本语法规则如下：</p>
@@ -10626,7 +10648,7 @@ width: 170px; }
         <category>技术分享</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
